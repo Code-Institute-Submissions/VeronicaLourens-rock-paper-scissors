@@ -16,6 +16,14 @@ Rock Paper Scissors game is an interactive easy yet super fun game for everyone 
 * Wireframe
   ![Rock Paper Scissors](assets/image/wireframe.jpg)
 * Design Choice
+  * Color Theme
+  
+      The site uses white color for the background and black color for the text. The uses a lovely picture of two playful children playing the game. The site uses bright colors and different shapes of buttons to enhance better user experience. The design is child and family friendly to attract little audience.
+      ![Color Theme](assets/image/colortheme.jpg)
+      [Color Grid](assets/image/colorgrid.jpg)
+
+  * Typography
+      The site's main font-family is Lato that is easy to read. The fall back font-family is Open Sans.
 
 ## Existing Features
 * Header
@@ -41,4 +49,8 @@ Rock Paper Scissors game is an interactive easy yet super fun game for everyone 
 * Clone the Project
 
 ## Credit
+* Media
+  * [Adobe Color](https://color.adobe.com/create/color-wheel) - extract the site's color theme.
+  * [EightShape Contrast](https://contrast-grid.eightshapes.com/) - color contrast grid.
+  * [Google Fonts](https://fonts.google.com/specimen/Lato#standard-styles) - provides the fonts for the site.
 ## Acknowledgement
