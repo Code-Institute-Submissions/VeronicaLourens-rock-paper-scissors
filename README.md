@@ -53,4 +53,5 @@ Rock Paper Scissors game is an interactive easy yet super fun game for everyone 
   * [Adobe Color](https://color.adobe.com/create/color-wheel) - extract the site's color theme.
   * [EightShape Contrast](https://contrast-grid.eightshapes.com/) - color contrast grid.
   * [Google Fonts](https://fonts.google.com/specimen/Lato#standard-styles) - provides the fonts for the site.
+  * [Freepik](https://www.freepik.com/) - provides the background image for free.
 ## Acknowledgement
