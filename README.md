@@ -24,6 +24,11 @@ Rock Paper Scissors game is an interactive easy yet super fun game for everyone 
 * Future Features
 
 ## Technologies Userd
+* [HTML5]() - to create site's structure of the content.
+* [CSS]() - to style the website content.
+* [JavaScript]() - to make to site interactive with buttons' clickable functionalities.
+* [GitHub]() - to host and deploy the website with its content.
+* [GitPod]() - to edit the code and push the code to GitHub page.
 ## Testing
 * Code Validation
 * Lighthouse Testing
