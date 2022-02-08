@@ -39,6 +39,30 @@ header a {
 
 }
 
+#game-container {
+    width: 100%;
+}
+
+#popup-box {
+    width: 280px;
+    font-size: 70%;
+    background-color: rgba(23, 209, 209, .6);
+    padding: 10px;
+    line-height: 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+
+}
+
+.close-btn {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    float: right;
+    color: black;
+    
+}
+
 
 
 
@@ -62,6 +86,13 @@ header a {
     #game-rules-btn {
         width: 120px;
         height: 45px;
+        font-size: 100%;
+    }
+
+    /* game section */
+
+    #popup-box {
+        width: 450px;
         font-size: 100%;
     }
 
