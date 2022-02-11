@@ -98,13 +98,13 @@ header a {
 
 #choice-container {
     width: 180px;
-    background: #5AB252;
     margin: 20px auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     border-radius: 10px;
     padding: 15px;
+    box-shadow: 0px 0px 10px 5px rgb(231, 149, 91);
 
 
 
@@ -117,9 +117,10 @@ header a {
     height: 40px;
     border-radius: 50%;
     background: rgb(84, 84, 233);
-    border: 2px solid #1623d6;
+    border: 3px solid #0e1bcc;
     color: rgb(238, 193, 135);
     cursor: pointer;
+    /* padding: 5px; */
     
 }
 
@@ -168,6 +169,24 @@ header a {
     #popup-box {
         width: 450px;
         font-size: 100%;
+    }
+
+    #choice-container {
+        width: 400px;
+         margin: 35px auto;
+        
+
+    }
+
+    #choice-container>button {
+        font-size: 300%;
+        width: 80px;
+        height: 80px;
+    }
+
+    .match-box p,
+    .match-box h2 {
+        font-size: 120%;
     }
 
     
