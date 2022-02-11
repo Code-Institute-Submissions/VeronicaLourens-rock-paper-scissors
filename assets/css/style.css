@@ -131,7 +131,8 @@ header a {
     background: rgba(23, 209, 209, .6);
 }
 
-.computer-choice-box h3 {
+.computer-choice-box h3,
+.move-count-box h3 {
     text-align: center;
     font-size: 80%;
 
@@ -162,9 +163,31 @@ header a {
 }
 
 
+.message-box,
+.score-box {
+    text-align: center;
+    background: #717aee;
+
+}
 
 .score-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
 
+.flex-item {
+    width: 70px;
+    height: 70px;
+    background: #5AB252;
+    border-radius: 50%;
+}
+
+.flex-item>p {
+    font-size: 80%;
+    color: white;
+    font-weight: bold;
 }
 
 
