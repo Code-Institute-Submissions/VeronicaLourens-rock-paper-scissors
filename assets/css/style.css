@@ -63,6 +63,19 @@ header a {
     
 }
 
+.header-left {
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+
+.sound-controls img {
+    width: 25px;
+}
+
 .match-box {
 
 }
