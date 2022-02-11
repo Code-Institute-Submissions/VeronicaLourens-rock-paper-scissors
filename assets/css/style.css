@@ -85,8 +85,52 @@ header a {
 }
 
 .match-box {
+    padding: 0 15px;
+    margin: 0 auto;
 
 }
+
+.match-box p,
+.match-box h2 {
+    font-size: 80%;
+    text-align: center;
+}
+
+#choice-container {
+    width: 180px;
+    background: #5AB252;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    padding: 15px;
+
+
+
+}
+
+#choice-container>button {
+    font-size: 150%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(84, 84, 233);
+    border: 2px solid #1623d6;
+    color: rgb(238, 193, 135);
+    cursor: pointer;
+    
+}
+
+#choice-container>button:hover,
+#choice-container>button:focus {
+    transform: scale(1.2);
+    color: #1623d6;
+    background: rgba(23, 209, 209, .6);
+}
+
+
 
 
 
