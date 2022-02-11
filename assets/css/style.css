@@ -76,6 +76,14 @@ header a {
     width: 25px;
 }
 
+#game-container {
+    width: 100vw;
+    background: url(../image/bkimg.jpg) center center no-repeat;
+    height: 70vh;
+    background-size: contain;
+
+}
+
 .match-box {
 
 }
@@ -105,6 +113,10 @@ header a {
         width: 120px;
         height: 45px;
         font-size: 100%;
+    }
+
+    .sound-controls img {
+        width: 45px;
     }
 
     /* game section */
