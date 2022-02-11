@@ -131,12 +131,37 @@ header a {
     background: rgba(23, 209, 209, .6);
 }
 
-.pc-choice-box h3 {
+.computer-choice-box h3 {
     text-align: center;
     font-size: 80%;
 
 
 }
+
+#computer-choice {
+    width: 50px;
+    height: 50px;
+    background: #5AB252;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#computer-choice>button {
+    width: 40px;
+    height: 40px;
+    font-size: 150%;
+    border-radius: 50%;
+    background: rgba(23, 209, 209, .6);
+    border: 3px solid #0e1bcc;
+    color: rgb(238, 193, 135);
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+
 
 .score-box {
 
