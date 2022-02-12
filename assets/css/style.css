@@ -218,6 +218,22 @@ header a {
     background-color: rgb(181, 24, 202);
 }
 
+/* footer */
+
+.copy-right-box {
+    text-align: center;
+    font-size: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy-right-box a {
+    font-size: 120%;
+    padding: 5px;
+    color: #0917db;
+}
+
 
 
 
@@ -292,15 +308,19 @@ header a {
         width: 100px;
         height: 45px;
         font-size: 100%;
-        
-        
+           
+    }
+
+    /* footer */
+
+    .copy-right-box {
+        font-size: 100%;
+    }
+
+    .copy-right-box a {
+        font-size: 150%;
     }
 
     
-     
-
-
-    
-
     
 }
