@@ -36,6 +36,8 @@ header a {
     border-radius: 12px;
     border: none;
     cursor: pointer;
+    border-bottom: 3px solid rgb(6, 80, 6);
+    box-shadow: 5px 5px 5px 2px rgb(175, 175, 243);
 
 }
 
@@ -53,6 +55,7 @@ header a {
     line-height: 20px;
     margin: 10px auto;
     border-radius: 10px;
+    display: none;
 
 }
 
@@ -99,7 +102,8 @@ header a {
 }
 
 #choice-container {
-    width: 180px;
+    width: 150px;
+    height: 30px;
     margin: 20px auto;
     display: flex;
     justify-content: space-evenly;
@@ -122,7 +126,8 @@ header a {
     border: 3px solid #0e1bcc;
     color: rgb(238, 193, 135);
     cursor: pointer;
-    /* padding: 5px; */
+   
+   
     
 }
 
@@ -150,6 +155,7 @@ header a {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 0px 5px 5px rgb(156, 156, 238);
   
 }
 
@@ -184,9 +190,10 @@ header a {
     width: 50px;
     height: 50px;
     background: #1f8516;
+    opacity: .9;
     border-radius: 50%;
     margin: 8px;
-    /* box-shadow: 0px 0px 5px 2px rgb(48, 135, 235); */
+    box-shadow: 0px 0px 5px 2px #f058bb;
 }
 
 .flex-item>p {
@@ -208,10 +215,10 @@ header a {
     background: #4753f5;
     border: none;
     border-radius: 10px;
-    border-bottom: #091181;
+    border-bottom: 3px solid #091181;
     cursor: pointer;
+    box-shadow: 5px 5px 5px 2px rgb(175, 175, 243);
 
-    
 }
 
 #restart-btn:hover {
@@ -226,6 +233,8 @@ header a {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px;
+    
 }
 
 .copy-right-box a {
@@ -237,11 +246,7 @@ header a {
 
 
 
-
-
-
-
-
+/* media queries for screens larger than 899px */
 
 @media (min-width: 899px) {
    
@@ -273,9 +278,8 @@ header a {
 
     #choice-container {
         width: 400px;
-         margin: 35px auto;
-        
-
+        height: 80px;
+        margin: 35px auto;
     }
 
     #choice-container>button,
@@ -296,6 +300,10 @@ header a {
         height: 100px;
     }
 
+    .flex-item {
+        margin: 15px;
+    }
+
     .computer-choice-box h3,
     .move-count-box h3,
     .flex-item p {
@@ -307,8 +315,7 @@ header a {
     #restart-btn {
         width: 100px;
         height: 45px;
-        font-size: 100%;
-           
+        font-size: 100%;    
     }
 
     /* footer */
@@ -320,7 +327,5 @@ header a {
     .copy-right-box a {
         font-size: 150%;
     }
-
-    
     
 }
