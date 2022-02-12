@@ -39,6 +39,8 @@ header a {
 
 }
 
+/* game section */
+
 #game-container {
     width: 100%;
 }
@@ -193,9 +195,28 @@ header a {
     font-weight: bold;
 }
 
+.restart-box {
+    text-align: center;
+   
+}
 
+#restart-btn {
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+    color: white;
+    background: #4753f5;
+    border: none;
+    border-radius: 10px;
+    border-bottom: #091181;
+    cursor: pointer;
 
+    
+}
 
+#restart-btn:hover {
+    background-color: rgb(181, 24, 202);
+}
 
 
 
@@ -265,7 +286,14 @@ header a {
         
         font-size: 110%;
 
+    }
 
+    #restart-btn {
+        width: 100px;
+        height: 45px;
+        font-size: 100%;
+        
+        
     }
 
     
