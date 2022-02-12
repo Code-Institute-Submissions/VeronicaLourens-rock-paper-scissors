@@ -142,12 +142,13 @@ header a {
 #computer-choice {
     width: 50px;
     height: 50px;
-    background: #5AB252;
+    background: rgba(23, 209, 209, .6);
     margin: 0 auto;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+  
 }
 
 #computer-choice>button {
@@ -155,9 +156,9 @@ header a {
     height: 40px;
     font-size: 150%;
     border-radius: 50%;
-    background: rgba(23, 209, 209, .6);
+  
     border: 3px solid #0e1bcc;
-    color: rgb(238, 193, 135);
+    color: #1623d6;
     cursor: pointer;
     margin: 0 auto;
 }
@@ -166,7 +167,7 @@ header a {
 .message-box,
 .score-box {
     text-align: center;
-    background: #717aee;
+    /* background: #717aee; */
 
 }
 
@@ -178,14 +179,16 @@ header a {
 }
 
 .flex-item {
-    width: 70px;
-    height: 70px;
-    background: #5AB252;
+    width: 50px;
+    height: 50px;
+    background: #1f8516;
     border-radius: 50%;
+    margin: 8px;
+    /* box-shadow: 0px 0px 5px 2px rgb(48, 135, 235); */
 }
 
 .flex-item>p {
-    font-size: 80%;
+    font-size: 60%;
     color: white;
     font-weight: bold;
 }
@@ -204,6 +207,7 @@ header a {
 
 
 @media (min-width: 899px) {
+   
 
     /* header */
     header {
@@ -237,7 +241,8 @@ header a {
 
     }
 
-    #choice-container>button {
+    #choice-container>button,
+    #computer-choice>button {
         font-size: 300%;
         width: 80px;
         height: 80px;
@@ -247,6 +252,25 @@ header a {
     .match-box h2 {
         font-size: 120%;
     }
+
+    #computer-choice,
+    .flex-item {
+        width: 100px;
+        height: 100px;
+    }
+
+    .computer-choice-box h3,
+    .move-count-box h3,
+    .flex-item p {
+        
+        font-size: 110%;
+
+
+    }
+
+    
+     
+
 
     
 
