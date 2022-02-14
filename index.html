@@ -22,8 +22,8 @@
         <div class="header-left">
             <button id="game-rules-btn" type="button" aria-label="Game rules button">Game Rules</button>
             <div class="sound-controls">
-                <img class="sound-off" src="./assets/image/sound-off.png" alt="Sound off image">
-                <img class="sound-on" src="./assets/image/sound-on.png" alt="Sound on image">
+                <img class="sound off active" src="./assets/image/sound-off.png" alt="Sound off image">
+                <img class="sound on" src="./assets/image/sound-on.png" alt="Sound on image">
             </div>
 
         </div>
@@ -76,43 +76,54 @@
 
         </div>
 
-        <div class="computer-choice-box">
-            <h3>PC chose:</h3>
-            <div id="computer-choice">
-                <button class="choice" type="button" value="rock" aria-label="Rock button">
-                    <i class="far fa-hand-rock"></i>
-                </button>
-            </div>
-        </div>
+        <!--the div below with its content would be hidden when the page loaded.-->
 
-        <!--move count and message-->
+        <div class="display-container">
 
-        <div class="move-count-box">
-            <h3>Count - <span>0</span></h3>
-        </div>
-        <div id="message" class="message-box"></div>
+            <!--computer choice-->
 
-        <!--game score-->
+             <div class="computer-choice-box">
+                 <h3>PC chose:</h3>
+                 <div id="computer-choice">
+                     <button class="choice" type="button" value="rock" aria-label="Rock button">
+                         <i class="far fa-hand-rock"></i>
+                     </button>
+                 </div>
+             </div>
 
-        <div class="score-box">
-            <div class="flex-item">
-                <p>You</p>
-                <p>0</p>
-            </div>
-            <div class="flex-item">
-                <p>Draw</p>
-                <p>0</p>
-            </div>
-            <div class="flex-item">
-                <p>PC</p>
-                <p>0</p>
-            </div>
-        </div>
+             <!--move count and message-->
 
-        <!--restart button-->
+             <div class="move-count-box">
+                 <h3>Count - <span>0</span></h3>
+             </div>
 
-        <div class="restart-box">
-            <button id="restart-btn" type="button" value="restart" aria-label="Restart button">Restart</button>
+             <div id="message" class="message-box"></div>
+
+             <!--game score-->
+
+             <div class="score-box">
+                 <div class="flex-item">
+                     <p>You</p>
+                     <p>0</p>
+                 </div>
+
+                 <div class="flex-item">
+                     <p>Draw</p>
+                     <p>0</p>
+                 </div>
+
+                 <div class="flex-item">
+                     <p>PC</p>
+                     <p>0</p>
+                 </div>
+             </div>
+
+             <!--restart button-->
+
+             <div class="restart-box">
+                 <button id="restart-btn" type="button" value="restart" aria-label="Restart button">Restart</button>
+             </div>
+
         </div>
 
     </section>
