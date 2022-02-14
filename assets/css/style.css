@@ -5,7 +5,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: Lato, "Open sans", sans-serif;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     background-color: white;
 }
 
@@ -13,32 +13,48 @@ body {
 
 header {
     width: 60%;
-    font-size: 60%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 5px;
+
 }
 
 header a {
+    font-size: 50%;
     text-decoration: none;
     color: black;
 }
 
 #game-rules-btn {
-    width: 100px;
-    height: 30px;
+    width: 80px;
+    height: 22px;
+    font-size: 60%;
     font-weight: bold;
+    letter-spacing: 1px;
     color: white;
     background: #5AB252;
     border-radius: 12px;
     border: none;
     cursor: pointer;
     border-bottom: 3px solid rgb(6, 80, 6);
-    box-shadow: 5px 5px 5px 2px rgb(175, 175, 243);
+    box-shadow: 3px 3px 3px 1px rgb(175, 175, 243);
 
+}
+
+.header-left {
+    width: 280px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.sound-controls img {
+    width: 20px;
 }
 
 /* game section */
@@ -49,10 +65,10 @@ header a {
 
 #popup-box {
     width: 280px;
-    font-size: 70%;
+    font-size: 60%;
     background-color: rgba(23, 209, 209, .6);
-    padding: 10px;
-    line-height: 20px;
+    padding: 3px 0;
+    line-height: 12px;
     margin: 10px auto;
     border-radius: 10px;
     display: none;
@@ -65,21 +81,16 @@ header a {
     font-weight: bold;
     float: right;
     color: black;
+    margin: 3px 8px 0 0;
+    cursor: pointer;
     
 }
 
-.header-left {
-    width: 300px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    
-
+.close-btn:hover {
+    color: white;
 }
 
-.sound-controls img {
-    width: 25px;
-}
+
 
 #game-container {
     width: 100vw;
@@ -90,45 +101,43 @@ header a {
 }
 
 .match-box {
-    padding: 0 15px;
+    padding: 5px 15px;
     margin: 0 auto;
 
 }
 
 .match-box p,
 .match-box h2 {
-    font-size: 80%;
+    font-size: 60%;
     text-align: center;
 }
 
 #choice-container {
-    width: 150px;
-    height: 30px;
-    margin: 20px auto;
+    width: 140px;
+    height: 20px;
+    margin: 15px auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 0px 0px 10px 5px rgb(231, 149, 91);
-
-
+    box-shadow: 0px 0px 5px 3px rgb(231, 149, 91);
 
 }
 
 #choice-container>button {
-    font-size: 150%;
+    font-size: 120%;
     text-align: center;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    margin: 5px;
     border-radius: 50%;
     background: rgb(84, 84, 233);
-    border: 3px solid #0e1bcc;
+    border: 2px solid #0e1bcc;
     color: rgb(238, 193, 135);
     cursor: pointer;
    
-   
-    
 }
 
 #choice-container>button:hover,
@@ -141,31 +150,31 @@ header a {
 .computer-choice-box h3,
 .move-count-box h3 {
     text-align: center;
-    font-size: 80%;
+    font-size: 60%;
 
 
 }
 
 #computer-choice {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     background: rgba(23, 209, 209, .6);
-    margin: 0 auto;
+    margin: 10px auto;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 5px 5px rgb(156, 156, 238);
+    box-shadow: 0px 0px 5px 3px rgb(94, 94, 221);
   
 }
 
 #computer-choice>button {
-    width: 40px;
-    height: 40px;
-    font-size: 150%;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    font-size: 120%;
     border-radius: 50%;
-  
-    border: 3px solid #0e1bcc;
+    border: 2px solid #0e1bcc;
     color: #1623d6;
     cursor: pointer;
     margin: 0 auto;
@@ -187,13 +196,13 @@ header a {
 }
 
 .flex-item {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     background: #1f8516;
     opacity: .9;
     border-radius: 50%;
     margin: 8px;
-    box-shadow: 0px 0px 5px 2px #f058bb;
+    /* box-shadow: 0px 0px 5px 2px #e79f18; */
 }
 
 .flex-item>p {
@@ -208,16 +217,18 @@ header a {
 }
 
 #restart-btn {
-    width: 80px;
-    height: 30px;
+    width: 60px;
+    height: 22px;
     font-weight: bold;
+    font-size: 60%;
+    letter-spacing: 1px;
     color: white;
     background: #4753f5;
     border: none;
     border-radius: 10px;
     border-bottom: 3px solid #091181;
     cursor: pointer;
-    box-shadow: 5px 5px 5px 2px rgb(175, 175, 243);
+    box-shadow: 3px 3px 3px 1px rgb(175, 175, 243);
 
 }
 
@@ -254,30 +265,37 @@ header a {
     /* header */
     header {
         width: 80%;
-        font-size: 100%;
         flex-direction: row;
+    }
 
+    header a {
+        font-size: 100%;
     }
 
     #game-rules-btn {
-        width: 120px;
-        height: 45px;
+        width: 130px;
+        height: 40px;
         font-size: 100%;
     }
 
     .sound-controls img {
-        width: 45px;
+        width: 30px;
     }
 
     /* game section */
 
+    #game-container {
+        height: 80vh;
+    }
+
     #popup-box {
-        width: 450px;
+        width: 420px;
         font-size: 100%;
+        line-height: 20px;
     }
 
     #choice-container {
-        width: 400px;
+        width: 350px;
         height: 80px;
         margin: 35px auto;
     }
@@ -294,13 +312,15 @@ header a {
         font-size: 120%;
     }
 
-    #computer-choice,
-    .flex-item {
+    #computer-choice {
         width: 100px;
         height: 100px;
+        margin: 40px auto;
     }
 
     .flex-item {
+        width: 100px;
+        height: 100px;
         margin: 15px;
     }
 
@@ -314,8 +334,9 @@ header a {
 
     #restart-btn {
         width: 100px;
-        height: 45px;
-        font-size: 100%;    
+        height: 40px;
+        font-size: 100%; 
+        margin-top: 30px;   
     }
 
     /* footer */
