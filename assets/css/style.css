@@ -45,7 +45,7 @@ header a {
 }
 
 .header-left {
-    width: 250px;
+    width: 160px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -125,7 +125,7 @@ header a {
     align-items: center;
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 0px 0px 5px 3px rgb(231, 149, 91);
+    box-shadow: 0px 0px 5px 3px rgb(107, 109, 228);
 
 }
 
@@ -172,7 +172,7 @@ header a {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 5px 3px rgb(94, 94, 221);
+    box-shadow: 0px 0px 5px 3px rgb(107, 109, 228);
   
 }
 
@@ -211,6 +211,7 @@ header a {
     border-radius: 50%;
     margin: 8px;
     /* box-shadow: 0px 0px 5px 2px #e79f18; */
+   
 }
 
 .flex-item>p {
@@ -278,6 +279,10 @@ header a {
 
     header a {
         font-size: 100%;
+    }
+
+    .header-left {
+        width: 300px;
     }
 
     #game-rules-btn {
@@ -372,6 +377,10 @@ header a {
 
     header a {
         font-size: 70%;
+    }
+
+    .header-left {
+        width: 220px;
     }
 
     #game-rules-btn {
