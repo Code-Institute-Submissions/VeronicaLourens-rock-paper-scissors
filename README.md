@@ -39,7 +39,7 @@ The website has only one page. The header on the top, the game area in the middl
 * Footer
   
   The footer of the page contains a copyright text and social media links.
-  
+
 * Future Features
 
   Additional animation to be added with celebration audio sound and big emojis for praise user’s achievement. An option of user account to be implemented for saving the game records each time user plays the game.
@@ -72,10 +72,6 @@ The website has only one page. The header on the top, the game area in the middl
 
 
 
-
-
-
-
 * Clone the Project
 
 ## Credit
@@ -84,4 +80,16 @@ The website has only one page. The header on the top, the game area in the middl
   * [EightShape Contrast](https://contrast-grid.eightshapes.com/) - color contrast grid.
   * [Google Fonts](https://fonts.google.com/specimen/Lato#standard-styles) - provides the fonts for the site.
   * [Freepik](https://www.freepik.com/) - provides the background image for free.
+  * [Free icon shop](https://freeiconshop.com/) - provides the sound control icons.
+  * [Am I Responsive]() -generates the site's responsiveness on different screens to display on the README file.
+  * [Font Awesome]() - provides the hand icons used for the game.
+  * [W3C School]() - provides the extra learning materials.
+  * [MDN Web Docs]() - provides reference materials.
+  * [Stack Overflow]() - provides extra support information.
+  * [Slack]() - provides extra support for the course and the project.
+  * [Chrome Dev Tools]() - carries out the **Lighthouse** testing and debug.
+  * [W3C Markup Validator]() - validates the site's HTML code.
+  * [W3C CSS Jigsaw Validator]() - validates the site's CSS code.
+  * [Youtube]() - provides extra video learning materials.
+  * [Compressor]() - to compress the site's image and screenshots.
 ## Acknowledgement
