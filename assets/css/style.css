@@ -63,10 +63,6 @@ header a {
 
 /* game section */
 
-#game-container {
-    width: 100%;
-}
-
 #popup-box {
     width: 280px;
     font-size: 60%;
@@ -99,8 +95,9 @@ header a {
 #game-container {
     width: 100vw;
     background: url(../image/bkimg.jpg) center center no-repeat;
-    height: 70vh;
+    height: 75vh;
     background-size: contain;
+    /* overflow: hidden; */
 
 }
 
@@ -151,9 +148,9 @@ header a {
     background: rgba(23, 209, 209, .6);
 }
 
-.display-container {
+/* .display-container {
     visibility: hidden;
-}
+} */
 
 .computer-choice-box h3,
 .move-count-box h3 {
@@ -167,7 +164,7 @@ header a {
     width: 45px;
     height: 45px;
     background: rgba(23, 209, 209, .6);
-    margin: 10px auto;
+    margin: 15px auto;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -189,14 +186,14 @@ header a {
 }
 
 
-.message-box,
-.score-box {
+.message-box {
     text-align: center;
-    /* background: #717aee; */
-
+    margin: 15px auto;
+    font-size: 60%;
 }
 
 .score-box {
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -298,7 +295,7 @@ header a {
     /* game section */
 
     #game-container {
-        height: 80vh;
+        height: 85vh;
     }
 
     #popup-box {
@@ -339,7 +336,8 @@ header a {
 
     .computer-choice-box h3,
     .move-count-box h3,
-    .flex-item p {
+    .flex-item p,
+    .message-box {
         
         font-size: 110%;
 
@@ -429,7 +427,8 @@ header a {
 
     .computer-choice-box h3,
     .move-count-box h3,
-    .flex-item p { 
+    .flex-item p,
+    .message-box { 
         font-size: 80%;
 
     }
