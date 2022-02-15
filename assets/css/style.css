@@ -6,7 +6,7 @@ body {
     box-sizing: border-box;
     font-family: Lato, "Open sans", sans-serif;
     letter-spacing: 1px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 /* header */
@@ -148,9 +148,9 @@ header a {
     background: rgba(23, 209, 209, .6);
 }
 
-/* .display-container {
+.display-container {
     visibility: hidden;
-} */
+}
 
 .computer-choice-box h3,
 .move-count-box h3 {

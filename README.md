@@ -46,6 +46,23 @@ Rock Paper Scissors game is an interactive easy yet super fun game for everyone 
 
 ## Deployment
 * Site Deployment
+  
+  The Rock Paper Scissors game website is deployed to GitHub page. The site's link -  https://veronicalourens.github.io/rock-paper-scissors/
+
+  Steps to deploy the site as the following:
+   * On my GitHub rock-paper-scissors repository, select the **Setting** tab.;
+   * Then navigate to the **Pages** on the left side of the page;
+   * Select **main** from the **Branch** box and click **save**;
+   * Refresh the page, go back to the **Pages**, a ticked message with a link in the green box that shows the site is successfully deployed.
+      
+      ![GitHub deployment](assets/screenshots/deploymnt.jpg)
+
+
+
+
+
+
+
 * Clone the Project
 
 ## Credit
