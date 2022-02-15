@@ -92,15 +92,15 @@ The website has only one page. The header on the top, the game area in the middl
   * [Google Fonts](https://fonts.google.com/specimen/Lato#standard-styles) - provides the fonts for the site.
   * [Freepik](https://www.freepik.com/) - provides the background image for free.
   * [Free icon shop](https://freeiconshop.com/) - provides the sound control icons.
-  * [Am I Responsive]() -generates the site's responsiveness on different screens to display on the README file.
-  * [Font Awesome]() - provides the hand icons used for the game.
-  * [W3C School]() - provides the extra learning materials.
-  * [MDN Web Docs]() - provides reference materials.
-  * [Stack Overflow]() - provides extra support information.
+  * [Am I Responsive](http://ami.responsivedesign.is) - generates the site's responsiveness on different screens.
+  * [Font Awesome](https://fontawesome.com/) - provides the hand icons used for the game.
+  * [W3C School](https://www.w3schools.com/) - provides the extra learning materials.
+  * [MDN Web Docs](https://developer.mozilla.org/en-US/) - provides reference materials.
+  * [Stack Overflow](https://stackoverflow.com/) - provides extra support information.
   * [Slack]() - provides extra support for the course and the project.
   * [Chrome Dev Tools]() - carries out the **Lighthouse** testing and debug.
-  * [W3C Markup Validator]() - validates the site's HTML code.
-  * [W3C CSS Jigsaw Validator]() - validates the site's CSS code.
-  * [Youtube]() - provides extra video learning materials.
-  * [Compressor]() - to compress the site's image and screenshots.
+  * [W3C Markup Validator](https://validator.w3.org/) - validates the site's HTML code.
+  * [W3C CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator/) - validates the site's CSS code.
+  * [Youtube](https://www.youtube.com/) - provides extra video learning materials.
+  * [Compressor](https://compressor.io/) - to compress the site's image and screenshots.
 ## Acknowledgement
