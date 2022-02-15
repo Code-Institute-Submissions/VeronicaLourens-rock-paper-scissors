@@ -26,10 +26,23 @@ Rock Paper Scissors game is an interactive easy yet super fun game for everyone 
       The site's main font-family is Lato that is easy to read. The fall back font-family is Open Sans.
 
 ## Existing Features
+The website has only one page. The header on the top, the game area in the middle of the page that has a background picture, short texts and the game choices. The footer on the bottom of the site. Some of the page content are hidden when the page loaded. The hidden content would be displayed after user interacts with the page by clicking the buttons. The site is responsive accordingly with the different media screen sizes from 320px up to 3500px.
 * Header
-* Page
+  
+  The Header contains the name of the game **Rock Paper Scissors** on the left side, **Game Rules** button and the sound **on** and **off** image on the right. The **Game Rules** button has a hover function that changes background color when the mouse moves in and out.
+* Page 
+
+  * The pop up box contains the game rules that would be displayed after user clicking the **Game Rules** button on the header.
+  * A title **Select your choice to play** indicates to start the game by clicking the **hand** buttons. The **computer choice**, **round count**, **messages**, **scores**  and a **Restart** button are displayed on the page after the game started.
+
+
 * Footer
+  
+  The footer of the page contains a copyright text and social media links.
+  
 * Future Features
+
+  Additional animation to be added with celebration audio sound and big emojis for praise user’s achievement. An option of user account to be implemented for saving the game records each time user plays the game.
 
 ## Technologies Userd
 * [HTML5]() - to create site's structure of the content.
