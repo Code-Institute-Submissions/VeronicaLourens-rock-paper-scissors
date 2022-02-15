@@ -47,7 +47,7 @@
                 <li>You play against PC/computer.</li>
                 <li>Score ONE point on each winning.</li>
                 <li>Score NO points when it's a Draw.</li>
-                <li>You decide the round number to play
+                <li>You decide how many rounds to play.</li>
                 <li>Final score higher to win the game.</li>
                 <li>Click the Restart button to re-start the game.</li>
             </ol>
@@ -76,55 +76,61 @@
 
         </div>
 
-        <!--the div below with its content would be hidden when the page loaded.-->
+        <!--the display-container-wrapper below with its content would be hidden when the page loaded.-->
 
-        <div class="display-container">
+        <div class="display-container-wrapper">
 
-            <!--computer choice-->
+            <div class="display-container">
 
-             <div class="computer-choice-box">
-                 <h3>PC chose:</h3>
-                 <div id="computer-choice">
-                     <button class="choice" type="button" value="rock" aria-label="Rock button">
-                         <i class="far fa-hand-rock"></i>
-                     </button>
-                 </div>
-             </div>
+                <!--computer choice-->
 
-             <!--move count and message-->
+                <div class="computer-choice-box">
+                    <h3>PC chose:</h3>
+                    <div id="computer-choice">
+                        <button class="choice" type="button" value="rock" aria-label="Rock button">
+                            <i class="far fa-hand-rock"></i>
+                        </button>
+                    </div>
+                </div>
 
-             <div class="move-count-box">
-                 <h3>Count - <span>0</span></h3>
-             </div>
+                <!--move count and message-->
 
-             <div id="message" class="message-box"></div>
+                <div class="move-count-box">
+                    <h3>Count - <span>0</span></h3>
+                </div>
 
-             <!--game score-->
+                <div id="message" class="message-box"></div>
 
-             <div class="score-box">
-                 <div class="flex-item">
-                     <p>You</p>
-                     <p>0</p>
-                 </div>
+                <!--game score-->
 
-                 <div class="flex-item">
-                     <p>Draw</p>
-                     <p>0</p>
-                 </div>
+                <div class="score-box">
+                    <div class="flex-item">
+                        <p>You</p>
+                        <p>0</p>
+                    </div>
 
-                 <div class="flex-item">
-                     <p>PC</p>
-                     <p>0</p>
-                 </div>
-             </div>
+                    <div class="flex-item">
+                        <p>Draw</p>
+                        <p>0</p>
+                    </div>
 
-             <!--restart button-->
+                    <div class="flex-item">
+                        <p>PC</p>
+                        <p>0</p>
+                    </div>
+                </div>
 
-             <div class="restart-box">
-                 <button id="restart-btn" type="button" value="restart" aria-label="Restart button">Restart</button>
-             </div>
+                <!--restart button-->
+
+                <div class="restart-box">
+                    <button id="restart-btn" type="button" value="restart" aria-label="Restart button">Restart</button>
+                </div>
+
+            </div>
 
         </div>
+
+        
 
     </section>
 
