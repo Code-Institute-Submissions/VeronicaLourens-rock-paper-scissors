@@ -52,6 +52,17 @@ The website has only one page. The header on the top, the game area in the middl
 * [GitPod]() - to edit the code and push the code to GitHub page.
 ## Testing
 * Code Validation
+
+  The **Rock Paper Scissors** site's html and css codes have been validated by the **W3C HTML Markup Valication** and **W3C CSS Validation** services by entering the site's URL address.
+  * W3C Markup Validation - No errors found.
+    
+    ![HTML code](assets/screenshots/w3c-html.jpg)
+
+  * W3C CSS Validation - No errors found.
+
+    ![CSS code](assets/screenshots/w3c-css.jpg)
+
+
 * Lighthouse Testing
 * Responsiveness Testing
 * Browsers Testing
