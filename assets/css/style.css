@@ -113,7 +113,8 @@ header a {
 .display-container-wrapper {
     width: 100%;
     background: url(../image/bckgd.jpg) center center no-repeat;
-    height: 280px;
+    /* height: 280px; */
+    height: 260px;
     background-size: contain;
     position: relative;
 
@@ -128,7 +129,7 @@ header a {
 }
 
 .match-box {
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .match-box p {
@@ -266,7 +267,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin-top: 40px;
     
 }
 
@@ -280,118 +281,15 @@ footer {
 
 
 
-/* media queries for screens larger than 899px */
-
-@media (min-width: 899px) {
-
-    h2,
-    h3,
-    h4 {
-        font-size: 20px;
-    }
-   
-
-    /* header */
-    header {
-        flex-direction: row;
-    }
-
-    header a {
-        font-size: 20px;
-    }
-
-    .header-left {
-        width: 400px;
-    }
-
-    #game-rules-btn {
-        width: 180px;
-        height: 40px;
-        font-size: 20px;
-    }
-
-    .sound-controls img {
-        width: 35px;
-        height: 35px;
-    }
-
-    /* game section */
-
-    .display-container-wrapper {
-        height: 1000px;
-    }
-
-    #popup-box {
-        width: 550px;
-        font-size: 20px;
-        line-height: 30px;
-    }
-
-    #choice-container {
-        width: 500px;
-        height: 90px;
-        margin: 35px auto;
-    }
-
-    #choice-container>button,
-    #computer-choice>button {
-        font-size: 300%;
-        width: 80px;
-        height: 80px;
-    }
-
-    .match-box p {
-        font-size: 20px;
-    }
-
-    #computer-choice {
-        width: 100px;
-        height: 100px;
-        margin: 40px auto;
-    }
-
-    .flex-item {
-        width: 100px;
-        height: 100px;
-        margin: 15px;
-    }
-
-   
-    .flex-item p,
-    .message-box {
-        font-size: 20px;
-
-    }
-
-    #restart-btn {
-        width: 120px;
-        height: 40px;
-        font-size: 20px; 
-        margin-top: 30px;   
-    }
-
-    /* footer */
-
-    .copy-right-box {
-        font-size: 18px;
-    }
-
-    .copy-right-box a {
-        font-size: 25px;
-    }
-    
-}
-
-
 /* media query for iPad and other tablets with screen sizes between 652px and 898px */
 
 @media (min-width: 652px) and (max-width: 898px) {
 
-     h2,
-     h3,
-     h4 {
-         font-size: 18px;
-     }
+    h2,
+    h3,
+    h4 {
+        font-size: 18px;
+    }
 
     /* header */
     header {
@@ -459,7 +357,7 @@ footer {
     }
 
     .flex-item p,
-    .message-box { 
+    .message-box {
         font-size: 18px;
 
     }
@@ -467,8 +365,8 @@ footer {
     #restart-btn {
         width: 100px;
         height: 35px;
-        font-size: 18px; 
-        margin-top: 30px;   
+        font-size: 18px;
+        margin-top: 30px;
     }
 
     /* footer */
@@ -480,5 +378,115 @@ footer {
     .copy-right-box a {
         font-size: 20px;
     }
+
+}
+
+
+/* media queries for screens larger than 899px */
+
+@media (min-width: 899px) {
+
+    h2,
+    h3,
+    h4 {
+        font-size: 20px;
+    }
+   
+
+    /* header */
+    header {
+        flex-direction: row;
+    }
+
+    header a {
+        font-size: 20px;
+    }
+
+    .header-left {
+        width: 400px;
+    }
+
+    #game-rules-btn {
+        width: 180px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .sound-controls img {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* game section */
+
+    .display-container-wrapper {
+        height: 1000px;
+    }
+
+    #popup-box {
+        width: 550px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    #choice-container {
+        width: 500px;
+        height: 90px;
+        margin: 35px auto;
+    }
+
+    #choice-container>button,
+    #computer-choice>button {
+        font-size: 300%;
+        width: 80px;
+        height: 80px;
+    }
+
+    .match-box {
+        margin-top: 30px;
+    }
+
+    .match-box p {
+        font-size: 20px;
+    }
+
+    #computer-choice {
+        width: 100px;
+        height: 100px;
+        margin: 40px auto;
+    }
+
+    .flex-item {
+        width: 100px;
+        height: 100px;
+        margin: 15px;
+    }
+
+   
+    .flex-item p,
+    .message-box {
+        font-size: 20px;
+
+    }
+
+    #restart-btn {
+        width: 120px;
+        height: 40px;
+        font-size: 20px; 
+        margin-top: 30px;   
+    }
+
+    /* footer */
+
+    .copy-right-box {
+        font-size: 18px;
+
+    }
+
+    .copy-right-box a {
+        font-size: 25px;
+    }
     
 }
+
+
