@@ -36,7 +36,7 @@ header a {
 }
 
 #game-rules-btn {
-    width: 110px;
+    width: 150px;
     height: 30px;
     font-size: 13px;
     font-weight: bold;
@@ -46,9 +46,16 @@ header a {
     border-radius: 12px;
     border: none;
     cursor: pointer;
-    border-bottom: 3px solid rgb(6, 80, 6);
+    border-bottom: 5px solid rgb(6, 80, 6); 
     box-shadow: 3px 3px 3px 3px rgb(175, 175, 243);
 
+    
+
+}
+
+#game-rules-btn:hover {
+    padding-left: 25px;
+    opacity: .9;
 }
 
 .header-left {
@@ -236,7 +243,7 @@ header a {
 }
 
 #restart-btn {
-    width: 80px;
+    width: 90px;
     height: 30px;
     font-weight: bold;
     font-size: 13px;
@@ -245,7 +252,7 @@ header a {
     background: #4753f5;
     border: none;
     border-radius: 10px;
-    border-bottom: 3px solid #091181;
+    border-bottom: 4px solid #091181;
     cursor: pointer;
     box-shadow: 3px 3px 3px 3px rgb(175, 175, 243);
 
@@ -326,7 +333,7 @@ footer {
     }
 
     #game-rules-btn {
-        width: 150px;
+        width: 180px;
         height: 35px;
         font-size: 18px;
     }
@@ -384,7 +391,7 @@ footer {
     }
 
     #restart-btn {
-        width: 100px;
+        width: 120px;
         height: 35px;
         font-size: 18px;
         margin-top: 30px;
@@ -426,7 +433,7 @@ footer {
     }
 
     #game-rules-btn {
-        width: 180px;
+        width: 230px;
         height: 40px;
         font-size: 20px;
     }
@@ -489,7 +496,7 @@ footer {
     }
 
     #restart-btn {
-        width: 120px;
+        width: 140px;
         height: 40px;
         font-size: 20px; 
         margin-top: 30px;   
