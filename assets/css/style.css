@@ -7,7 +7,6 @@ body {
     font-family: Lato, "Open sans", sans-serif;
     letter-spacing: 1px;
     min-height: 100vh;
-    
 }
 
 h2, h3, h4 {
@@ -25,8 +24,6 @@ header {
     align-items: center;
     padding-top: 5px;
     box-shadow: 0px 0px 8px 2px #bbbbf1;
-   
-
 }
 
 header a {
@@ -48,7 +45,6 @@ header a {
     cursor: pointer;
     border-bottom: 5px solid rgb(6, 80, 6); 
     box-shadow: 3px 3px 3px 3px rgb(175, 175, 243);
-
 }
 
 #game-rules-btn:hover {
@@ -95,40 +91,11 @@ header a {
     float: right;
     color: black;
     margin: 3px 8px 0 0;
-    cursor: pointer;
-    
+    cursor: pointer;  
 }
 
 .close-btn:hover {
     color: white;
-}
-
-
-/* #game-container {
-    width: 100vw;
-    background: url(../image/bkimg.jpg) center center no-repeat;
-    height: 75vh;
-    background-size: contain;
-   
-
-} */
-
-.display-container-wrapper {
-    width: 100%;
-    background: url(../image/bckgd.jpg) center center no-repeat;
-    /* height: 280px; */
-    height: 260px;
-    background-size: contain;
-    position: relative;
-
-}
-
-.display-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* visibility: hidden; */
 }
 
 .match-box {
@@ -150,7 +117,6 @@ header a {
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0px 0px 8px 8px rgb(107, 109, 228);
-
 }
 
 #choice-container>button {
@@ -167,7 +133,6 @@ header a {
     cursor: pointer;
     transition: transform 2s;
     transform-style: preserve-3d;
-   
 }
 
 #choice-container>button:hover {
@@ -180,6 +145,21 @@ header a {
     background: rgba(23, 209, 209, .6);
 }
 
+.display-container-wrapper {
+    width: 100%;
+    background: url(../image/bckgd.jpg) center center no-repeat;
+    height: 260px;
+    background-size: contain;
+    position: relative;
+}
+
+.display-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* visibility: hidden; */
+}
 
 #computer-choice {
     width: 45px;
@@ -191,7 +171,6 @@ header a {
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 6px 4px rgb(107, 109, 228);
-  
 }
 
 #computer-choice>button {
@@ -206,11 +185,9 @@ header a {
     margin: 0 auto;
 }
 
-
 .message-box {
     text-align: center;
-    margin: 10px auto;
-  
+    margin: 8px auto;
 }
 
 .score-box {
@@ -228,7 +205,6 @@ header a {
     border-radius: 50%;
     margin: 5px;
     /* box-shadow: 0px 0px 5px 2px #e79f18; */
-   
 }
 
 .flex-item>p {
@@ -240,7 +216,6 @@ header a {
 .restart-box {
     text-align: center;
     margin-top: 20px;
-   
 }
 
 #restart-btn {
@@ -256,7 +231,6 @@ header a {
     border-bottom: 4px solid #091181;
     cursor: pointer;
     box-shadow: 3px 3px 3px 3px rgb(175, 175, 243);
-
 }
 
 #restart-btn:hover {
@@ -275,8 +249,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
-    
+    margin-top: 40px; 
 }
 
 .copy-right-box a {
@@ -286,14 +259,14 @@ footer {
     margin: 10px;
 }
 
-
 /* media queries for the background image on mobile screens sizes between 375px and 480px */
 
 @media (min-width:375px) and (max-width:480px) {
 
     /* game section */
 
-    .display-container-wrapper {
+    .display-container-wrapper,
+    .display-container {
         height: 360px;
     }
 }
@@ -304,11 +277,11 @@ footer {
 
     /* game section */
 
-     .display-container-wrapper {
+     .display-container-wrapper,
+     .display-container {
          height: 460px;
      }
 }
-
 
 /* media queries for iPad and other tablets with screen sizes between 652px and 898px */
 
@@ -346,10 +319,6 @@ footer {
 
     /* game section */
 
-    .display-container-wrapper {
-        height: 600px;
-    }
-
     #popup-box {
         width: 500px;
         font-size: 18px;
@@ -373,10 +342,19 @@ footer {
         font-size: 18px;
     }
 
+    .display-container-wrapper,
+    .display-container {
+        height: 600px;
+    }
+
     #computer-choice {
         width: 70px;
         height: 70px;
         margin: 30px auto;
+    }
+
+    .message-box {
+        margin: 20px;
     }
 
     .flex-item {
@@ -407,7 +385,6 @@ footer {
     .copy-right-box a {
         font-size: 20px;
     }
-
 }
 
 /* media queries for screens larger than 899px */
@@ -446,10 +423,6 @@ footer {
 
     /* game section */
 
-    .display-container-wrapper {
-        height: 800px;
-    }
-
     #popup-box {
         width: 550px;
         font-size: 20px;
@@ -477,6 +450,11 @@ footer {
         font-size: 20px;
     }
 
+    .display-container-wrapper,
+    .display-container {
+        height: 800px;
+    }
+
     #computer-choice {
         width: 100px;
         height: 100px;
@@ -488,12 +466,10 @@ footer {
         height: 100px;
         margin: 15px;
     }
-
    
     .flex-item p,
     .message-box {
         font-size: 20px;
-
     }
 
     #restart-btn {
@@ -507,42 +483,43 @@ footer {
 
     .copy-right-box {
         font-size: 18px;
-
     }
 
     .copy-right-box a {
         font-size: 25px;
-    }
-    
+    }  
 }
-
 
 /* media queries for the background image on screens from 1024px up to high resolution 4K */
 
 @media (min-width: 1024px) {
      /* game section */
-     .display-container-wrapper {
+     .display-container-wrapper,
+     .display-container {
         height: 900px;
      }
 }
 
 @media (min-width: 1281px) {
      /* game section */
-    .display-container-wrapper {
+    .display-container-wrapper,
+    .display-container {
         height: 1000px;
     }
 }
 
 @media (min-width: 1599px) {
      /* game section */
-    .display-container-wrapper {
+    .display-container-wrapper,
+    .display-container {
         height: 1300px;
     }
 }
 
 @media (min-width: 1899px) {
     /* game section */
-    .display-container-wrapper {
+    .display-container-wrapper,
+    .display-container {
         height: 1500px;
     }
 }
