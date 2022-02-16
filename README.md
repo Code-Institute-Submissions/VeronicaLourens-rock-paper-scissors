@@ -14,13 +14,13 @@ Rock Paper Scissors game is an interactive easy yet super fun game for everyone 
   
     The purpose of the website is to provide a fun and exciting easy game for young and old to enjoy. The site should be accessible and responsive on different media screens and browsers.
 * Wireframe
-  ![Rock Paper Scissors](assets/image/wireframe.jpg)
+  ![Rock Paper Scissors](assets/readmeimg/wireframe.jpg)
 * Design Choice
   * Color Theme
   
       The site uses white color for the background and black color for the text. The uses a lovely picture of two playful children playing the game. The site uses bright colors and different shapes of buttons to enhance better user experience. The design is child and family friendly to attract little audience.
-      ![Color Theme](assets/image/colortheme.jpg)
-      [Color Grid](assets/image/colorgrid.jpg)
+      ![Color Theme](assets/readmeimg/colortheme.jpg)
+      [Color Grid](assets/readmeimg/colorgrid.jpg)
 
   * Typography
       The site's main font-family is Lato that is easy to read. The fall back font-family is Open Sans.
@@ -56,11 +56,11 @@ The website has only one page. The header on the top, the game area in the middl
   The **Rock Paper Scissors** site's html and css codes have been validated by the **W3C HTML Markup Valication** and **W3C CSS Validation** services by entering the site's URL address.
   * W3C Markup Validation - No errors found.
     
-    ![HTML code](assets/screenshots/w3c-html.jpg)
+    ![HTML code](assets/readmeimg/w3c-html.jpg)
 
   * W3C CSS Validation - No errors found.
 
-    ![CSS code](assets/screenshots/w3c-css.jpg)
+    ![CSS code](assets/readmeimg/w3c-css.jpg)
 
 
 * Lighthouse Testing
@@ -79,7 +79,7 @@ The website has only one page. The header on the top, the game area in the middl
    * Select **main** from the **Branch** box and click **save**;
    * Refresh the page, go back to the **Pages**, a ticked message with a link in the green box that shows the site is successfully deployed.
       
-      ![GitHub deployment](assets/screenshots/deploymnt.jpg)
+      ![GitHub deployment](assets/readmeimg/deploymnt.jpg)
 
 
 
