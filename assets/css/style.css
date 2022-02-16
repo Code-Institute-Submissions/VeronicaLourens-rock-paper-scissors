@@ -49,8 +49,6 @@ header a {
     border-bottom: 5px solid rgb(6, 80, 6); 
     box-shadow: 3px 3px 3px 3px rgb(175, 175, 243);
 
-    
-
 }
 
 #game-rules-btn:hover {
@@ -64,8 +62,6 @@ header a {
     justify-content: space-evenly;
     align-items: center;
     margin: 8px 0;
-
-
 }
 
 .sound-controls img {
@@ -165,14 +161,19 @@ header a {
     padding: 5px;
     margin: 5px;
     border-radius: 50%;
-    background: rgb(84, 84, 233);
-    border: 2px solid #0e1bcc;
-    color: rgb(238, 193, 135);
+    background: rgb(99, 99, 248);
+    border: 3px solid #1f2ce7;
+    color: rgb(238, 211, 245);
     cursor: pointer;
+    transition: transform 2s;
+    transform-style: preserve-3d;
    
 }
 
-#choice-container>button:hover,
+#choice-container>button:hover {
+    transform: rotateY(180deg);
+
+}
 #choice-container>button:focus {
     transform: scale(1.2);
     color: #1623d6;
@@ -199,7 +200,7 @@ header a {
     padding: 5px;
     font-size: 140%;
     border-radius: 50%;
-    border: 2px solid #0e1bcc;
+    border: 3px solid #0e1bcc;
     color: #1623d6;
     cursor: pointer;
     margin: 0 auto;
