@@ -279,9 +279,30 @@ footer {
 }
 
 
+/* media queries for the background image on mobile screens sizes between 375px and 480px */
+
+@media (min-width:375px) and (max-width:480px) {
+
+    /* game section */
+
+    .display-container-wrapper {
+        height: 360px;
+    }
+}
+
+/* media queries for the background image on low resolution tablets and mobiles with screens between 481px and 651px */
+
+@media (min-width:481px) and (max-width:651px) {
+
+    /* game section */
+
+     .display-container-wrapper {
+         height: 460px;
+     }
+}
 
 
-/* media query for iPad and other tablets with screen sizes between 652px and 898px */
+/* media queries for iPad and other tablets with screen sizes between 652px and 898px */
 
 @media (min-width: 652px) and (max-width: 898px) {
 
@@ -381,7 +402,6 @@ footer {
 
 }
 
-
 /* media queries for screens larger than 899px */
 
 @media (min-width: 899px) {
@@ -391,7 +411,6 @@ footer {
     h4 {
         font-size: 20px;
     }
-   
 
     /* header */
     header {
@@ -420,7 +439,7 @@ footer {
     /* game section */
 
     .display-container-wrapper {
-        height: 1000px;
+        height: 800px;
     }
 
     #popup-box {
@@ -488,5 +507,37 @@ footer {
     }
     
 }
+
+
+/* media queries for the background image on screens from 1024px up to high resolution 4K */
+
+@media (min-width: 1024px) {
+     /* game section */
+     .display-container-wrapper {
+        height: 900px;
+     }
+}
+
+@media (min-width: 1281px) {
+     /* game section */
+    .display-container-wrapper {
+        height: 1000px;
+    }
+}
+
+@media (min-width: 1599px) {
+     /* game section */
+    .display-container-wrapper {
+        height: 1300px;
+    }
+}
+
+@media (min-width: 1899px) {
+    /* game section */
+    .display-container-wrapper {
+        height: 1500px;
+    }
+}
+
 
 
