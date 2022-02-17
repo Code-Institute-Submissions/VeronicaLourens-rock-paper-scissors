@@ -9,6 +9,9 @@ const popupBox = document.getElementById('popup-box');
 const soundOff = document.querySelector('.sound-off');
 const soundOn = document.querySelector('.sound-on');
 
+// Audio sound for the mouse click.
+const clickSound = document.getElementById('click-sound');
+
 
 /**
  * Add event listener to the game rules button that fires the funtions,
@@ -22,6 +25,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
     gameRulesBtn.addEventListener('click', (e) => {
         popupBox.style.display = 'block';
+        clickSound.play();
 
     });
 
@@ -37,6 +41,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
     closeBtn.addEventListener('click', (e) => {
         popupBox.style.display = 'none';
+         clickSound.play();
 
     });
 
@@ -56,8 +61,7 @@ soundOff.addEventListener('click', (e) => {
         soundOn.classList.add('active');
         soundOff.classList.remove('active');
 
-        audio.muted = false;
-        audio.pause();
+        clickSound.pause();
 
     }
 });
@@ -70,7 +74,9 @@ soundOn.addEventListener('click', () => {
         soundOff.classList.add('active');
         soundOn.classList.remove('active');
 
-        audio.play();
+        clickSound.play();
     }
 
 });
+
+
