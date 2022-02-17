@@ -31,19 +31,40 @@ Click here to view the live website - [Rock Paper Scissors](https://veronicalour
       The site's main font-family is Lato that is easy to read. The fall back font-family is Open Sans.
 
 ## Existing Features
-The website has only one page. The header on the top, the game area in the middle of the page that has a background picture, short texts and the game choices. The footer on the bottom of the site. Some of the page content are hidden when the page loaded. The hidden content would be displayed after user interacts with the page by clicking the buttons. The site is responsive accordingly with the different media screen sizes from 320px up to 3500px.
+The website has only one page. The header on the top, the game area in the middle of the page that has a background picture, short texts and the game choices. The footer on the bottom of the site. 
+
+Some of the page content are hidden when the page loaded. The hidden content would be displayed after user interacts with the page by clicking the buttons. 
+
+The site is responsive accordingly with the different media screen sizes from 320px up to 4000px.
+
 * Header
   
-  The Header contains the name of the game **Rock Paper Scissors** on the left side, **Game Rules** button and the sound **on** and **off** image on the right. The **Game Rules** button has a hover function that changes background color when the mouse moves in and out.
-* Page 
+  The Header contains the name of the game **Rock Paper Scissors** on the left side, **Game Rules** button and the sound **on** and **off** image on the right. 
+  
+  The **Game Rules** button has a hover function that changes background color and horizontally shift to left and right when the mouse moves in and out. 
+
+    ![Header](assets/readmeimg/header.jpg)
+* Main page
 
   * The pop up box contains the game rules that would be displayed after user clicking the **Game Rules** button on the header.
-  * A title **Select your choice to play** indicates to start the game by clicking the **hand** buttons. The **computer choice**, **round count**, **messages**, **scores**  and a **Restart** button are displayed on the page after the game started.
+
+    ![Popup](assets/readmeimg/popup.jpg)
+
+  * A title **Select your choice to play** indicates to start the game by clicking the **hand** buttons. The **hand** buttons are animated that show the zoom and turning effects.
+  
+
+    ![Choice](assets/readmeimg/matchbox.jpg)
+
+  * The **computer choice**, **round count**, **messages**, **scores**  and a **Restart** button are displayed on the page after the game started.
+
+    ![Display](assets/readmeimg/gamebk.jpg)
 
 
 * Footer
   
   The footer of the page contains a copyright text and social media links.
+
+  ![Footer](assets/readmeimg/footer.jpg)
 
 * Future Features
 
