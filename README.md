@@ -64,9 +64,38 @@ The website has only one page. The header on the top, the game area in the middl
 
 
 * Lighthouse Testing
+
+  The site has been tested on Chrome Incognito window using Dev Tools for both mobile and the desktop.
+
+  * Desktop
+  
+    ![Destop](assets/readmeimg/lghths-dsk.jpg)
+
+  * Mobile
+
+    ![Mobile](assets/readmeimg/lghths-mb.jpg)
+
 * Responsiveness Testing
 * Browsers Testing
-* Bugs
+* Resolved Known-bugs
+  
+  * Background and foreground colors do not have a sufficient contrast ratio;
+  
+    * Adjusted the background color for the game rules and restart button to solve the problem.
+  
+  * First Content Paint and Largest Contentful Paint;
+  
+    * Replaced the background image with compressed and resized image to solve the problem.
+  
+  * Document doesn't use legible font size;
+  
+    * Increased the font-size and changed the font size units to slove the problem.
+  
+  * Overlapping header elements and social media links.
+
+    * Added margin to the header elements and social media links to solve the problem.
+
+
 
 ## Deployment
 * Site Deployment
