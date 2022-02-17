@@ -10,7 +10,9 @@ Click here to view the live website - [Rock Paper Scissors](https://veronicalour
 
 
 ## User Experience UX
+
 * User Stories
+  
   * As a first time user, I want the website to be easily accessible on different devices and work on different browsers.
   * As a first time user, I want the site to have a vivid theme.
   * As a first time user, I want to know what the game rules are and how to play it.
@@ -21,6 +23,7 @@ Click here to view the live website - [Rock Paper Scissors](https://veronicalour
 * Site Owner Stories
   
     The purpose of the website is to provide a fun and exciting easy game for young and old to enjoy. The site should be accessible and responsive on different media screens and browsers.
+
 * Wireframe
   ![Rock Paper Scissors](assets/readmeimg/wireframe.jpg)
 
@@ -29,12 +32,14 @@ Click here to view the live website - [Rock Paper Scissors](https://veronicalour
 * Design Choice
   * Color Theme
   
-      The site uses white color for the background and black color for the text. The uses a lovely picture of two playful children playing the game. The site uses bright colors and different shapes of buttons to enhance better user experience. The design is child and family friendly to attract little audience.
+      The site uses white color for the background and black color for the text. It has a lovely picture of two playful children playing the Rock Paper Scissors game for the background. The site uses bright colors based on the color theme that the colors change slidely to darker color. The buttons are with different shapes. The design is child and family friendly to attract little audience.
+
       ![Color Theme](assets/readmeimg/colortheme.jpg)
       
       [Color Grid](assets/readmeimg/colorgrid.jpg)
 
   * Typography
+  
       The site's main font-family is Lato that is easy to read. The fall back font-family is Open Sans.
 
 [Back to top](#rock-paper-scissors)
@@ -110,7 +115,6 @@ The site is responsive accordingly with the different media screen sizes from 32
     
     ![HTML code](assets/readmeimg/w3c-html.jpg)
 
-[Back to top](#rock-paper-scissors)
 
   * W3C CSS Validation - No errors found.
 
