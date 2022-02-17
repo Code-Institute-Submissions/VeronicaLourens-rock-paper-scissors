@@ -239,8 +239,11 @@ header a {
 
 /* footer */
 
-footer {
+body > footer {
+    height: 80px;
     box-shadow: 0px 0px 8px 2px #bbbbf1;
+    position: sticky;
+    top: 100vh; 
 }
 
 .copy-right-box {
@@ -256,7 +259,7 @@ footer {
     font-size: 20px;
     padding: 5px;
     color: #0917db;
-    margin: 10px;
+    margin: 15px;
 }
 
 /* media queries for the background image on mobile screens sizes between 375px and 480px */
@@ -381,7 +384,7 @@ footer {
     }
 
     .copy-right-box a {
-        font-size: 20px;
+        font-size: 25px;
     }
 }
 
@@ -486,7 +489,7 @@ footer {
     }
 
     .copy-right-box a {
-        font-size: 25px;
+        font-size: 28px;
     }  
 }
 
