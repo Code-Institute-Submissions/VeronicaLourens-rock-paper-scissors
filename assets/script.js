@@ -11,31 +11,42 @@ const soundOn = document.querySelector('.sound-on');
 
 
 /**
- * Add event listener to the game rules button that fires the funtion,
+ * Add event listener to the game rules button that fires the funtions,
  * the background color of the button changes when moving mouse in and out,
- * opening a popup box when clicking the gume rules button
+ * opening a popup box when clicking the game rules button,
+ * closing the popup box when clicking the close button.
  * 
  */
 
 document.addEventListener('DOMContentLoaded', (e) => {
 
+    gameRulesBtn.addEventListener('click', (e) => {
+        popupBox.style.display = 'block';
+
+    });
+
+    gameRulesBtn.addEventListener('mouseover', (e) => {
+        gameRulesBtn.style.background = '#F27329';
+
+    });
+
+    gameRulesBtn.addEventListener('mouseout', (e) => {
+         gameRulesBtn.style.background = '#128607';
+
+    });
+
+    closeBtn.addEventListener('click', (e) => {
+        popupBox.style.display = 'none';
+
+    });
+
+    
+
     
 
 });
 
-gameRulesBtn.addEventListener('click', openPopupBox);
-gameRulesBtn.addEventListener('mouseover', setMouseOverColor);
-gameRulesBtn.addEventListener('mouseout', setMouseOutColor);
 
-function openPopupBox() {
-    popupBox.style.display = 'block';
-}
 
-function setMouseOverColor() {
-    gameRulesBtn.style.background = '#F27329';
 
-}
 
-function setMouseOutColor() {
-    gameRulesBtn.style.background = '#128607';
-}
