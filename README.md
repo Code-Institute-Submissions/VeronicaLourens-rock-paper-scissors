@@ -102,7 +102,33 @@ The site is responsive accordingly with the different media screen sizes from 32
     ![Mobile](assets/readmeimg/lghths-mb.jpg)
 
 * Responsiveness Testing
+
+  * The website has been manually tested and passed on the **Google Chrome Dev Tools** and the **Responsive Design Checker**.
+
+  |       | **Moto G4** | **Galaxy S5** | **iPhone 5** | **iPad** | **iPad Pro** | **Display < 1200px** | **Display <= 4000px** |
+  |-------|:-----------:|:-------------:|:------------:|:--------:|:------------:|:--------------------:|:---------------------:|
+  |Render |  &check;    |   &check;     |   &check;    |  &check; |    &check;   |        &check;       |        &check;        |  
+  |Image  |  &check;    |   &check;     |   &check;    |  &check; |    &check;   |        &check;       |        &check;        |   
+  |Links  |  &check;    |   &check;     |   &check;    |  &check; |    &check;   |        &check;       |        &check;        | 
+
+  * The website has been tested and passed on my own devices. It is fully responsive on two desktops, two laptops, iPad Air and  three mobile phones. 
+
+  |       |**Galaxy Note4**|**Nokia 7 Plus**|**Huawei P30 Pro**|**iPad Air**|**Lenovo E540**|**HP Elitebook 850 G5**|**DELL 2407WFP**|**Yiyama ProLite XB3288UHSU**|
+  |-------|:--------------:|:--------------:|:----------------:|:----------:|:-------------:|:---------------------:|:---------------:|:--------------------------:|
+  |Render |    &check;     |   &check;      |      &check;     |   &check;  |    &check;    |        &check;        |     &check;     |        &check;             |
+  |Image  |    &check;     |   &check;      |      &check;     |   &check;  |    &check;    |        &check;        |     &check;     |        &check;             |
+  |Links  |    &check;     |   &check;      |      &check;     |   &check;  |    &check;    |        &check;        |     &check;     |        &check;             |
+
+
 * Browsers Testing
+
+  The website has been tested on different browers and fully responsive on the devices I have at home while using the following browsers.
+
+  * **Google Chrome**
+  * **Microsoft Edge**
+  * **Safari**
+  * **Mozilla Firefox**
+  
 * Resolved Known-bugs
   
   * Background and foreground colors do not have a sufficient contrast ratio;
