@@ -40,13 +40,37 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
     });
 
-    
-
-    
 
 });
 
 
+/**
+ * Add event listener to the sound control icon,
+ * toggle the audio sound on and off when firing the click function.
+ */
+
+soundOff.addEventListener('click', (e) => {
+    
+    if(soundOn.classList.contains('on')) {
+
+        soundOn.classList.add('active');
+        soundOff.classList.remove('active');
+
+        audio.muted = false;
+        audio.pause();
+
+    }
+});
 
 
+soundOn.addEventListener('click', () => {
 
+    if(soundOff.classList.contains('off')) {
+
+        soundOff.classList.add('active');
+        soundOn.classList.remove('active');
+
+        audio.play();
+    }
+
+});
