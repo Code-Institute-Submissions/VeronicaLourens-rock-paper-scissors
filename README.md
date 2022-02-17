@@ -15,20 +15,29 @@ Click here to view the live website - [Rock Paper Scissors](https://veronicalour
   * As a first time user, I want the site to have a vivid theme.
   * As a first time user, I want to know what the game rules are and how to play it.
   * As a game user, I want to know the game scores and result of win or lost.
+
+[Back to top](#rock-paper-scissors)
+
 * Site Owner Stories
   
     The purpose of the website is to provide a fun and exciting easy game for young and old to enjoy. The site should be accessible and responsive on different media screens and browsers.
 * Wireframe
   ![Rock Paper Scissors](assets/readmeimg/wireframe.jpg)
+
+[Back to top](#rock-paper-scissors)
+
 * Design Choice
   * Color Theme
   
       The site uses white color for the background and black color for the text. The uses a lovely picture of two playful children playing the game. The site uses bright colors and different shapes of buttons to enhance better user experience. The design is child and family friendly to attract little audience.
       ![Color Theme](assets/readmeimg/colortheme.jpg)
+      
       [Color Grid](assets/readmeimg/colorgrid.jpg)
 
   * Typography
       The site's main font-family is Lato that is easy to read. The fall back font-family is Open Sans.
+
+[Back to top](#rock-paper-scissors)
 
 ## Existing Features
 The website has only one page. The header on the top, the game area in the middle of the page that has a background picture, short texts and the game choices. The footer on the bottom of the site. 
@@ -37,6 +46,8 @@ Some of the page content are hidden when the page loaded. The hidden content wou
 
 The site is responsive accordingly with the different media screen sizes from 320px up to 4000px.
 
+[Back to top](#rock-paper-scissors)
+
 * Header
   
   The Header contains the name of the game **Rock Paper Scissors** on the left side, **Game Rules** button and the sound **on** and **off** image on the right. 
@@ -44,21 +55,29 @@ The site is responsive accordingly with the different media screen sizes from 32
   The **Game Rules** button has a hover function that changes background color and horizontally shift to left and right when the mouse moves in and out. 
 
     ![Header](assets/readmeimg/header.jpg)
+
+[Back to top](#rock-paper-scissors)
+
 * Main page
 
   * The pop up box contains the game rules that would be displayed after user clicking the **Game Rules** button on the header.
 
     ![Popup](assets/readmeimg/popup.jpg)
 
+[Back to top](#rock-paper-scissors)
+
   * A title **Select your choice to play** indicates to start the game by clicking the **hand** buttons. The **hand** buttons are animated that show the zoom and turning effects.
   
 
     ![Choice](assets/readmeimg/matchbox.jpg)
 
+[Back to top](#rock-paper-scissors)
+
   * The **computer choice**, **round count**, **messages**, **scores**  and a **Restart** button are displayed on the page after the game started.
 
     ![Display](assets/readmeimg/gamebk.jpg)
 
+[Back to top](#rock-paper-scissors)
 
 * Footer
   
@@ -66,9 +85,13 @@ The site is responsive accordingly with the different media screen sizes from 32
 
   ![Footer](assets/readmeimg/footer.jpg)
 
+[Back to top](#rock-paper-scissors)
+
 * Future Features
 
   Additional animation to be added with celebration audio sound and big emojis for praise user’s achievement. An option of user account to be implemented for saving the game records each time user plays the game.
+
+[Back to top](#rock-paper-scissors)
 
 ## Technologies Userd
 * [HTML5]() - to create site's structure of the content.
@@ -76,6 +99,9 @@ The site is responsive accordingly with the different media screen sizes from 32
 * [JavaScript]() - to make to site interactive with buttons' clickable functionalities.
 * [GitHub]() - to host and deploy the website with its content.
 * [GitPod]() - to edit the code and push the code to GitHub page.
+
+[Back to top](#rock-paper-scissors)
+
 ## Testing
 * Code Validation
 
@@ -84,10 +110,13 @@ The site is responsive accordingly with the different media screen sizes from 32
     
     ![HTML code](assets/readmeimg/w3c-html.jpg)
 
+[Back to top](#rock-paper-scissors)
+
   * W3C CSS Validation - No errors found.
 
     ![CSS code](assets/readmeimg/w3c-css.jpg)
 
+[Back to top](#rock-paper-scissors)
 
 * Lighthouse Testing
 
@@ -97,9 +126,13 @@ The site is responsive accordingly with the different media screen sizes from 32
   
     ![Destop](assets/readmeimg/lghths-dsk.jpg)
 
+[Back to top](#rock-paper-scissors)
+
   * Mobile
 
     ![Mobile](assets/readmeimg/lghths-mb.jpg)
+
+[Back to top](#rock-paper-scissors)
 
 * Responsiveness Testing
 
@@ -111,6 +144,8 @@ The site is responsive accordingly with the different media screen sizes from 32
   |Image  |  &check;    |   &check;     |   &check;    |  &check; |    &check;   |        &check;       |        &check;        |   
   |Links  |  &check;    |   &check;     |   &check;    |  &check; |    &check;   |        &check;       |        &check;        | 
 
+[Back to top](#rock-paper-scissors)
+
   * The website has been tested and passed on my own devices. It is fully responsive on two desktops, two laptops, iPad Air and  three mobile phones. 
 
   |       |**Galaxy Note4**|**Nokia 7 Plus**|**Huawei P30 Pro**|**iPad Air**|**Lenovo E540**|**HP Elitebook 850 G5**|**DELL 2407WFP**|**Yiyama ProLite XB3288UHSU**|
@@ -119,6 +154,7 @@ The site is responsive accordingly with the different media screen sizes from 32
   |Image  |    &check;     |   &check;      |      &check;     |   &check;  |    &check;    |        &check;        |     &check;     |        &check;             |
   |Links  |    &check;     |   &check;      |      &check;     |   &check;  |    &check;    |        &check;        |     &check;     |        &check;             |
 
+[Back to top](#rock-paper-scissors)
 
 * Browsers Testing
 
@@ -128,7 +164,9 @@ The site is responsive accordingly with the different media screen sizes from 32
   * **Microsoft Edge**
   * **Safari**
   * **Mozilla Firefox**
-  
+
+[Back to top](#rock-paper-scissors)
+
 * Resolved Known-bugs
   
   * Background and foreground colors do not have a sufficient contrast ratio;
@@ -148,6 +186,7 @@ The site is responsive accordingly with the different media screen sizes from 32
     * Added margin to the header elements and social media links to solve the problem.
 
 
+[Back to top](#rock-paper-scissors)
 
 ## Deployment
 * Site Deployment
@@ -163,10 +202,14 @@ The site is responsive accordingly with the different media screen sizes from 32
       ![GitHub deployment](assets/readmeimg/deploymnt.jpg)
 
 
+[Back to top](#rock-paper-scissors)
 
 * Clone the Project
+* 
+[Back to top](#rock-paper-scissors)
 
 ## Credit
+
 * Media
   * [Adobe Color](https://color.adobe.com/create/color-wheel) - extract the site's color theme.
   * [EightShape Contrast](https://contrast-grid.eightshapes.com/) - color contrast grid.
@@ -184,4 +227,15 @@ The site is responsive accordingly with the different media screen sizes from 32
   * [W3C CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator/) - validates the site's CSS code.
   * [Youtube](https://www.youtube.com/) - provides extra video learning materials.
   * [Compressor](https://compressor.io/) - to compress the site's image and screenshots.
+
+[Back to top](#rock-paper-scissors)
+
 ## Acknowledgement
+
+* Whilst I have tried to deviate as much as possible, there might be some similarities in the code as the Super Cars project was influenced by the code along Love Maths project at [Code Institute]().
+
+* I relied upon the support from Code Institue [online tutors]() and mentor [Precious Ijege](), Slack community and my families. Thanks to all those who support my learning journey. I use W3schools, MDN web docs and stack overflow for general references throughout the project.
+
+* The [Rock Paper Scissors](https://veronicalourens.github.io/rock-paper-scissors/) website is intended for education purpose of completing the Portfolio Project 2 for the Diploma of Full Stack Software Development course at [Code Institue](https://codeinstitute.net/).
+
+[Back to top](#rock-paper-scissors)
