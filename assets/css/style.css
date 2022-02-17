@@ -108,7 +108,7 @@ header a {
 }
 
 #choice-container {
-    width: 160px;
+    width: 180px;
     height: 25px;
     margin: 20px auto;
     display: flex;
@@ -125,7 +125,7 @@ header a {
     width: 40px;
     height: 40px;
     padding: 5px;
-    margin: 5px;
+    margin: 8px;
     border-radius: 50%;
     background: rgb(99, 99, 248);
     border: 3px solid #1f2ce7;
@@ -267,7 +267,7 @@ footer {
 
     .display-container-wrapper,
     .display-container {
-        height: 360px;
+        height: 300px;
     }
 }
 
@@ -277,9 +277,8 @@ footer {
 
     /* game section */
 
-     .display-container-wrapper,
-     .display-container {
-         height: 460px;
+     .display-container-wrapper {
+         height: 350px;
      }
 }
 
@@ -326,7 +325,7 @@ footer {
     }
 
     #choice-container {
-        width: 300px;
+        width: 320px;
         height: 50px;
         margin: 25px auto;
     }
@@ -342,9 +341,8 @@ footer {
         font-size: 18px;
     }
 
-    .display-container-wrapper,
-    .display-container {
-        height: 600px;
+    .display-container-wrapper {
+        height: 500px;
     }
 
     #computer-choice {
@@ -450,9 +448,11 @@ footer {
         font-size: 20px;
     }
 
-    .display-container-wrapper,
-    .display-container {
+    .display-container-wrapper {
         height: 800px;
+    }
+    .display-container {
+        height: 600px;
     }
 
     #computer-choice {
@@ -494,32 +494,31 @@ footer {
 
 @media (min-width: 1024px) {
      /* game section */
-     .display-container-wrapper,
+     .display-container-wrapper {
+         height: 900px;
+     }
      .display-container {
-        height: 900px;
+        height: 600px;
      }
 }
 
 @media (min-width: 1281px) {
      /* game section */
-    .display-container-wrapper,
-    .display-container {
+    .display-container-wrapper{
         height: 1000px;
     }
 }
 
 @media (min-width: 1599px) {
      /* game section */
-    .display-container-wrapper,
-    .display-container {
+    .display-container-wrapper{
         height: 1300px;
     }
 }
 
 @media (min-width: 1899px) {
     /* game section */
-    .display-container-wrapper,
-    .display-container {
+    .display-container-wrapper {
         height: 1500px;
     }
 }
