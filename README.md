@@ -193,6 +193,7 @@ The site is responsive accordingly with the different media screen sizes from 32
 [Back to top](#rock-paper-scissors)
 
 ## Deployment
+
 * Site Deployment
   
   The Rock Paper Scissors game website is deployed to GitHub page. The site's link -  https://veronicalourens.github.io/rock-paper-scissors/
