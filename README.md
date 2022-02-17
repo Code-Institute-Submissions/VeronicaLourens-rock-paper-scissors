@@ -4,6 +4,11 @@
 
 Rock Paper Scissors game is an interactive easy yet super fun game for everyone especially for little children who love to play it often with families and friends. More than often that children are interested in playing games on media screens nowadays. The site intends to target the audience who enjoys play against the computer in their spare time. 
 
+Click here to view the live website - [Rock Paper Scissors](https://veronicalourens.github.io/rock-paper-scissors/)
+
+![Rock Paper Scissors](assets/readmeimg/gamepg.jpg)
+
+
 ## User Experience UX
 * User Stories
   * As a first time user, I want the website to be easily accessible on different devices and work on different browsers.
