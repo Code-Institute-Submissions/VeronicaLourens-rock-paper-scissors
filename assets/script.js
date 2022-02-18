@@ -6,11 +6,13 @@
 const gameRulesBtn = document.getElementById('game-rules-btn');
 const closeBtn = document.querySelector('.close-btn');
 const popupBox = document.getElementById('popup-box');
-const soundOff = document.querySelector('.sound-off');
-const soundOn = document.querySelector('.sound-on');
+const soundOff = document.querySelector('.off');
+const soundOn = document.querySelector('.on');
 
-// Audio sound for the mouse click.
+// Audio sound.
+let soundIsOn = false;
 const clickSound = document.getElementById('click-sound');
+
 
 
 /**
@@ -25,7 +27,8 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
     gameRulesBtn.addEventListener('click', (e) => {
         popupBox.style.display = 'block';
-        clickSound.play();
+        // clickSound.play();
+        playAudio();
 
     });
 
@@ -41,10 +44,13 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
     closeBtn.addEventListener('click', (e) => {
         popupBox.style.display = 'none';
-         clickSound.play();
+        //  clickSound.play();
+        playAudio();
+
 
     });
 
+   
 
 });
 
@@ -61,22 +67,55 @@ soundOff.addEventListener('click', (e) => {
         soundOn.classList.add('active');
         soundOff.classList.remove('active');
 
-        clickSound.pause();
+        // clickSound.pause();
+        // pauseAudio()
 
     }
+
+    playAudio();
+    
 });
 
 
-soundOn.addEventListener('click', () => {
+
+soundOn.addEventListener('click', (e) => {
 
     if(soundOff.classList.contains('off')) {
 
         soundOff.classList.add('active');
         soundOn.classList.remove('active');
 
-        clickSound.play();
+        // clickSound.play();
+
     }
 
+    pauseAudio();
+
 });
+
+
+
+
+
+function playAudio() {
+    if(!soundIsOn) {
+        clickSound.play();
+
+    }
+}
+
+function pauseAudio() {
+    if(soundIsOn) {
+        clickSound.pause();
+    }
+}
+
+
+
+
+
+/**
+ * 
+ */
 
 
