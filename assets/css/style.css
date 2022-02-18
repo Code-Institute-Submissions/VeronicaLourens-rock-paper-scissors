@@ -33,8 +33,8 @@ header a {
 }
 
 #game-rules-btn {
-    width: 150px;
-    height: 30px;
+    width: 140px;
+    height: 28px;
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -99,7 +99,7 @@ header a {
 }
 
 .match-box {
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 .match-box p {
@@ -148,7 +148,7 @@ header a {
 .display-container-wrapper {
     width: 100%;
     background: url(../image/bckgd.jpg) center center no-repeat;
-    height: 260px;
+    height: 250px;
     background-size: contain;
     position: relative;
 }
@@ -158,7 +158,7 @@ header a {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 #computer-choice {
@@ -215,12 +215,12 @@ header a {
 
 .restart-box {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 #restart-btn {
     width: 90px;
-    height: 30px;
+    height: 28px;
     font-weight: bold;
     font-size: 13px;
     letter-spacing: 1px;
@@ -239,7 +239,7 @@ header a {
 
 /* footer */
 
-body > footer {
+footer {
     /* height: 80px; */
     box-shadow: 0px 0px 8px 2px #bbbbf1;
     position: sticky;
@@ -349,7 +349,7 @@ body > footer {
     }
 
     .display-container-wrapper {
-        height: 500px;
+        height: 450px;
     }
 
     #computer-choice {
@@ -448,7 +448,7 @@ body > footer {
     }
 
     .match-box {
-        margin-top: 50px;
+        margin-top: 40px;
     }
 
     .match-box p {
@@ -456,7 +456,7 @@ body > footer {
     }
 
     .display-container-wrapper {
-        height: 800px;
+        height: 600px;
     }
     .display-container {
         height: 600px;
@@ -502,7 +502,7 @@ body > footer {
 @media (min-width: 1024px) {
      /* game section */
      .display-container-wrapper {
-         height: 900px;
+         height: 700px;
      }
      .display-container {
         height: 600px;
@@ -512,14 +512,14 @@ body > footer {
 @media (min-width: 1281px) {
      /* game section */
     .display-container-wrapper{
-        height: 1000px;
+        height: 900px;
     }
 }
 
 @media (min-width: 1599px) {
      /* game section */
     .display-container-wrapper{
-        height: 1300px;
+        height: 1200px;
     }
 }
 
