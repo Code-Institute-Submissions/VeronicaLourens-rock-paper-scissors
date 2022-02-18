@@ -66,14 +66,15 @@ header a {
     cursor: pointer;
 }
 
-/* .on {
-    visibility: hidden;
-} */
-
-
+.on,
 .off {
-    visibility: hidden;
+    display: none;
 }
+
+.active {
+    display: block;
+}
+
 
 /* #toggle-sound {
     background: url(../image/sound-off.png);
