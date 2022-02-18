@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 const soundOff = document.querySelector('.off');
 const soundOn = document.querySelector('.on');
 
-let soundIsOn = false;
+let soundIsOn = true; // JO'S NOTE: SET SOUND ON TEMPORARILY FOR TEST
 const clickSound = document.getElementById('click-sound');
 const playerSound = document.getElementById('player-sound');
 const pcSound = document.getElementById('pc-sound');
@@ -103,7 +103,7 @@ soundOn.addEventListener('click', (e) => {
 });
 
 function playSound() {
-    if(!soundIsOn) {
+    if(soundIsOn) {
         clickSound.play();
 
     }
@@ -126,9 +126,9 @@ function pauseSound() {
  * display computer choice, move counts, message and scores.
  */
 
-const rock = document.getElementById('rock');
-const paper = document.getElementById('paper');
-const scissors = document.getElementById('scissors');
+const rock = document.getElementById('rock').innerHTML;
+const paper = document.getElementById('paper').innerHTML;
+const scissors = document.getElementById('scissors').innerHTML;
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -138,11 +138,13 @@ document.addEventListener('DOMContentLoaded', function() {
     for (let choice of playerChoice) {
         choice.addEventListener('click', function () {
 
-            alert('You clicked');
+            // alert('You clicked');
 
             let playerInput = this.getAttribute('value');
 
             console.log(playerInput);
+
+            renderGame(playerInput);
 
             
 
@@ -150,6 +152,39 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 })
+
+/**
+ * Render the game
+ * 
+ */
+
+function renderGame(playerInput) {
+
+    let computerChoice = [rock, paper, scissors];
+    let computerInput = computerChoice[Math.floor(Math.random() * 3)];
+
+    console.log(computerInput);
+
+    // create html element
+    let html = `<button>${computerInput}</button>`;
+    document.getElementById('computer-choice').innerHTML = html;
+
+
+    // choice of rock
+
+    if (playerInput === 'rock') {
+
+        if (computerInput === rock) {
+            alert('draw');
+
+        }
+    }
+
+
+
+
+
+}
 
 
 
