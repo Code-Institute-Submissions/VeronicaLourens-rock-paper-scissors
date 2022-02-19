@@ -122,6 +122,7 @@ function pauseSound() {
 const rock = document.getElementById('rock').innerHTML;
 const paper = document.getElementById('paper').innerHTML;
 const scissors = document.getElementById('scissors').innerHTML;
+const message = document.getElementById('message');
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -213,7 +214,6 @@ function renderGame(playerInput) {
         } else {
             playerWon();
         }
-
     }
 
     movesCount();
@@ -232,10 +232,10 @@ function draw() {
     document.getElementById('draw-count').innerText = ++drawCount
 
     message.innerHTML = `<h4 id="message">It's a Draw!</h4>`;
-    
-    
-}
+    message.style.color = '#F27329';
 
+    movesCount(); 
+}
 
 /**
  * The playerWon function is to increment player's score 1 point each time,
@@ -248,7 +248,8 @@ function playerWon() {
     document.getElementById('player-score').innerText = ++playerScore;
 
     message.innerHTML = `<h4 id="message">You won and scored!</h4>`;
-
+    message.style.color = 'red';
+    
 }
 
 /**
@@ -262,6 +263,7 @@ function computerWon() {
     document.getElementById('computer-score').innerText = ++computerScore;
 
     message.innerHTML = `<h4 id="message">PC won and scored!</h4>`;
+    message.style.color = 'blue';
 
 }
 
