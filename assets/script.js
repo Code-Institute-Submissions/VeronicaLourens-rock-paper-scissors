@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 const soundOff = document.querySelector('.off');
 const soundOn = document.querySelector('.on');
 
-let soundIsOn = true; // JO'S NOTE: SET SOUND ON TEMPORARILY FOR TEST
+let soundIsOn = true;
 const clickSound = document.getElementById('click-sound');
 const playerSound = document.getElementById('player-sound');
 const pcSound = document.getElementById('pc-sound');
@@ -122,8 +122,8 @@ function pauseSound() {
 /**
  * Get the valiables of game choices array, message, move count and restart btn.
  * add event listener to the game choice buttons.
- * generate a computer random choice when clicking each of buttons.
- * display computer choice, move counts, message and scores.
+ * generate a PC/computer random choice when clicking each of buttons.
+ * display PC/computer choice, move counts, message and scores.
  */
 
 const rock = document.getElementById('rock').innerHTML;
@@ -154,7 +154,10 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 /**
- * Render the game
+ * The renderGame function is the primary game,
+ * generate PC's random choice when user clicks any of the three hand buttons,
+ * display PC's choice on the page to tell what computer choice is,
+ * compares the choices between player and the computer to check either who scores 1 point.
  * 
  */
 
@@ -187,8 +190,50 @@ function renderGame(playerInput) {
 }
 
 
+/**
+ * Draw function is to increment the draw count by 1 each time,
+ * display the message when the result is a "Draw".
+ */
+
+function draw() {
+    
+}
 
 
+/**
+ * The playerWon function is to increment player's score 1 point each time,
+ * and display the message when the player wins.
+ */
 
+function playerWon() {
+
+}
+
+/**
+ * The computerWon function is to increment PC's score 1 point each time,
+ * and display the message when PC wins.
+ */
+
+function computerWon() {
+
+}
+
+/**
+ * The movesCount function is to increment the game rounds count,
+ * the count increases by 1 each time player clicks one of the three hand buttons,
+ * it's the sum of the total number the player selects the buttons.
+ */
+
+function movesCount() {
+
+}
+
+/**
+ * The restartGame function is to reset and restart the game when clicking the restart button.
+ */
+
+function restartGame() {
+
+}
 
 
