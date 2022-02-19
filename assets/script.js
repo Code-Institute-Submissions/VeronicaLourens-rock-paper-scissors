@@ -291,11 +291,22 @@ function checkWinner() {
 }
 
 /**
- * The restartGame function is to reset and restart the game when clicking the restart button.
+ * The restartGame function is to reset and restart the game on clicking the restart button,
+ * to set all the game data to initical state.
  */
 
-function restartGame() {
+document.getElementById('restart-btn').addEventListener('click', (e) => {
 
-}
+    document.getElementById('player-score').innerText = 0;
+    document.getElementById('computer-score').innerText = 0;
+    document.getElementById ('moves-count').innerText = 0;
+    document.getElementById('message').innerText = '';
+    document.getElementById('draw-count').textContent = 0;
+
+    clickSound.play();
+
+})
+
+
 
 
