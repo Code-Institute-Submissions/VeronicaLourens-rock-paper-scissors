@@ -77,14 +77,11 @@ soundOff.addEventListener('click', (e) => {
 
         soundOn.classList.add('active');
         soundOff.classList.remove('active');
-
     }
 
     playSound();
     
 });
-
-
 
 soundOn.addEventListener('click', (e) => {
 
@@ -92,14 +89,10 @@ soundOn.addEventListener('click', (e) => {
 
         soundOff.classList.add('active');
         soundOn.classList.remove('active');
-
-        pauseSound();
-       
     }
 
-     
+    pauseSound();
 
-    
 });
 
 function playSound() {
@@ -178,17 +171,15 @@ function renderGame(playerInput) {
     if (playerInput === 'rock') {
 
         if (computerInput === rock) {
-            alert('draw');
+            draw();
             return
 
         } else if (computerInput === paper) {
-            alert('pc won')
+            computerWon();
           
-
         } else {
-            alert('player won')
+            playerWon();
             
-
         }
 
     }
@@ -197,19 +188,14 @@ function renderGame(playerInput) {
     if (playerInput === 'paper') {
         
         if (computerInput === paper) {
-            alert('draw')
-
             draw();
             return
 
         } else if (computerInput === scissors) {
-          
-            alert('pc won')
+            computerWon();
 
         } else {
-            alert('player son')
-           
-
+            playerWon(); 
         }
 
     }
@@ -218,24 +204,19 @@ function renderGame(playerInput) {
     if (playerInput === 'scissors') {
 
         if (computerInput === scissors) {
-            alert('draw')
             draw();
             return
 
         } else if (computerInput === rock) {
-            alert('pc won')
+            computerWon();
           
-
         } else {
-            alert('player won')
-           
-
+            playerWon();
         }
+
     }
 
-
-
-
+    movesCount();
 
 }
 
@@ -248,7 +229,7 @@ function renderGame(playerInput) {
 function draw() {
 
     let drawCount = document.getElementById('draw-count').innerText;
-    drawCount.innerText = ++drawCount
+    document.getElementById('draw-count').innerText = ++drawCount
 
     message.innerHTML = `<h4 id="message">It's a Draw!</h4>`;
     
@@ -264,7 +245,7 @@ function draw() {
 function playerWon() {
 
     let playerScore = document.getElementById('player-score').innerText;
-    playerScore.innerText = ++playerScore;
+    document.getElementById('player-score').innerText = ++playerScore;
 
     message.innerHTML = `<h4 id="message">You won and scored!</h4>`;
 
@@ -278,7 +259,7 @@ function playerWon() {
 function computerWon() {
 
     let computerScore = document.getElementById('computer-score').innerText;
-    computerScore.innerText = ++computerScore;
+    document.getElementById('computer-score').innerText = ++computerScore;
 
     message.innerHTML = `<h4 id="message">PC won and scored!</h4>`;
 
@@ -293,7 +274,7 @@ function computerWon() {
 function movesCount() {
 
     let movesCount = document.getElementById('moves-count').innerText;
-    movesCount.innerText = ++movesCount;
+    document.getElementById('moves-count').innerText = ++movesCount;
 
 }
 
