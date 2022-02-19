@@ -6,14 +6,6 @@
 const gameRulesBtn = document.getElementById('game-rules-btn');
 const closeBtn = document.querySelector('.close-btn');
 const popupBox = document.getElementById('popup-box');
-// const soundOff = document.querySelector('.off');
-// const soundOn = document.querySelector('.on');
-
-// // Audio sound.
-// let soundIsOn = false;
-// const clickSound = document.getElementById('click-sound');
-
-
 
 /**
  * Add event listener to the game rules button that fires the funtions,
@@ -28,7 +20,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
     gameRulesBtn.addEventListener('click', (e) => {
         popupBox.style.display = 'block';
     
-        playSound();
+        clickSound.play();
 
     });
 
@@ -45,21 +37,18 @@ document.addEventListener('DOMContentLoaded', (e) => {
     closeBtn.addEventListener('click', (e) => {
         popupBox.style.display = 'none';
         
-        playSound();
-
+        clickSound.play();
 
     });
-
-   
 
 });
 
 
 /**
  * Add event listener to the sound control icon,
+ * get the sound toggle icons and audio sound valiables,
  * toggle the audio sound on and off when firing the click function.
  */
-
 
 const soundOff = document.querySelector('.off');
 const soundOn = document.querySelector('.on');
@@ -79,7 +68,7 @@ soundOff.addEventListener('click', (e) => {
         soundOff.classList.remove('active');
     }
 
-    playSound();
+    // playSound();
     
 });
 
@@ -91,22 +80,23 @@ soundOn.addEventListener('click', (e) => {
         soundOn.classList.remove('active');
     }
 
-    pauseSound();
+    // pauseSound();
 
 });
 
-function playSound() {
-    if(soundIsOn) {
-        clickSound.play();
+// function playSound() {
+//     if(soundIsOn) {
+//         clickSound.play();
 
-    }
-}
 
-function pauseSound() {
-    if(soundIsOn == false) {
-        clickSound.pause();
-    }
-}
+//     }
+// }
+
+// function pauseSound() {
+//     if(soundIsOn == false) {
+//         clickSound.pause();
+//     }
+// }
 
 
 
@@ -139,8 +129,6 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log(playerInput);
 
             renderGame(playerInput);
-
-            
 
         })
     }
@@ -233,9 +221,9 @@ function draw() {
 
     message.innerHTML = `<h4 id="message">It's a Draw!</h4>`;
     message.style.color = '#F27329';
-    // message.style.transform = 'scale(1.2)';
 
-    movesCount(); 
+    movesCount();
+    drawSound.play();
 }
 
 /**
@@ -250,7 +238,8 @@ function playerWon() {
 
     message.innerHTML = `<h4 id="message">You won and scored!</h4>`;
     message.style.color = 'red';
-    // message.style.transform = 'scale(1.2)';
+
+    playerSound.play();
     
 }
 
@@ -266,7 +255,8 @@ function computerWon() {
 
     message.innerHTML = `<h4 id="message">PC won and scored!</h4>`;
     message.style.color = 'blue';
-    // message.style.transform = 'scale(1.2)';
+
+    pcSound.play();
 
 }
 
@@ -289,6 +279,14 @@ function movesCount() {
  */
 
 function checkWinner() {
+
+    if(movesCount === 10) {
+        if(playerScore > computerScore) {
+            alert('Congrats! You won the game!');
+        } else if(playerScore === computerScore) {
+            alert("It's a Draw. Please try again.")
+        }
+    }
 
 }
 
