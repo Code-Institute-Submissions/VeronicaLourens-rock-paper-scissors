@@ -155,6 +155,9 @@ function renderGame(playerInput) {
     let html = `<button>${computerInput}</button>`;
     document.getElementById('computer-choice').innerHTML = html;
 
+    // to set the display container visible when the game started.
+    document.querySelector('.display-container').style.visibility = 'visible';
+
 
     // choice of rock
     if (playerInput === 'rock') {

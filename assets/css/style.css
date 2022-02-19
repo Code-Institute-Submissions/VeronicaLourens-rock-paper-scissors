@@ -348,7 +348,7 @@ footer {
     }
 
     .display-container-wrapper {
-        height: 600px;
+        height: 500px;
     }
     .display-container {
         height: 450px; 
@@ -455,7 +455,7 @@ footer {
     }
 
     .display-container-wrapper {
-        height: 600px;
+        height: 580px;
     }
 
     .display-container {
@@ -499,17 +499,17 @@ footer {
 @media (min-width: 1024px) {
      /* game section */
      .display-container-wrapper {
-         height: 700px;
+         height: 620px;
      }
      .display-container {
-        height: 550px;
+        height: 520px;
      }
 }
 
 @media (min-width: 1281px) {
      /* game section */
     .display-container-wrapper{
-        height: 800px;
+        height: 680px;
     }
 
     .display-container {
@@ -520,22 +520,22 @@ footer {
 @media (min-width: 1599px) {
      /* game section */
     .display-container-wrapper{
-        height: 1000px;
+        height: 780px;
     }
 
     .display-container {
-        height: 550px;
+        height: 580px;
     }
 }
 
 @media (min-width: 1899px) {
     /* game section */
     .display-container-wrapper {
-        height: 1200px;
+        height: 1100px;
     }
 
     .display-container {
-        height: 550px;
+        height: 600px;
     }
 }
 
