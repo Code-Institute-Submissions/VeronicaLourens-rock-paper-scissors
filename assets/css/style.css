@@ -40,7 +40,7 @@ header a {
     letter-spacing: 1px;
     color: white;
     background: #128607;
-    border-radius: 12px;
+    border-radius: 18px;
     border: none;
     cursor: pointer;
     border-bottom: 5px solid rgb(6, 80, 6); 
@@ -55,14 +55,14 @@ header a {
 .header-left {
     width: 280px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     margin: 8px 0;
 }
 
-.sound-controls img {
-    width: 25px;
-    height: 25px;
+#toggle-sound img {
+    width: 28px;
+    height: 28px;
     cursor: pointer;
 }
 
@@ -122,7 +122,7 @@ header a {
 #choice-container {
     width: 180px;
     height: 25px;
-    margin: 20px auto;
+    margin: 15px auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -168,8 +168,9 @@ header a {
 .display-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    box-sizing: border-box;
     /* visibility: hidden; */
 }
 
@@ -177,7 +178,7 @@ header a {
     width: 45px;
     height: 45px;
     background: rgba(23, 209, 209, .6);
-    margin: 5px auto;
+    margin: 0 auto;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -197,11 +198,6 @@ header a {
     margin: 0 auto;
 }
 
-.message-box {
-    text-align: center;
-    margin: 8px auto;
-}
-
 .score-box {
     text-align: center;
     display: flex;
@@ -215,7 +211,7 @@ header a {
     background: #128607;
     opacity: .9;
     border-radius: 50%;
-    margin: 5px;
+    /* margin: 5px; */
     /* box-shadow: 0px 0px 5px 2px #e79f18; */
 }
 
@@ -239,7 +235,7 @@ header a {
     color: white;
     background: #4753f5;
     border: none;
-    border-radius: 10px;
+    border-radius: 18px;
     border-bottom: 4px solid #091181;
     cursor: pointer;
     box-shadow: 3px 3px 3px 3px rgb(175, 175, 243);
@@ -326,9 +322,9 @@ footer {
         font-size: 18px;
     }
 
-    .sound-controls img {
-        width: 30px;
-        height: 30px;
+    #toggle-sound img {
+        width: 35px;
+        height: 35px;
     }
 
     /* game section */
@@ -377,7 +373,7 @@ footer {
     .flex-item {
         width: 90px;
         height: 90px;
-        margin: 15px;
+        /* margin: 15px; */
     }
 
     .flex-item p,
@@ -433,9 +429,9 @@ footer {
         font-size: 20px;
     }
 
-    .sound-controls img {
-        width: 35px;
-        height: 35px;
+    #toggle-sound img {
+        width: 40px;
+        height: 40px;
     }
 
     /* game section */
@@ -483,7 +479,7 @@ footer {
     .flex-item {
         width: 100px;
         height: 100px;
-        margin: 15px;
+        /* margin: 15px; */
     }
    
     .flex-item p,

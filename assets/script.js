@@ -233,6 +233,7 @@ function draw() {
 
     message.innerHTML = `<h4 id="message">It's a Draw!</h4>`;
     message.style.color = '#F27329';
+    // message.style.transform = 'scale(1.2)';
 
     movesCount(); 
 }
@@ -249,6 +250,7 @@ function playerWon() {
 
     message.innerHTML = `<h4 id="message">You won and scored!</h4>`;
     message.style.color = 'red';
+    // message.style.transform = 'scale(1.2)';
     
 }
 
@@ -264,6 +266,7 @@ function computerWon() {
 
     message.innerHTML = `<h4 id="message">PC won and scored!</h4>`;
     message.style.color = 'blue';
+    // message.style.transform = 'scale(1.2)';
 
 }
 
