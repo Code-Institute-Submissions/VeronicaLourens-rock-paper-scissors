@@ -191,11 +191,17 @@ function renderGame(playerInput) {
 
 
 /**
- * Draw function is to increment the draw count by 1 each time,
+ * The draw function is to increment the draw count by 1 each time,
  * display the message when the result is a "Draw".
  */
 
 function draw() {
+
+    let drawCount = document.getElementById('draw-count').innerText;
+    drawCount.innerText = ++drawCount
+
+    message.innerHTML = `<h4 id="message">It's a Draw!</h4>`;
+    
     
 }
 
@@ -207,6 +213,11 @@ function draw() {
 
 function playerWon() {
 
+    let playerScore = document.getElementById('player-score').innerText;
+    playerScore.innerText = ++playerScore;
+
+    message.innerHTML = `<h4 id="message">You won and scored!</h4>`;
+
 }
 
 /**
@@ -215,6 +226,11 @@ function playerWon() {
  */
 
 function computerWon() {
+
+    let computerScore = document.getElementById('computer-score').innerText;
+    computerScore.innerText = ++computerScore;
+
+    message.innerHTML = `<h4 id="message">PC won and scored!</h4>`;
 
 }
 
@@ -225,6 +241,18 @@ function computerWon() {
  */
 
 function movesCount() {
+
+    let movesCount = document.getElementById('moves-count').innerText;
+    movesCount.innerText = ++movesCount;
+
+}
+
+/**
+ * The checkWinner function is to tell who is the final winner of the game,
+ * and display the cheerful celebration message to the winner.
+ */
+
+function checkWinner() {
 
 }
 
