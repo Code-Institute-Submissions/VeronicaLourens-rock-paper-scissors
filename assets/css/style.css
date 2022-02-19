@@ -80,9 +80,9 @@ header a {
     width: 300px;
     font-size: 12px;
     background-color: rgba(23, 209, 209, .6);
-    padding: 3px 0;
+    padding: 2px 0;
     line-height: 15px;
-    margin: 10px auto;
+    margin: 8px auto;
     border-radius: 10px;
     display: none;
 
@@ -114,7 +114,7 @@ header a {
 #choice-container {
     width: 180px;
     height: 30px;
-    margin: 15px auto;
+    margin: 12px auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -158,6 +158,7 @@ header a {
 }
 
 .display-container {
+    height: 260px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -238,7 +239,6 @@ header a {
 /* footer */
 
 footer {
-    /* height: 80px; */
     box-shadow: 0px 0px 8px 2px #bbbbf1;
     position: sticky;
     top: 100vh; 
@@ -278,7 +278,8 @@ footer {
 
     /* game section */
 
-     .display-container-wrapper {
+     .display-container-wrapper,
+     .display-container {
          height: 350px;
      }
 }
@@ -309,7 +310,7 @@ footer {
     #game-rules-btn {
         width: 180px;
         height: 35px;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     #toggle-sound img {
@@ -321,14 +322,14 @@ footer {
 
     #popup-box {
         width: 500px;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 25px;
     }
 
     #choice-container {
-        width: 320px;
-        height: 60px;
-        margin: 30px auto;
+        width: 300px;
+        height: 50px;
+        margin-top: 20px;
     }
 
     #choice-container>button,
@@ -343,11 +344,14 @@ footer {
     }
 
     .match-box p {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .display-container-wrapper {
-        height: 450px;
+        height: 600px;
+    }
+    .display-container {
+        height: 450px; 
     }
 
     #computer-choice {
@@ -361,21 +365,18 @@ footer {
     }
 
     .flex-item {
-        width: 90px;
-        height: 90px;
-        /* margin: 15px; */
+        width: 80px;
+        height: 80px;
     }
 
-    .flex-item p,
-    .message-box {
-        font-size: 18px;
-
+    .flex-item p {
+        font-size: 16px;
     }
 
     #restart-btn {
         width: 120px;
         height: 35px;
-        font-size: 18px;
+        font-size: 16px;
         margin-top: 30px;
     }
 
@@ -397,7 +398,7 @@ footer {
     h2,
     h3,
     h4 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     /* header */
@@ -406,7 +407,7 @@ footer {
     }
 
     header a {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .header-left {
@@ -414,9 +415,9 @@ footer {
     }
 
     #game-rules-btn {
-        width: 230px;
+        width: 200px;
         height: 40px;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     #toggle-sound img {
@@ -427,67 +428,65 @@ footer {
     /* game section */
 
     #popup-box {
-        width: 550px;
-        font-size: 20px;
-        line-height: 30px;
+        width: 500px;
+        font-size: 18px;
+        line-height: 25px;
     }
 
     #choice-container {
-        width: 500px;
-        height: 90px;
-        margin: 40px auto;
+        width: 350px;
+        height: 60px;
+        margin-top: 25px;
     }
 
     #choice-container>button,
     #computer-choice>button {
-        font-size: 300%;
-        width: 80px;
-        height: 80px;
+        font-size: 250%;
+        width: 60px;
+        height: 60px;
     }
 
     .match-box {
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
     .match-box p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .display-container-wrapper {
         height: 600px;
     }
+
     .display-container {
-        height: 600px;
+        height: 500px;
     }
 
     #computer-choice {
-        width: 100px;
-        height: 100px;
-        margin: 40px auto;
+        width: 80px;
+        height: 80px;
     }
 
     .flex-item {
-        width: 100px;
-        height: 100px;
-        /* margin: 15px; */
+        width: 80px;
+        height: 80px;
     }
    
-    .flex-item p,
-    .message-box {
-        font-size: 20px;
+    .flex-item p {
+        font-size: 16px;
     }
 
     #restart-btn {
-        width: 140px;
+        width: 120px;
         height: 40px;
-        font-size: 20px; 
-        margin-top: 30px;   
+        font-size: 18px; 
+        margin-top: 10px;   
     }
 
     /* footer */
 
     .copy-right-box {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .copy-right-box a {
@@ -503,28 +502,40 @@ footer {
          height: 700px;
      }
      .display-container {
-        height: 600px;
+        height: 550px;
      }
 }
 
 @media (min-width: 1281px) {
      /* game section */
     .display-container-wrapper{
-        height: 900px;
+        height: 800px;
+    }
+
+    .display-container {
+        height: 550px;
     }
 }
 
 @media (min-width: 1599px) {
      /* game section */
     .display-container-wrapper{
-        height: 1200px;
+        height: 1000px;
+    }
+
+    .display-container {
+        height: 550px;
     }
 }
 
 @media (min-width: 1899px) {
     /* game section */
     .display-container-wrapper {
-        height: 1500px;
+        height: 1200px;
+    }
+
+    .display-container {
+        height: 550px;
     }
 }
 
