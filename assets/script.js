@@ -163,22 +163,72 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function renderGame(playerInput) {
 
+    // to get computer's random choice
     let computerChoice = [rock, paper, scissors];
     let computerInput = computerChoice[Math.floor(Math.random() * 3)];
 
     console.log(computerInput);
 
-    // create html element
+    // create an element to display the computer choice
     let html = `<button>${computerInput}</button>`;
     document.getElementById('computer-choice').innerHTML = html;
 
 
     // choice of rock
-
     if (playerInput === 'rock') {
 
         if (computerInput === rock) {
             alert('draw');
+            return
+
+        } else if (computerInput === paper) {
+            alert('pc won')
+          
+
+        } else {
+            alert('player won')
+            
+
+        }
+
+    }
+
+    // choice of paper
+    if (playerInput === 'paper') {
+        
+        if (computerInput === paper) {
+            alert('draw')
+
+            draw();
+            return
+
+        } else if (computerInput === scissors) {
+          
+            alert('pc won')
+
+        } else {
+            alert('player son')
+           
+
+        }
+
+    }
+
+    // choice of scissors
+    if (playerInput === 'scissors') {
+
+        if (computerInput === scissors) {
+            alert('draw')
+            draw();
+            return
+
+        } else if (computerInput === rock) {
+            alert('pc won')
+          
+
+        } else {
+            alert('player won')
+           
 
         }
     }
