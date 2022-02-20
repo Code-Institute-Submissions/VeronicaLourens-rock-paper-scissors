@@ -58,6 +58,8 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
     });
 
+    //startGame();
+
 });
 
 
@@ -96,10 +98,8 @@ soundOn.addEventListener('click', (e) => {
 
 
 /**
- * Get the valiables of game choices array, message, move count and restart btn.
- * add event listener to the game choice buttons.
- * generate a PC/computer random choice when clicking each of buttons.
- * display PC/computer choice, move counts, message and scores.
+ * Add event listener to the game choice buttons.
+ * start to play game on clicking each of the game choice buttons.
  */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -121,25 +121,25 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 
-// function startGame() {
+/*function startGame() {
 
-//     let playerChoice = document.getElementsByClassName('choice');
+    let playerChoice = document.getElementsByClassName('choice');
 
-//     for (let choice of playerChoice) {
-//         choice.addEventListener('click', function () {
+    for (let choice of playerChoice) {
+        choice.addEventListener('click', function () {
 
-//             // alert('You clicked');
+            // alert('You clicked');
 
-//             let playerInput = this.getAttribute('value');
+            let playerInput = this.getAttribute('value');
 
-//             console.log(playerInput);
+            console.log(playerInput);
 
-//             renderGame(playerInput);
+            renderGame(playerInput);
 
-//         })
-//     }
+        })
+    }
     
-// }
+}*/
 
 /**
  * The renderGame function is the primary game,
@@ -242,7 +242,6 @@ function draw() {
 
 function playerWon() {
 
-    //let playerScore = document.getElementById('player-score').innerText;
     document.getElementById('player-score').innerText = ++playerScore;
 
     message.innerHTML = `<h4 id="message">You scored!</h4>`;
@@ -259,7 +258,6 @@ function playerWon() {
 
 function computerWon() {
 
-   //let computerScore = document.getElementById('computer-score').innerText;
     document.getElementById('computer-score').innerText = ++computerScore;
 
     message.innerHTML = `<h4 id="message">PC scored!</h4>`;
@@ -302,7 +300,7 @@ function checkWinner(movesCount) {
 
         if (playerScore === computerScore) {
 
-            message.innerHTML = `<h4 id="message">It's a Draw!</h4>`;
+            message.innerHTML = `<h4 id="message">It's a Tie game!</h4>`;
             message.style.color = 'red';
             
         } else if (playerScore > computerScore) {
@@ -312,7 +310,7 @@ function checkWinner(movesCount) {
 
         } else {
 
-            message.innerHTML = `<h4 id="message">Ooeps...you lost! Try again.</h4>`;
+            message.innerHTML = `<h4 id="message">Oopsie-daisy...you lost! Try again.</h4>`;
             message.style.color = 'red';
         }
     }
@@ -331,6 +329,11 @@ document.getElementById('restart-btn').addEventListener('click', (e) => {
     document.getElementById ('moves-count').innerText = 0;
     document.getElementById('message').innerText = '';
     document.getElementById('draw-count').textContent = 0;
+
+    playerScore = 0;
+    computerScore = 0;
+    message = '';
+    drawCount = 0;
 
     clickSound.play();
 
