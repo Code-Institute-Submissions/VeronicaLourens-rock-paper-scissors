@@ -61,12 +61,12 @@ const drawSound = document.getElementById('draw-sound');
 
 
 soundOff.addEventListener('click', (e) => {
-    
     if(soundOn.classList.contains('on')) {
-
         soundOn.classList.add('active');
         soundOff.classList.remove('active');
     }
+    
+    
 
     // playSound();
     
@@ -234,9 +234,13 @@ function draw() {
  * and display the message when the player wins.
  */
 
+let playerScore = document.getElementById('player-score').innerText;
+let computerScore = document.getElementById('computer-score').innerText;
+let gameIsAlive = false;
+
 function playerWon() {
 
-    let playerScore = document.getElementById('player-score').innerText;
+    //let playerScore = document.getElementById('player-score').innerText;
     document.getElementById('player-score').innerText = ++playerScore;
 
     message.innerHTML = `<h4 id="message">You won and scored!</h4>`;
@@ -253,7 +257,7 @@ function playerWon() {
 
 function computerWon() {
 
-    let computerScore = document.getElementById('computer-score').innerText;
+   // let computerScore = document.getElementById('computer-score').innerText;
     document.getElementById('computer-score').innerText = ++computerScore;
 
     message.innerHTML = `<h4 id="message">PC won and scored!</h4>`;
@@ -273,6 +277,10 @@ function movesCount() {
 
     let movesCount = document.getElementById('moves-count').innerText;
     document.getElementById('moves-count').innerText = ++movesCount;
+    // Perform a check to see if 10 moves are made
+    if (movesCount === 10) {
+        checkWinner(movesCount)
+    }
 
 }
 
@@ -281,13 +289,24 @@ function movesCount() {
  * and display the cheerful celebration message to the winner.
  */
 
-function checkWinner() {
+function checkWinner(movesCount) {
+    
+    if (movesCount === 10 && gameIsAlive === false) {
 
-    if(movesCount === 10) {
-        if(playerScore > computerScore) {
-            alert('Congrats! You won the game!');
-        } else if(playerScore === computerScore) {
-            alert("It's a Draw. Please try again.")
+        if (playerScore === computerScore) {
+
+            message.innerHTML = `<h4 id="message">It's a Draw!</h4>`;
+            message.style.color = 'red';
+            
+        } else if (playerScore > computerScore) {
+
+            message.innerHTML = `<h4 id="message">Congrats! You won!!</h4>`;
+            message.style.color = 'red';
+
+        } else {
+
+            message.innerHTML = `<h4 id="message">Oooeps...you lost and please try again.</h4>`;
+            message.style.color = 'red';
         }
     }
 
@@ -298,7 +317,7 @@ function checkWinner() {
  * to set all the game data to initical state.
  */
 
-document.getElementById('restart-btn').addEventListener('click', (e) => {
+/*document.getElementById('restart-btn').addEventListener('click', (e) => {
 
     document.getElementById('player-score').innerText = 0;
     document.getElementById('computer-score').innerText = 0;
@@ -308,7 +327,9 @@ document.getElementById('restart-btn').addEventListener('click', (e) => {
 
     clickSound.play();
 
-})
+})*/
+
+
 
 
 
