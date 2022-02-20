@@ -3,9 +3,28 @@
  * manipulate the DOM to get variables.
  */
 
+// Header elements
 const gameRulesBtn = document.getElementById('game-rules-btn');
 const closeBtn = document.querySelector('.close-btn');
+const soundOff = document.querySelector('.off');
+const soundOn = document.querySelector('.on');
+
+// Audio sound
+const audios = document.querySelectorAll('audio');
+const clickSound = document.getElementById('click-sound');
+const playerSound = document.getElementById('player-sound');
+const pcSound = document.getElementById('pc-sound');
+const drawSound = document.getElementById('draw-sound');
+
+// Game section
 const popupBox = document.getElementById('popup-box');
+const rock = document.getElementById('rock').innerHTML;
+const paper = document.getElementById('paper').innerHTML;
+const scissors = document.getElementById('scissors').innerHTML;
+const message = document.getElementById('message');
+let playerScore = document.getElementById('player-score').innerText;
+let computerScore = document.getElementById('computer-score').innerText;
+let gameIsAlive = false;
 
 /**
  * Add event listener to the game rules button that fires the funtions,
@@ -19,7 +38,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
     gameRulesBtn.addEventListener('click', (e) => {
         popupBox.style.display = 'block';
-    
         clickSound.play();
 
     });
@@ -36,7 +54,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
     closeBtn.addEventListener('click', (e) => {
         popupBox.style.display = 'none';
-        
         clickSound.play();
 
     });
@@ -50,56 +67,32 @@ document.addEventListener('DOMContentLoaded', (e) => {
  * toggle the audio sound on and off when firing the click function.
  */
 
-const soundOff = document.querySelector('.off');
-const soundOn = document.querySelector('.on');
-
-let soundIsOn = true;
-const clickSound = document.getElementById('click-sound');
-const playerSound = document.getElementById('player-sound');
-const pcSound = document.getElementById('pc-sound');
-const drawSound = document.getElementById('draw-sound');
-
-
 soundOff.addEventListener('click', (e) => {
-    if(soundOn.classList.contains('on')) {
-        soundOn.classList.add('active');
-        soundOff.classList.remove('active');
-    }
-    
-    
 
-    // playSound();
-    
+    for(let audio of audios) {
+
+        if (soundOn.classList.contains('on')) {
+            soundOn.classList.add('active');
+            soundOff.classList.remove('active');
+        }
+        audio.muted = false;
+    }
+
 });
 
 soundOn.addEventListener('click', (e) => {
 
-    if(soundOff.classList.contains('off')) {
+    for(let audio of audios) {
 
-        soundOff.classList.add('active');
-        soundOn.classList.remove('active');
+         if (soundOff.classList.contains('off')) {
+             soundOff.classList.add('active');
+             soundOn.classList.remove('active');
+         }
+
+        audio.muted = true;
     }
 
-    // pauseSound();
-
 });
-
-// function playSound() {
-//     if(soundIsOn) {
-//         clickSound.play();
-
-
-//     }
-// }
-
-// function pauseSound() {
-//     if(soundIsOn == false) {
-//         clickSound.pause();
-//     }
-// }
-
-
-
 
 
 /**
@@ -109,20 +102,12 @@ soundOn.addEventListener('click', (e) => {
  * display PC/computer choice, move counts, message and scores.
  */
 
-const rock = document.getElementById('rock').innerHTML;
-const paper = document.getElementById('paper').innerHTML;
-const scissors = document.getElementById('scissors').innerHTML;
-const message = document.getElementById('message');
-
-
 document.addEventListener('DOMContentLoaded', function() {
 
     let playerChoice = document.getElementsByClassName('choice');
 
     for (let choice of playerChoice) {
         choice.addEventListener('click', function () {
-
-            // alert('You clicked');
 
             let playerInput = this.getAttribute('value');
 
@@ -134,6 +119,27 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 })
+
+
+// function startGame() {
+
+//     let playerChoice = document.getElementsByClassName('choice');
+
+//     for (let choice of playerChoice) {
+//         choice.addEventListener('click', function () {
+
+//             // alert('You clicked');
+
+//             let playerInput = this.getAttribute('value');
+
+//             console.log(playerInput);
+
+//             renderGame(playerInput);
+
+//         })
+//     }
+    
+// }
 
 /**
  * The renderGame function is the primary game,
@@ -222,7 +228,7 @@ function draw() {
     let drawCount = document.getElementById('draw-count').innerText;
     document.getElementById('draw-count').innerText = ++drawCount
 
-    message.innerHTML = `<h4 id="message">It's a Draw!</h4>`;
+    message.innerHTML = `<h4 id="message">Draw!</h4>`;
     message.style.color = '#F27329';
 
     movesCount();
@@ -234,16 +240,12 @@ function draw() {
  * and display the message when the player wins.
  */
 
-let playerScore = document.getElementById('player-score').innerText;
-let computerScore = document.getElementById('computer-score').innerText;
-let gameIsAlive = false;
-
 function playerWon() {
 
     //let playerScore = document.getElementById('player-score').innerText;
     document.getElementById('player-score').innerText = ++playerScore;
 
-    message.innerHTML = `<h4 id="message">You won and scored!</h4>`;
+    message.innerHTML = `<h4 id="message">You scored!</h4>`;
     message.style.color = 'red';
 
     playerSound.play();
@@ -257,10 +259,10 @@ function playerWon() {
 
 function computerWon() {
 
-   // let computerScore = document.getElementById('computer-score').innerText;
+   //let computerScore = document.getElementById('computer-score').innerText;
     document.getElementById('computer-score').innerText = ++computerScore;
 
-    message.innerHTML = `<h4 id="message">PC won and scored!</h4>`;
+    message.innerHTML = `<h4 id="message">PC scored!</h4>`;
     message.style.color = 'blue';
 
     pcSound.play();
@@ -277,20 +279,25 @@ function movesCount() {
 
     let movesCount = document.getElementById('moves-count').innerText;
     document.getElementById('moves-count').innerText = ++movesCount;
+   
     // Perform a check to see if 10 moves are made
     if (movesCount === 10) {
-        checkWinner(movesCount)
+        checkWinner(movesCount);
+
     }
 
 }
 
 /**
  * The checkWinner function is to tell who is the final winner of the game,
- * and display the cheerful celebration message to the winner.
+ * and display the message to state who the winner is.
  */
 
+
 function checkWinner(movesCount) {
-    
+
+    //let gameIsAlive = false;
+
     if (movesCount === 10 && gameIsAlive === false) {
 
         if (playerScore === computerScore) {
@@ -300,12 +307,12 @@ function checkWinner(movesCount) {
             
         } else if (playerScore > computerScore) {
 
-            message.innerHTML = `<h4 id="message">Congrats! You won!!</h4>`;
+            message.innerHTML = `<h4 id="message">Congrats! You won!</h4>`;
             message.style.color = 'red';
 
         } else {
 
-            message.innerHTML = `<h4 id="message">Oooeps...you lost and please try again.</h4>`;
+            message.innerHTML = `<h4 id="message">Ooeps...you lost! Try again.</h4>`;
             message.style.color = 'red';
         }
     }
@@ -317,7 +324,7 @@ function checkWinner(movesCount) {
  * to set all the game data to initical state.
  */
 
-/*document.getElementById('restart-btn').addEventListener('click', (e) => {
+document.getElementById('restart-btn').addEventListener('click', (e) => {
 
     document.getElementById('player-score').innerText = 0;
     document.getElementById('computer-score').innerText = 0;
@@ -327,7 +334,7 @@ function checkWinner(movesCount) {
 
     clickSound.play();
 
-})*/
+})
 
 
 
