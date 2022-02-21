@@ -22,6 +22,7 @@ const rock = document.getElementById('rock').innerHTML;
 const paper = document.getElementById('paper').innerHTML;
 const scissors = document.getElementById('scissors').innerHTML;
 const message = document.getElementById('message');
+const restartBtn = document.getElementById('restart-btn');
 let playerScore = document.getElementById('player-score').innerText;
 let computerScore = document.getElementById('computer-score').innerText;
 let gameIsAlive = false;
@@ -284,7 +285,7 @@ document.addEventListener('DOMContentLoaded', function() {
      * to set all the game data to the initical state.
      */
 
-    document.getElementById('restart-btn').addEventListener('click', (e) => {
+    restartBtn.addEventListener('click', (e) => {
 
         document.getElementById('player-score').innerText = 0;
         document.getElementById('computer-score').innerText = 0;
