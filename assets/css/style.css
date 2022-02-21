@@ -435,15 +435,15 @@ footer {
 
     #choice-container {
         width: 350px;
-        height: 60px;
+        height: 55px;
         margin-top: 25px;
     }
 
     #choice-container>button,
     #computer-choice>button {
-        font-size: 250%;
-        width: 60px;
-        height: 60px;
+        font-size: 220%;
+        width: 55px;
+        height: 55px;
     }
 
     .match-box {
@@ -508,11 +508,6 @@ footer {
 
 @media (min-width: 1281px) {
 
-    /* header */
-    header {
-        padding-top: 0;
-    }
-    
      /* game section */
     .display-container-wrapper{
         height: 650px;
