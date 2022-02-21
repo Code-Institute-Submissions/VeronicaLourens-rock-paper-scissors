@@ -34,7 +34,7 @@ header a {
 #game-rules-btn {
     width: 140px;
     height: 28px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     letter-spacing: 1px;
     color: white;
@@ -221,7 +221,7 @@ header a {
     width: 90px;
     height: 28px;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 1px;
     color: white;
     background: #4753f5;
@@ -310,7 +310,7 @@ footer {
     #game-rules-btn {
         width: 180px;
         height: 35px;
-        font-size: 16px;
+        font-size: 15px;
     }
 
     #toggle-sound img {
@@ -322,7 +322,7 @@ footer {
 
     #popup-box {
         width: 500px;
-        font-size: 16px;
+        font-size: 15px;
         line-height: 25px;
     }
 
@@ -344,7 +344,7 @@ footer {
     }
 
     .match-box p {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .display-container-wrapper {
@@ -370,13 +370,13 @@ footer {
     }
 
     .flex-item p {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     #restart-btn {
         width: 120px;
         height: 35px;
-        font-size: 16px;
+        font-size: 15px;
         margin-top: 30px;
     }
 
