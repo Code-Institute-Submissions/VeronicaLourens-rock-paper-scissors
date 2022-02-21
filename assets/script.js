@@ -263,7 +263,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (playerScore === computerScore) {
 
-                message.innerHTML = `<h4 id="message">It's a Tie game!</h4>`;
+                message.innerHTML = `<h4 id="message">Game over. It's a Tie!</h4>`;
                 message.style.color = 'red';
 
             } else if (playerScore > computerScore) {

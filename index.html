@@ -8,6 +8,7 @@
     <meta name="keywords" content="rock paper scissors game, children's game, computer game">
 
     <title>Rock Paper Scissors</title>
+
     <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
@@ -16,24 +17,24 @@
     <!--page header-->
 
     <header>
+
         <a href="index.html">
             <h1>Rock Paper Scissors</h1>
         </a>
+
         <div class="header-left">
+
             <button id="game-rules-btn" type="button" aria-label="Game rules button">Game Rules >></button>
+
             <div id="toggle-sound">
                 <img class="off active" src="./assets/image/sound-off.png" alt="Sound off image">
                 <img class="on" src="./assets/image/sound-on.png" alt="Sound on image">
             </div>
 
-            <!-- <button id="toggle-sound"></button> -->
-
-
-
         </div>
         
-
     </header>
+
     <!--game section-->
 
     <section id="game-container">
@@ -61,10 +62,12 @@
         <!--game choices-->
 
         <div class="match-box">
+
             <p>Wanna play around?</p>
             <h2>Select your choice below to play:</h2>
 
             <div id="choice-container">
+
                 <button id="rock" class="choice" type="button" value="rock" aria-label="Rock button">
                     <i class="far fa-hand-rock"></i>
                 </button>
@@ -76,6 +79,7 @@
                 <button id="scissors" class="choice" type="button" value="scissors" aria-label="Scissors button">
                     <i class="far fa-hand-scissors"></i>
                 </button>
+
             </div>
 
         </div>
@@ -89,33 +93,28 @@
                 <!--computer choice-->
 
                 <div class="computer-choice-box">
+
                     <h3>PC chose:</h3>
-                    <div id="computer-choice">
-                        <!-- <button class="choice" type="button" value="rock" aria-label="Rock button">
-                            <i class="far fa-hand-rock"></i>
-                        </button> -->
-                    </div>
+                    <div id="computer-choice"></div>
+                    
                 </div>
 
                 <!--move count and message-->
 
                 <div>
 
-                     <div id="message" class="message-box"></div>
+                    <div class="move-count-box">
+                        <h3>Count -- <span id="moves-count">0</span></h3>
+                    </div>
 
-                     <div class="move-count-box">
-                         <h3>Count -- <span id="moves-count">0</span></h3>
-                     </div>
+                    <div id="message" class="message-box"></div>
 
                 </div>
-
-               
-
-                
 
                 <!--game score-->
 
                 <div class="score-box">
+
                     <div class="flex-item">
                         <p>You</p>
                         <p id="player-score">0</p>
@@ -130,6 +129,7 @@
                         <p>PC</p>
                         <p id="computer-score">0</p>
                     </div>
+
                 </div>
 
                 <!--restart button-->
@@ -147,6 +147,7 @@
     <!--audio box-->
 
     <div id="audio-box">
+
         <audio id="click-sound" src="./assets/audio/mouse-click.mp3" preload="auto" type="audio/mpeg" muted="true"></audio>
         <audio id="player-sound" src="./assets/audio/player.wav" preload="auto" type="audio/wav" muted="true"></audio>
         <audio id="pc-sound" src="./assets/audio/pc.wav" preload="auto" type="audio/wav" muted="true"></audio>
@@ -155,10 +156,12 @@
     </div>
 
     <!--page footer-->
+
     <footer>
         <div class="copy-right-box">
 
             <p><i class="far fa-copyright"></i>&nbsp;VeronicaLourens</p>
+
             <a href="https://www.facebook.com/" target="_blank" rel="noopener"
                 aria-label="Visit our Facebook page (open in a new tab">
                 <i class="fab fa-facebook-square"></i>
@@ -173,10 +176,9 @@
 
     </footer>
 
-
     <script src="https://kit.fontawesome.com/c853477dfa.js" crossorigin="anonymous"></script>
 
-
     <script src="./assets/script.js"></script>
+
 </body>
 </html>
