@@ -455,11 +455,11 @@ footer {
     }
 
     .display-container-wrapper {
-        height: 580px;
+        height: 560px;
     }
 
     .display-container {
-        height: 500px;
+        height: 480px;
     }
 
     #computer-choice {
@@ -499,21 +499,27 @@ footer {
 @media (min-width: 1024px) {
      /* game section */
      .display-container-wrapper {
-         height: 620px;
+         height: 600px;
      }
      .display-container {
-        height: 520px;
+        height: 480px;
      }
 }
 
 @media (min-width: 1281px) {
+
+    /* header */
+    header {
+        padding-top: 0;
+    }
+    
      /* game section */
     .display-container-wrapper{
-        height: 680px;
+        height: 650px;
     }
 
     .display-container {
-        height: 550px;
+        height: 480px;
     }
 }
 
