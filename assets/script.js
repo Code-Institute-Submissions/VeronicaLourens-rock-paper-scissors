@@ -264,17 +264,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (playerScore === computerScore) {
 
-                message.innerHTML = `<h4 id="message">Game over. It's a Tie!</h4>`;
+                message.innerHTML = `<h4 id="message">Game over.<br>It's a Tie!</h4>`;
                 message.style.color = 'red';
 
             } else if (playerScore > computerScore) {
 
-                message.innerHTML = `<h4 id="message">Congrats! You won!</h4>`;
+                message.innerHTML = `<h4 id="message">Congratulations!<br> You WON!</h4>`;
                 message.style.color = 'red';
 
             } else {
 
-                message.innerHTML = `<h4 id="message">Oopsie-daisy...you lost! Try again.</h4>`;
+                message.innerHTML = `<h4 id="message">Oopsie-daisy...<br>You lost! Try again.</h4>`;
                 message.style.color = 'red';
             }
         }
