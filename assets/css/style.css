@@ -332,8 +332,7 @@ footer {
         margin-top: 20px;
     }
 
-    #choice-container>button,
-    #computer-choice>button {
+    #choice-container>button {
         font-size: 200%;
         width: 55px;
         height: 55px;
@@ -359,6 +358,12 @@ footer {
         height: 70px;
         margin: 30px auto;
     }
+
+    #computer-choice>button {
+        font-size: 200%;
+        width: 55px;
+        height: 55px;
+     }
 
     .message-box {
         margin: 20px;
