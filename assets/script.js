@@ -269,12 +269,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
             } else if (playerScore > computerScore) {
 
-                message.innerHTML = `<h4 id="message">Congratulations!<br> You WON!</h4>`;
+                message.innerHTML = `<h4 id="message">Congratulations!<br>You WON!</h4>`;
                 message.style.color = 'red';
 
             } else {
 
-                message.innerHTML = `<h4 id="message">Oopsie-daisy...<br>You lost! Try again.</h4>`;
+                message.innerHTML = `<h4 id="message">Oopsie-daisy...<br>You lost!</h4>`;
                 message.style.color = 'red';
             }
         }
@@ -287,18 +287,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
     restartBtn.addEventListener('click', (e) => {
 
-        document.getElementById('player-score').innerText = 0;
-        document.getElementById('computer-score').innerText = 0;
-        document.getElementById('moves-count').innerText = 0;
-        document.getElementById('message').innerText = '';
-        document.getElementById('draw-count').textContent = 0;
+        // document.getElementById('player-score').innerText = 0;
+        // document.getElementById('computer-score').innerText = 0;
+        // document.getElementById('moves-count').innerText = 0;
+        // document.getElementById('message').innerText = '';
+        // document.getElementById('draw-count').textContent = 0;
 
-        playerScore = 0;
-        computerScore = 0;
-        message = '';
-        drawCount = 0;
+        // playerScore = 0;
+        // computerScore = 0;
+        // message = '';
+        // drawCount = 0;
 
         clickSound.play();
+
+        // reload the game on clicking the restart button
+
+        window.location.reload();
 
     });
 
