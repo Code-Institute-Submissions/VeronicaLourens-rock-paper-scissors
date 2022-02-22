@@ -21,10 +21,10 @@ const popupBox = document.getElementById('popup-box');
 const rock = document.getElementById('rock').innerHTML;
 const paper = document.getElementById('paper').innerHTML;
 const scissors = document.getElementById('scissors').innerHTML;
-const message = document.getElementById('message');
 const restartBtn = document.getElementById('restart-btn');
 let playerScore = document.getElementById('player-score').innerText;
 let computerScore = document.getElementById('computer-score').innerText;
+let message = document.getElementById('message');
 let gameIsAlive = false;
 
 
@@ -293,10 +293,10 @@ document.addEventListener('DOMContentLoaded', function() {
         // document.getElementById('message').innerText = '';
         // document.getElementById('draw-count').textContent = 0;
 
-        // playerScore = 0;
-        // computerScore = 0;
-        // message = '';
-        // drawCount = 0;
+        playerScore = 0;
+        computerScore = 0;
+        message = '';
+        drawCount = 0;
 
         clickSound.play();
 
