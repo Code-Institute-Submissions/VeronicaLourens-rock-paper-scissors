@@ -35,7 +35,7 @@ let gameIsAlive = false;
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    let playerChoice = document.querySelectorAll('choice');
+    let playerChoice = document.querySelectorAll('.choice');
 
     for (let choice of playerChoice) {
         choice.addEventListener('click', function () {
