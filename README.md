@@ -65,7 +65,7 @@ The site is responsive accordingly with the different media screen sizes from 32
 
 * ### Game section
 
-  * The pop up box contains the game rules that would be displayed after user clicking the **Game Rules** button on the header.
+  * The pop up box contains the game rules that appears on the page after user clicks the **Game Rules** button on the header.
 
     ![Popup](assets/readmeimg/popup.jpg)
 
@@ -77,13 +77,13 @@ The site is responsive accordingly with the different media screen sizes from 32
 
   [Back to top](#rock-paper-scissors)
 
-  * The **messages**, **round count**, **computer choice**,**scores** are displayed on the page after user started by clicking the hand buttons.
+  * The **messages**, **round count**, **computer choice** and **scores** are displayed on the page after user starts to play the game by clicking the hand buttons.
 
     ![Display](assets/readmeimg/gamebk.jpg)
 
   [Back to top](#rock-paper-scissors)
 
-  * A game over message appears on the page when the game reaches  10 rounds. It tells the user the final result. The Restart button is visible for user to play the game again. The page would be reloaded on clicking the Restart button.
+  * A game over message appears on the page when the game reaches 10 rounds. It tells the user the final result. The Restart button is visible for user to play the game again. The page would be reloaded on clicking the Restart button.
 
     ![Game over win message](assets/readmeimg/msg1.jpg)
 
@@ -107,7 +107,7 @@ The site is responsive accordingly with the different media screen sizes from 32
 
 [Back to top](#rock-paper-scissors)
 
-* Footer
+* ### Footer
   
   The footer of the page contains a copyright text and social media links.
 
@@ -115,7 +115,7 @@ The site is responsive accordingly with the different media screen sizes from 32
 
   [Back to top](#rock-paper-scissors)
 
-* Future Features
+* ### Future Features
 
   Additional animation to be added with celebration audio sound and big emojis for praise user’s achievement. An option of user account to be implemented for saving the game records each time user plays the game.
 
@@ -131,7 +131,7 @@ The site is responsive accordingly with the different media screen sizes from 32
 [Back to top](#rock-paper-scissors)
 
 ## Testing
-* Code Validation
+* ### Code Validation
 
   The **Rock Paper Scissors** site's html and css codes have been validated by the **W3C HTML Markup Valication** and **W3C CSS Validation** services by entering the site's URL address.
   * W3C Markup Validation - No errors found.
@@ -151,7 +151,7 @@ The site is responsive accordingly with the different media screen sizes from 32
 
 [Back to top](#rock-paper-scissors)
 
-* Lighthouse Testing
+* ### Lighthouse Testing
 
   The site has been tested on Chrome Incognito window using Dev Tools for both mobile and the desktop.
 
@@ -167,7 +167,7 @@ The site is responsive accordingly with the different media screen sizes from 32
 
 [Back to top](#rock-paper-scissors)
 
-* Responsiveness Testing
+* ### Responsiveness Testing
 
   * The website has been manually tested and passed on the **Google Chrome Dev Tools** and the **Responsive Design Checker**.
 
@@ -189,7 +189,7 @@ The site is responsive accordingly with the different media screen sizes from 32
 
 [Back to top](#rock-paper-scissors)
 
-* Browsers Testing
+* ### Browsers Testing
 
   The website has been tested on different browers and fully responsive on the devices I have at home while using the following browsers.
 
@@ -200,7 +200,7 @@ The site is responsive accordingly with the different media screen sizes from 32
 
 [Back to top](#rock-paper-scissors)
 
-* Resolved Known-bugs
+* ### Resolved Known-bugs
   
   * Background and foreground colors do not have a sufficient contrast ratio;
   
@@ -223,7 +223,7 @@ The site is responsive accordingly with the different media screen sizes from 32
 
 ## Deployment
 
-* Site Deployment
+* ### Site Deployment
   
   The Rock Paper Scissors game website is deployed to GitHub page. The site's link -  https://veronicalourens.github.io/rock-paper-scissors/
 
@@ -238,13 +238,13 @@ The site is responsive accordingly with the different media screen sizes from 32
 
 [Back to top](#rock-paper-scissors)
 
-* Clone the Project
+* ### Clone the Project
 * 
 [Back to top](#rock-paper-scissors)
 
 ## Credit
 
-* Media
+* ### Media
   * [Adobe Color](https://color.adobe.com/create/color-wheel) - extract the site's color theme.
   * [EightShape Contrast](https://contrast-grid.eightshapes.com/) - color contrast grid.
   * [Google Fonts](https://fonts.google.com/specimen/Lato#standard-styles) - provides the fonts for the site.
