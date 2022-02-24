@@ -149,9 +149,9 @@ header a {
     background: rgba(23, 209, 209, .6);
 }
 
-#draw-msg,
-#win-msg,
-#lost-msg {
+.draw-msg,
+.win-msg,
+.lost-msg {
     width: 260px;
     min-height: 100px;
     box-shadow: 0px 0px 6px 6px rgb(152, 54, 243);
@@ -162,13 +162,16 @@ header a {
     align-content: center;
     margin-top: 20px;
     border-radius: 50%;
-    display: none;
 
 }
 
-#draw-msg p,
-#win-msg p,
-#lost-msg p {
+.modal {
+    display: none;
+}
+
+.draw-msg p,
+.win-msg p,
+.lost-msg p {
     text-align: center;
     font-size: 14px;
     font-weight: bold;
@@ -375,16 +378,17 @@ footer {
         font-size: 15px;
     }
 
-    #draw-msg,
-    #win-msg,
-    #lost-msg {
+    .draw-msg,
+    .win-msg,
+    .lost-msg {
         width: 320px;
         min-height: 120px;
+        margin-top: 40px;
     }
 
-    #draw-msg p,
-    #win-msg p,
-    #lost-msg p {
+    .draw-msg p,
+    .win-msg p,
+    .lost-msg p {
         font-size: 18px;
     }
 
@@ -496,16 +500,17 @@ footer {
     }
 
 
-    #draw-msg,
-    #win-msg,
-    #lost-msg {
+    .draw-msg,
+    .win-msg,
+    .lost-msg {
         width: 350px;
         min-height: 130px;
+        margin-top: 40px;
     }
 
-    #draw-msg p,
-    #win-msg p,
-    #lost-msg p {
+    .draw-msg p,
+    .win-msg p,
+    .lost-msg p {
         font-size: 20px;
     }
 
@@ -553,16 +558,17 @@ footer {
 @media (min-width: 1024px) {
      /* game section */
 
-     #draw-msg,
-     #win-msg,
-     #lost-msg {
+     .draw-msg,
+     .win-msg,
+     .lost-msg {
          width: 380px;
          min-height: 140px;
+         margin-top: 50px;
      }
 
-     #draw-msg p,
-     #win-msg p,
-     #lost-msg p {
+     .draw-msg p,
+     .win-msg p,
+     .lost-msg p {
         font-size: 20px;
 
      }
