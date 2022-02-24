@@ -364,7 +364,7 @@ footer {
         margin-top: 20px;
     }
 
-    #choice-container>button {
+    .choice {
         font-size: 200%;
         width: 55px;
         height: 55px;
@@ -484,7 +484,7 @@ footer {
         margin-top: 25px;
     }
 
-    #choice-container>button,
+    .choice,
     #computer-choice>button {
         font-size: 220%;
         width: 55px;
