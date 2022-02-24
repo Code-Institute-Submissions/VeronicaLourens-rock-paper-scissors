@@ -270,15 +270,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (playerScore === computerScore) {
 
-               drawMsg.style.display = 'block';
+               drawMsg.style.display = 'flex';
 
             } else if (playerScore > computerScore) {
 
-                 winMsg.style.display = 'block';
+                 winMsg.style.display = 'flex';
 
             } else {
 
-                lostMsg.style.display = 'block';
+                lostMsg.style.display = 'flex';
             }
 
             matchBox.style.display = 'none';
