@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (computerInput === rock) {
                 incrementDrawCount();
-                return
+                return;
 
             } else if (computerInput === paper) {
                 incrementComputerScore();
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (computerInput === paper) {
                 incrementDrawCount();
-                return
+                return;
 
             } else if (computerInput === scissors) {
                 incrementComputerScore();
@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (computerInput === scissors) {
                 incrementDrawCount();
-                return
+                return;
 
             } else if (computerInput === rock) {
                 incrementComputerScore();
@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function incrementDrawCount() {
 
         let drawCount = document.getElementById('draw-count').innerText;
-        document.getElementById('draw-count').innerText = ++drawCount
+        document.getElementById('draw-count').innerText = ++drawCount;
 
         message.innerHTML = `<h4 id="message">Draw!</h4>`;
         message.style.color = '#F27329';
@@ -297,7 +297,6 @@ document.addEventListener('DOMContentLoaded', function() {
         playerScore = 0;
         computerScore = 0;
         message = '';
-        drawCount = 0;
 
         clickSound.play();
 

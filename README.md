@@ -11,7 +11,7 @@ Click here to view the live website - [Rock Paper Scissors](https://veronicalour
 
 ## User Experience UX
 
-* User Stories
+* ### User Stories
   
   * As a first time user, I want the website to be easily accessible on different devices and work on different browsers.
   * As a first time user, I want the site to have a vivid theme.
@@ -20,16 +20,16 @@ Click here to view the live website - [Rock Paper Scissors](https://veronicalour
 
 [Back to top](#rock-paper-scissors)
 
-* Site Owner Stories
+* ### Site Owner Stories
   
-    The purpose of the website is to provide a fun and exciting easy game for young and old to enjoy. The site should be accessible and responsive on different media screens and browsers.
+  The purpose of the website is to provide a fun and exciting easy game for young and old to enjoy. The site should be accessible and responsive on different media screens and browsers.
 
-* Wireframe
+* ### Wireframe
   ![Rock Paper Scissors](assets/readmeimg/wireframe.jpg)
 
 [Back to top](#rock-paper-scissors)
 
-* Design Choice
+* ### Design Choice
   * Color Theme
   
       The site uses white color for the background and black color for the text. It has a lovely picture of two playful children playing the Rock Paper Scissors game for the background. The site uses bright colors based on the color theme that the colors change slidely to darker color. The buttons are with different shapes. The design is child and family friendly to attract little audience.
@@ -53,7 +53,7 @@ The site is responsive accordingly with the different media screen sizes from 32
 
 [Back to top](#rock-paper-scissors)
 
-* Header
+* ### Header
   
   The Header contains the name of the game **Rock Paper Scissors** on the left side, **Game Rules** button and the sound **on** and **off** image on the right. 
   
@@ -63,7 +63,7 @@ The site is responsive accordingly with the different media screen sizes from 32
 
 [Back to top](#rock-paper-scissors)
 
-* Game section
+* ### Game section
 
   * The pop up box contains the game rules that would be displayed after user clicking the **Game Rules** button on the header.
 
@@ -83,9 +83,7 @@ The site is responsive accordingly with the different media screen sizes from 32
 
   [Back to top](#rock-paper-scissors)
 
-  * Game over message
-
-    A game over message appears on the page when the game reaches 10 rounds. It tells the user the final result. The Restart button is visible for user to play the game again. The page would be reloaded on clicking the Restart button.
+  * A game over message appears on the page when the game reaches  10 rounds. It tells the user the final result. The Restart button is visible for user to play the game again. The page would be reloaded on clicking the Restart button.
 
     ![Game over win message](assets/readmeimg/msg1.jpg)
 
@@ -144,6 +142,12 @@ The site is responsive accordingly with the different media screen sizes from 32
   * W3C CSS Validation - No errors found.
 
     ![CSS code](assets/readmeimg/w3c-css.jpg)
+
+  * Javascript Validation
+
+
+
+  
 
 [Back to top](#rock-paper-scissors)
 
