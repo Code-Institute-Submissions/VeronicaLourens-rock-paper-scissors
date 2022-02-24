@@ -21,11 +21,18 @@ const popupBox = document.getElementById('popup-box');
 const rock = document.getElementById('rock').innerHTML;
 const paper = document.getElementById('paper').innerHTML;
 const scissors = document.getElementById('scissors').innerHTML;
-const restartBtn = document.getElementById('restart-btn');
+
 let playerScore = document.getElementById('player-score').innerText;
 let computerScore = document.getElementById('computer-score').innerText;
 let message = document.getElementById('message');
-let gameIsAlive = false;
+
+// hidden elements
+ const matchBox = document.querySelector('.match-box');
+ const computerChoiceBox = document.querySelector('.computer-choice-box');
+ const drawMsg = document.getElementById('draw-msg');
+ const winMsg = document.getElementById('win-msg');
+ const lostMsg = document.getElementById('lost-msg');
+ const restartBtn = document.getElementById('restart-btn');
 
 
 /**
@@ -257,25 +264,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function checkWinner(movesCount) {
 
-        //let gameIsAlive = false;
+        let gameIsAlive = false;
 
         if (movesCount === 10 && gameIsAlive === false) {
 
             if (playerScore === computerScore) {
 
-                message.innerHTML = `<h4 id="message">Game over.<br>It's a Tie!</h4>`;
-                message.style.color = 'red';
+               drawMsg.style.display = 'block';
 
             } else if (playerScore > computerScore) {
 
-                message.innerHTML = `<h4 id="message">Congratulations!<br>You WON!</h4>`;
-                message.style.color = 'red';
+                 winMsg.style.display = 'block';
 
             } else {
 
-                message.innerHTML = `<h4 id="message">Oopsie-daisy...<br>You lost!</h4>`;
-                message.style.color = 'red';
+                lostMsg.style.display = 'block';
             }
+
+            matchBox.style.display = 'none';
+            message.style.display = 'none';
+            computerChoiceBox.style.display = 'none';
+            restartBtn.style.display = 'block';
+  
         }
     }
 

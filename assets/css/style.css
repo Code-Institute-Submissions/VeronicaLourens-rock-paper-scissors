@@ -257,6 +257,7 @@ header a {
     border-bottom: 4px solid #091181;
     cursor: pointer;
     box-shadow: 3px 3px 3px 3px rgb(175, 175, 243);
+    display: none;
 }
 
 #restart-btn:hover {
