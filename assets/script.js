@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */ 
+
 /**
  * Wait for the DOM to finish loading the page,
  * manipulate the DOM to set variables in global enviroment.
