@@ -63,24 +63,49 @@ The site is responsive accordingly with the different media screen sizes from 32
 
 [Back to top](#rock-paper-scissors)
 
-* Main page
+* Game section
 
   * The pop up box contains the game rules that would be displayed after user clicking the **Game Rules** button on the header.
 
     ![Popup](assets/readmeimg/popup.jpg)
 
-[Back to top](#rock-paper-scissors)
 
-  * A title **Select your choice to play** indicates to start the game by clicking the **hand** buttons. The **hand** buttons are animated that show the zoom and turning effects.
+  * A title **Select your choice to play** indicates to start the game by clicking the **hand** buttons. The **hand** buttons are animated that has the zoom and turning effects.
   
 
     ![Choice](assets/readmeimg/matchbox.jpg)
 
-[Back to top](#rock-paper-scissors)
+  [Back to top](#rock-paper-scissors)
 
-  * The **computer choice**, **round count**, **messages**, **scores**  and a **Restart** button are displayed on the page after the game started.
+  * The **messages**, **round count**, **computer choice**,**scores** are displayed on the page after user started by clicking the hand buttons.
 
     ![Display](assets/readmeimg/gamebk.jpg)
+
+  [Back to top](#rock-paper-scissors)
+
+  * Game over message
+
+    A game over message appears on the page when the game reaches 10 rounds. It tells the user the final result. The Restart button is visible for user to play the game again. The page would be reloaded on clicking the Restart button.
+
+    ![Game over win message](assets/readmeimg/msg1.jpg)
+
+    <details><summary>Game over lost message.</summary>
+
+    ![Game over lost message](assets/readmeimg/msg2.jpg)
+
+    </details>
+
+    <details><summary>Game over draw message.</summary>
+
+    ![Game over draw message](assets/readmeimg/msg3.jpg)
+
+    </details>
+
+    <details><summary><b>Game over page display.</b></summary>
+
+    ![Game over message](assets/readmeimg/gameover.jpg)
+
+    </details>
 
 [Back to top](#rock-paper-scissors)
 
@@ -90,7 +115,7 @@ The site is responsive accordingly with the different media screen sizes from 32
 
   ![Footer](assets/readmeimg/footer.jpg)
 
-[Back to top](#rock-paper-scissors)
+  [Back to top](#rock-paper-scissors)
 
 * Future Features
 
