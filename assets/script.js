@@ -49,12 +49,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             let playerInput = this.getAttribute('value');
 
-
             renderGame(playerInput);
 
         });
     }
-
 
     /**
      * Add event listener to the header elemets.
@@ -85,7 +83,6 @@ document.addEventListener('DOMContentLoaded', function() {
         clickSound.play();
 
     });
-
 
     /**
      * Add event listener to the sound toggle icon,
@@ -120,7 +117,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     });
 
-
     /**
      * The renderGame function is the primary game function,
      * generate computer's random choice on clicking any of the three hand buttons,
@@ -145,14 +141,14 @@ document.addEventListener('DOMContentLoaded', function() {
         if (playerInput === 'rock') {
 
             if (computerInput === rock) {
-                draw();
+                incrementDrawCount();
                 return
 
             } else if (computerInput === paper) {
-                computerWon();
+                incrementComputerScore();
 
             } else {
-                playerWon();
+                incrementPlayerScore();
 
             }
         }
@@ -161,14 +157,14 @@ document.addEventListener('DOMContentLoaded', function() {
         if (playerInput === 'paper') {
 
             if (computerInput === paper) {
-                draw();
+                incrementDrawCount();
                 return
 
             } else if (computerInput === scissors) {
-                computerWon();
+                incrementComputerScore();
 
             } else {
-                playerWon();
+                incrementPlayerScore();
             }
         }
 
@@ -176,14 +172,14 @@ document.addEventListener('DOMContentLoaded', function() {
         if (playerInput === 'scissors') {
 
             if (computerInput === scissors) {
-                draw();
+                incrementDrawCount();
                 return
 
             } else if (computerInput === rock) {
-                computerWon();
+                incrementComputerScore();
 
             } else {
-                playerWon();
+                incrementPlayerScore();
             }
         }
 
@@ -192,11 +188,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     /**
-     * The draw function is to increment the draw count by 1 each time,
+     * The incrementDrawCount function is to increment the draw count by 1 each time,
      * display the message when the result is a "Draw".
      */
 
-    function draw() {
+    function incrementDrawCount() {
 
         let drawCount = document.getElementById('draw-count').innerText;
         document.getElementById('draw-count').innerText = ++drawCount
@@ -209,11 +205,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     /**
-     * The playerWon function is to increment player's score 1 point each time,
+     * The incrementPlayerScore function is to increment player's score 1 point each time,
      * and display the message when the player wins.
      */
 
-    function playerWon() {
+    function incrementPlayerScore() {
 
         document.getElementById('player-score').innerText = ++playerScore;
 
@@ -225,11 +221,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     /**
-     * The computerWon function is to increment PC's score 1 point each time,
+     * The incrementComputerScore function is to increment PC's score 1 point each time,
      * and display the message when PC wins.
      */
 
-    function computerWon() {
+    function incrementComputerScore() {
 
         document.getElementById('computer-score').innerText = ++computerScore;
 
@@ -296,12 +292,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     restartBtn.addEventListener('click', (e) => {
 
-        // document.getElementById('player-score').innerText = 0;
-        // document.getElementById('computer-score').innerText = 0;
-        // document.getElementById('moves-count').innerText = 0;
-        // document.getElementById('message').innerText = '';
-        // document.getElementById('draw-count').textContent = 0;
-
         playerScore = 0;
         computerScore = 0;
         message = '';
@@ -314,7 +304,6 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.reload();
 
     });
-
 
 });
 
