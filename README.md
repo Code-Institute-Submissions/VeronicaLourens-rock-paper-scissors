@@ -337,7 +337,9 @@ The site is responsive accordingly with the different media screen sizes from 32
 
 * Whilst I have tried to deviate as much as possible, there might be some similarities in the code as the project was influenced by the code along Love Maths project at [Code Institute]().
 
-* I relied upon the support from Code Institue [online tutors]() and mentor [Precious Ijege](), Slack community and my families. Thanks to all those who support my learning journey. I use W3schools, MDN web docs and stack overflow for general references throughout the project.
+* I relied upon the support from Code Institue [online tutors](),  mentor [Precious Ijege](),  project lead [David Bowers](), Slack community and my families. Great thanks to all those who support my learning journey. 
+  
+* I use W3schools, MDN web docs and stack overflow for general references throughout the project. I watched the tutorial videos of JavasCript Full Course for Beginners by [Dave Gray]() on Youtube to gain better understanding about JavaScript basics.
 
 * The [Rock Paper Scissors](https://veronicalourens.github.io/rock-paper-scissors/) website is intended for education purpose of completing the Portfolio Project 2 for the Diploma of Full Stack Software Development course at [Code Institue](https://codeinstitute.net/).
 
