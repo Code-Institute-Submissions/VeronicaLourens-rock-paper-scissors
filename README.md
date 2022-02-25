@@ -1,4 +1,4 @@
-# Rock Paper Scissors Game
+# Rock Paper Scissors
 
 ## Site Overview
 
@@ -32,7 +32,7 @@ Click here to view the live website - [Rock Paper Scissors](https://veronicalour
 * ### Design Choice
   * Color Theme
   
-      The site uses white color for the background and black color for the text. It has a lovely picture of two playful children playing the Rock Paper Scissors game for the background. The site uses bright colors based on the color theme that the colors change slidely to darker color. The buttons are with different shapes. The design is child and family friendly to attract little audience.
+      The site uses white color for the background and black color for the text. It has a lovely picture of two playful children playing the Rock Paper Scissors game for the background of the game section. The site uses bright colors based on the color theme that the colors change slidely to darker color. The buttons are with different shapes. The design is child and family friendly to attract little audience.
 
       ![Color Theme](assets/readmeimg/colortheme.jpg)
 
@@ -328,6 +328,8 @@ The site is responsive accordingly with the different media screen sizes from 32
   * [W3C CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator/) - validates the site's CSS code.
   * [Youtube](https://www.youtube.com/) - provides extra video learning materials.
   * [Compressor](https://compressor.io/) - to compress the site's image and screenshots.
+  * [JSHint](https://jshint.com) - to validate the site's JavaScript code.
+  * [Responsive design checker]() - to check the site's responsiveness.
 
 [Back to top](#rock-paper-scissors)
 
