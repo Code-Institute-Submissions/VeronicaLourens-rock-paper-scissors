@@ -294,11 +294,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     restartBtn.addEventListener('click', (e) => {
 
-        playerScore = 0;
-        computerScore = 0;
-        message = '';
-
         clickSound.play();
+
+        //reset all the date back to initial state
+
+        document.getElementById('player-score').innerText = 0;
+        document.getElementById('computer-score').innerText = 0;
+        document.getElementById('moves-count').innerText = 0;
+        document.getElementById('message').innerText = '';
+        document.getElementById('draw-count').textContent = 0;
 
         // reload the game on clicking the restart button
 
