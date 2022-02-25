@@ -206,22 +206,46 @@ The site is responsive accordingly with the different media screen sizes from 32
 [Back to top](#rock-paper-scissors)
 
 * ### Resolved Known-bugs
-  
-  * Background and foreground colors do not have a sufficient contrast ratio;
-  
-    * Adjusted the background color for the game rules and restart button to solve the problem.
-  
-  * First Content Paint and Largest Contentful Paint;
-  
-    * Replaced the background image with compressed and resized image to solve the problem.
-  
-  * Document doesn't use legible font size;
-  
-    * Increased the font-size and changed the font size units to slove the problem.
-  
-  * Overlapping header elements and social media links.
 
-    * Added margin to the header elements and social media links to solve the problem.
+  * #### Lighthouse texting bugs
+  
+    * Background and foreground colors do not have a sufficient contrast ratio;
+  
+      * Adjusted the background color for the game rules and restart button to solve the problem.
+  
+    * First Content Paint and Largest Contentful Paint;
+  
+      * Replaced the background image with compressed and resized image to solve the problem.
+  
+    * Document doesn't use legible font size;
+  
+      * Increased the font-size and changed the font size units to slove the problem.
+  
+    * Overlapping header elements and social media links.
+
+      * Added margin to the header elements and social media links to solve the problem.
+
+  * #### JSHint validation warnings
+  
+    * There were total 51 warnings:
+  
+      * 4 **Missing semicolons**;
+      * 1 **Undefined variable: drawCount**;
+      * 1 **Functions declared within loops referencing an outer scoped variable may lead to confusing semantics**;
+      * 45 **Warnings about ES6**.
+
+        <details><summary>JSHint validation result.</summary>
+
+          ![JSHint result](assets/readmeimg/jshint.jpg)
+
+        </details>
+
+
+    * I took the following steps to close the warnings:
+  
+      * Add semicolon to the four lines of code where it was missing.
+      * Delete the undifined variable **drawCount**.
+      * Add a comment of **jshint esversion: 6** to the top of the script.js file.
 
 
 [Back to top](#rock-paper-scissors)
