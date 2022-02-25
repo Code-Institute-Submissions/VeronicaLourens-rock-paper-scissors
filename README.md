@@ -138,7 +138,7 @@ The website is created using **mobile-first design approach** and added media qu
 ## Testing
 * ### Code Validation
 
-  The **Rock Paper Scissors** site's html and css codes have been validated by the **W3C HTML Markup Valication** and **W3C CSS Validation** services by entering the site's URL address.
+  The **Rock Paper Scissors** site's HTML, CSS and JavaScript codes have been validated by the **W3C HTML Markup Valication**, **W3C CSS Validation** and **JSHint Validation** services by entering the site's URL address.
   * W3C Markup Validation - No errors found.
     
     ![HTML code](assets/readmeimg/w3c-html.jpg)
