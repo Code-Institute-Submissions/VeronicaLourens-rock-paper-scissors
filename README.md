@@ -148,15 +148,26 @@ The site is responsive accordingly with the different media screen sizes from 32
 
     ![CSS code](assets/readmeimg/w3c-css.jpg)
 
-  * Javascript Validation - One warning found.
+  * JSHint JavaScript Validation - One warning found.
 
-    This warning is caused by the function declared within the **for loop** at line **49** in the script file. The function fires on the click event that loop through each of the elements that has a **class** attribute with the value of **choice**.
+    * Metrics:
+  
+      * ```There are 15 functions in the script file.```
+      * ```Functions with the largest signature take 1 arguments, while the median is 1.```
+      * ```Largest function has 24 statements in it, while the median is 4.```
+      * ```The most complex function has a cyclomatic complexity value of 10 while the median is 1.```
+  
+    * One warning:
 
-    <details><summary>JSHint validation result.</summary>
+      ```49 Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (renderGame)```
 
-      ![JSHint result](assets/readmeimg/jshint00.jpg)
+      This warning is caused by the function declared within the **for loop** at line **49** in the script.js file. The function fires on the click event that loop through each of the elements that has a **class** attribute with the value of **choice**.
 
-    </details>
+      <details><summary>JSHint validation result.</summary>
+
+        ![JSHint result](assets/readmeimg/jshint00.jpg)
+
+      </details>
   
 
 [Back to top](#rock-paper-scissors)
@@ -230,7 +241,7 @@ The site is responsive accordingly with the different media screen sizes from 32
 
       * Added margin to the header elements and social media links to solve the problem.
 
-  * #### JSHint validation warnings
+  * #### JSHint JavaScript Validation Warnings
   
     * There were total 51 warnings:
   
@@ -330,6 +341,7 @@ The site is responsive accordingly with the different media screen sizes from 32
   * [Compressor](https://compressor.io/) - to compress the site's image and screenshots.
   * [JSHint](https://jshint.com) - to validate the site's JavaScript code.
   * [Responsive design checker]() - to check the site's responsiveness.
+  * [Favicon generator]() - to generate the site's favicon icon.
 
 [Back to top](#rock-paper-scissors)
 
