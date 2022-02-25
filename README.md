@@ -239,7 +239,20 @@ The site is responsive accordingly with the different media screen sizes from 32
 [Back to top](#rock-paper-scissors)
 
 * ### Clone the Project
-* 
+  
+  Steps to clone the project from GitHub as following:
+  1. On my GitHub rock-paper-scissors repository page, click the **Code** tab next to the green **Gitpod** button;
+  2. In the **Clone** board, click the icon on the right side of the URL under **HTTPS** to copy the given URL;
+  3. Go to the local IDE of your choice, create a file where the project would be cloned.
+  4. Type **git clone** on the the terminal, then paste the copied URL from GitHub;
+  5. Press **Enter** to complete the clone process.
+
+      <details><summary>Clone the project.</summary>
+
+        ![Clone the project](assets/readmeimg/clone.jpg)
+
+      </details>
+   
 [Back to top](#rock-paper-scissors)
 
 ## Credit
@@ -266,7 +279,7 @@ The site is responsive accordingly with the different media screen sizes from 32
 
 ## Acknowledgement
 
-* Whilst I have tried to deviate as much as possible, there might be some similarities in the code as the Super Cars project was influenced by the code along Love Maths project at [Code Institute]().
+* Whilst I have tried to deviate as much as possible, there might be some similarities in the code as the project was influenced by the code along Love Maths project at [Code Institute]().
 
 * I relied upon the support from Code Institue [online tutors]() and mentor [Precious Ijege](), Slack community and my families. Thanks to all those who support my learning journey. I use W3schools, MDN web docs and stack overflow for general references throughout the project.
 
