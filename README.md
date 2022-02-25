@@ -143,10 +143,15 @@ The site is responsive accordingly with the different media screen sizes from 32
 
     ![CSS code](assets/readmeimg/w3c-css.jpg)
 
-  * Javascript Validation
+  * Javascript Validation - One warning found.
 
+    This warning is caused by the function declared within the **for loop** at line **49** in the script file. The function fires on the click event that loop through each of the elements that has a **class** attribute with the value of **choice**.
 
+    <details><summary>JSHint validation result.</summary>
 
+      ![JSHint result](assets/readmeimg/jshint00.jpg)
+
+    </details>
   
 
 [Back to top](#rock-paper-scissors)
