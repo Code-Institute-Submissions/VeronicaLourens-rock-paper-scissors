@@ -45,9 +45,9 @@ Click here to view the live website - [Rock Paper Scissors](https://veronicalour
 [Back to top](#rock-paper-scissors)
 
 ## Existing Features
-The website has only one page. The header on the top, the game area in the middle of the page that has a background picture, short texts and the game choices. The footer on the bottom of the site. 
+The website has only one page. The header on the top, the game area in the middle of the page that has a background picture, short texts and the game choices. The footer is on the bottom of the site. 
 
-Some of the page content are hidden when the page loaded. The hidden content would be displayed after user interacts with the page by clicking the buttons. 
+Some of the page content are hidden when the page loaded. The hidden content would be displayed after user interacts with the page by clicking the buttons. The audio sound is muted by default. There is a sound toggle icon to toggle the audio sound.
 
 The site is responsive accordingly with the different media screen sizes from 320px up to 4000px.
 
