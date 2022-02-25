@@ -88,7 +88,9 @@ The website is created using **mobile-first design approach** and added media qu
 
   [Back to top](#rock-paper-scissors)
 
-  * A game over message appears on the page when the game reaches 10 rounds. It tells the user the final result. The Restart button is visible for user to play the game again. The page would be reloaded on clicking the Restart button.
+  * A game over message, total rounds, final game scores and a restart button are displayed on the page when the game reaches 10 rounds. It tells the user the final result. 
+  
+  * The Restart button indicates to user to re-play the game again. All of the data would be reset to the initial state. The page would be reloaded on clicking the Restart button.
 
     ![Game over win message](assets/readmeimg/msg1.jpg)
 
