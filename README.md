@@ -35,8 +35,13 @@ Click here to view the live website - [Rock Paper Scissors](https://veronicalour
       The site uses white color for the background and black color for the text. It has a lovely picture of two playful children playing the Rock Paper Scissors game for the background. The site uses bright colors based on the color theme that the colors change slidely to darker color. The buttons are with different shapes. The design is child and family friendly to attract little audience.
 
       ![Color Theme](assets/readmeimg/colortheme.jpg)
-      
-      [Color Grid](assets/readmeimg/colorgrid.jpg)
+
+      <details><summary>Color contrast grid.</summary>
+
+      ![Color contrast grid](assets/readmeimg/colorgrid.jpg)
+
+      </details>
+
 
   * Typography
   
