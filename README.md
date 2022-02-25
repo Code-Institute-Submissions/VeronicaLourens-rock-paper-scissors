@@ -245,10 +245,10 @@ The site is responsive accordingly with the different media screen sizes from 32
   
     * There were total 51 warnings:
   
-      * 4 **Missing semicolons**;
-      * 1 **Undefined variable: drawCount**;
-      * 1 **Functions declared within loops referencing an outer scoped variable may lead to confusing semantics**;
-      * 45 **Warnings about ES6**.
+      * 4 Missing semicolons;
+      * 1 Undefined variable: drawCount;
+      * 1 Functions declared within loops referencing an outer scoped variable may lead to confusing semantics;
+      * 45 Warnings about ES6.
 
         <details><summary>JSHint validation result.</summary>
 
@@ -257,11 +257,11 @@ The site is responsive accordingly with the different media screen sizes from 32
         </details>
 
 
-    * I took the following steps to close the warnings:
+    * I took the following steps to improve and close the warnings:
   
-      * Add semicolon to the four lines of code where it was missing.
-      * Delete the undifined variable **drawCount**.
-      * Add a comment of **jshint esversion: 6** to the top of the script.js file.
+      * Added semicolons to the four lines of code where they were missing .
+      * Deleted the undefined variable **drawCount**.
+      * Added a comment of **jshint esversion: 6** to the top of the script.js file.
 
 
 [Back to top](#rock-paper-scissors)
