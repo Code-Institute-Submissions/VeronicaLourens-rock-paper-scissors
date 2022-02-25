@@ -36,7 +36,6 @@ let message = document.getElementById('message');
  const lostMsg = document.querySelector('.lost-msg');
  const restartBtn = document.getElementById('restart-btn');
 
-
 /**
  * Add event listener to the buttons.
  * Start to play game on clicking each of the game choice buttons.
@@ -49,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
     for (let choice of playerChoice) {
         choice.addEventListener('click', function () {
 
-            let playerInput = this.getAttribute('value');
+            let playerInput = this.getAttribute('id');
 
             renderGame(playerInput);
 
