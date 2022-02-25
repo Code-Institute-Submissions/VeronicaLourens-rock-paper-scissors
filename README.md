@@ -15,7 +15,7 @@ Click here to view the live website - [Rock Paper Scissors](https://veronicalour
   
   * As a first time user, I want the website to be easily accessible on different devices and work on different browsers.
   * As a first time user, I want the site to have a vivid theme.
-  * As a first time user, I want to know what the game rules are and how to play it.
+  * As a returning user, I want to know what the game rules are and how to play it.
   * As a game user, I want to know the game scores and result of win or lost.
 
 [Back to top](#rock-paper-scissors)
@@ -220,6 +220,26 @@ The site is responsive accordingly with the different media screen sizes from 32
 
 
 [Back to top](#rock-paper-scissors)
+
+* ### Testing User Stories
+
+  * As a first time user, I want the website to be easily accessible on different devices and work on different browsers.
+  
+    * User is able to access the site on different media screens using **Google Chrome**, **Microsoft Edge**, **Safari**, **Mozilla Firefox**.
+  
+  * As a first time user, I want the site to have a vivid theme.
+
+    * The site contains a vivid background picture and a variety of colors and shapes. 
+  
+  * As a returning user, I want to know what the game rules are and how to play it. 
+  
+    * User is able to find the game rules and instructions by clicking the **Game Rules** button on the header.
+  
+  * As a game user, I want to know the game scores and result of win or lost.
+
+    * User is able to see the game scores, move counts, draw numbers and the message on clicking each of the hand buttons. User is informed with the final result with a popup message box.
+
+
 
 ## Deployment
 
