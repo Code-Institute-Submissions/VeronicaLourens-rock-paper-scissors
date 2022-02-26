@@ -131,8 +131,9 @@ document.addEventListener('DOMContentLoaded', function() {
         let computerChoice = [rock, paper, scissors];
         let computerInput = computerChoice[Math.floor(Math.random() * 3)];
 
-        // display computer's random choice on the page
-        document.getElementById('computer-choice').innerHTML = computerInput;
+        // create an element to display the computer choice
+        let html = `<button>${computerInput}</button>`;
+        document.getElementById('computer-choice').innerHTML = html;
 
         // set the display container visible when the game started.
         document.querySelector('.display-container').style.visibility = 'visible';
@@ -294,7 +295,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         clickSound.play();
 
-        //reset all the date back to initial state
+        //reset all the data back to initial state
 
         document.getElementById('player-score').innerText = 0;
         document.getElementById('computer-score').innerText = 0;
