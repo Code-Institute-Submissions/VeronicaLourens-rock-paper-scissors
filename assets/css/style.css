@@ -179,7 +179,6 @@ header a {
     margin: 5px;
 }
 
-
 .display-container-wrapper {
     width: 100%;
     background: url(../image/bckgd.jpg) center center no-repeat;
@@ -199,8 +198,8 @@ header a {
 }
 
 #computer-choice {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     background: rgba(23, 209, 209, .6);
     margin: 0 auto;
     border-radius: 10px;
@@ -406,8 +405,8 @@ footer {
 
     #computer-choice>button {
         font-size: 200%;
-        width: 55px;
-        height: 55px;
+        width: 60px;
+        height: 60px;
      }
 
     .flex-item {
@@ -480,15 +479,25 @@ footer {
 
     #choice-container {
         width: 350px;
-        height: 55px;
+        height: 60px;
         margin-top: 25px;
     }
 
-    .choice,
+    .choice {
+        font-size: 220%;
+        width: 60px;
+        height: 60px;
+    }
+
+    #computer-choice {
+        width: 75px;
+        height: 75px;
+    }
+
     #computer-choice>button {
         font-size: 220%;
-        width: 55px;
-        height: 55px;
+        width: 65px;
+        height: 65px;
     }
 
     .match-box {
@@ -498,7 +507,6 @@ footer {
     .match-box p {
         font-size: 18px;
     }
-
 
     .draw-msg,
     .win-msg,
