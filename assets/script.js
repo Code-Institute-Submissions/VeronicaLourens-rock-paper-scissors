@@ -131,9 +131,8 @@ document.addEventListener('DOMContentLoaded', function() {
         let computerChoice = [rock, paper, scissors];
         let computerInput = computerChoice[Math.floor(Math.random() * 3)];
 
-        // create an element to display the computer choice
-        let html = `<button>${computerInput}</button>`;
-        document.getElementById('computer-choice').innerHTML = html;
+        // display computer's random choice on the page
+        document.getElementById('computer-choice').innerHTML = computerInput;
 
         // set the display container visible when the game started.
         document.querySelector('.display-container').style.visibility = 'visible';
