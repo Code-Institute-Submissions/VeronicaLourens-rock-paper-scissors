@@ -37,11 +37,15 @@ let message = document.getElementById('message');
  const restartBtn = document.getElementById('restart-btn');
 
 /**
- * Add event listener to the buttons.
- * Start to play game on clicking each of the game choice buttons.
+ * Add event listeners to the buttons when the DOM content is loaded.
  */
 
 document.addEventListener('DOMContentLoaded', function() {
+
+    /**
+     * To get computer's random choice on each time user clicks the hand buttons. 
+     * Start to play game on clicking each of the game choice buttons.
+     */
 
     let playerChoice = document.querySelectorAll('.choice');
 
@@ -50,7 +54,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
             let playerInput = this.getAttribute('id');
 
-            renderGame(playerInput);
+             // to get computer's random choice
+            let computerChoice = [rock, paper, scissors];
+            let computerInput = computerChoice[Math.floor(Math.random() * 3)];
+
+             // to display the computer choice
+            let html = `<button>${computerInput}</button>`;
+            document.getElementById('computer-choice').innerHTML = html;
+
+             // to set the display container visible when the game started.
+            document.querySelector('.display-container').style.visibility = 'visible';
+
+            renderGame(playerInput, computerInput);
 
         });
     }
@@ -119,24 +134,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     /**
-     * The renderGame function is the primary game function,
-     * generate computer's random choice on clicking any of the three hand buttons,
-     * display computer's choice on the page to tell what computer choice is,
      * compares the choices between player and the computer.
      */
 
-    function renderGame(playerInput) {
-
-        // get computer's random choice
-        let computerChoice = [rock, paper, scissors];
-        let computerInput = computerChoice[Math.floor(Math.random() * 3)];
-
-        // create an element to display the computer choice
-        let html = `<button>${computerInput}</button>`;
-        document.getElementById('computer-choice').innerHTML = html;
-
-        // set the display container visible when the game started.
-        document.querySelector('.display-container').style.visibility = 'visible';
+    function renderGame(playerInput, computerInput) {
 
         // choice of rock
         if (playerInput === 'rock') {
