@@ -106,11 +106,10 @@ The website is created using **mobile-first design approach** and added media qu
 
     </details>
 
-    <details><summary><b>Game over page display.</b></summary>
 
     ![Game over message](assets/readmeimg/gameover.jpg)
 
-    </details>
+    
 
 [Back to top](#rock-paper-scissors)
 
@@ -165,12 +164,9 @@ The website is created using **mobile-first design approach** and added media qu
 
       This warning is caused by the function declared within the **for loop** at line **49** in the script.js file. The function fires on the click event that loop through each of the elements that has a **class** attribute with the value of **choice**.
 
-      <details><summary>JSHint validation result.</summary>
 
         ![JSHint result](assets/readmeimg/jshint00.jpg)
 
-      </details>
-  
 
 [Back to top](#rock-paper-scissors)
 
@@ -314,11 +310,8 @@ The website is created using **mobile-first design approach** and added media qu
   4. Type **git clone** on the the terminal, then paste the copied URL from GitHub;
   5. Press **Enter** to complete the clone process.
 
-      <details><summary>Clone the project.</summary>
+     ![Clone the project](assets/readmeimg/clone.jpg)
 
-        ![Clone the project](assets/readmeimg/clone.jpg)
-
-      </details>
    
 [Back to top](#rock-paper-scissors)
 
