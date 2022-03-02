@@ -92,6 +92,8 @@ The website is created using **mobile-first design approach** and added media qu
   
   * The Restart button indicates to user to re-play the game again. All of the data would be reset to the initial state. The page would be reloaded on clicking the Restart button.
 
+    ![Game over message](assets/readmeimg/gameover.jpg)
+
     ![Game over win message](assets/readmeimg/msg1.jpg)
 
     <details><summary>Game over lost message.</summary>
@@ -106,8 +108,6 @@ The website is created using **mobile-first design approach** and added media qu
 
     </details>
 
-
-    ![Game over message](assets/readmeimg/gameover.jpg)
 
     
 
@@ -338,8 +338,8 @@ The website is created using **mobile-first design approach** and added media qu
  
   * [Freepik](https://www.freepik.com/) - provides the background image for free.
   * [Free icon shop](https://freeiconshop.com/) - provides the audio sound control icons.
+  * [Fesliyanstudios](https://www.fesliyanstudios.com/) - provides the audios for the buttons and messages.
  
-  
   * [MDN Web Docs](https://developer.mozilla.org/en-US/) - provides reference materials.
   * [Stack Overflow](https://stackoverflow.com/) - provides extra support information.
   * [Slack]() - provides extra support for the course and the project.
