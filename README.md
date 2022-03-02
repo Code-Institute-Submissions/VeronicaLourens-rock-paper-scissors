@@ -208,14 +208,13 @@ The website is created using **mobile-first design approach** and added media qu
 
 [Back to top](#rock-paper-scissors)
 
-* ### Browsers Testing
+* ### Browser Compatibility Testing
 
-  The website has been tested on different browers and fully responsive on the devices I have at home while using the following browsers.
+  The website has been tested on the following browers. The site's compatibility and the functionality are fine with no issues. The website's appearence looks good using the following browsers. 
 
   * **Google Chrome**
   * **Microsoft Edge**
   * **Safari**
-  * **Mozilla Firefox**
 
 [Back to top](#rock-paper-scissors)
 
@@ -306,8 +305,8 @@ The website is created using **mobile-first design approach** and added media qu
   Steps to clone the project from GitHub as following:
   1. On my GitHub rock-paper-scissors repository page, click the **Code** tab next to the green **Gitpod** button;
   2. In the **Clone** board, click the icon on the right side of the URL under **HTTPS** to copy the given URL;
-  3. Go to the local IDE of your choice, create a file where the project would be cloned.
-  4. Type **git clone** on the the terminal, then paste the copied URL from GitHub;
+  3. Go to the local IDE of your choice.
+  4. Type **git clone** in the terminal, then paste the copied URL from GitHub;
   5. Press **Enter** to complete the clone process.
 
      ![Clone the project](assets/readmeimg/clone.jpg)
