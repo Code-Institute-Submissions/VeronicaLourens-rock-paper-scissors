@@ -225,7 +225,7 @@ header a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .flex-item {
@@ -395,7 +395,7 @@ footer {
         height: 500px;
     }
     .display-container {
-        height: 450px; 
+        height: 380px; 
     }
 
     #computer-choice {
@@ -527,7 +527,7 @@ footer {
     }
 
     .display-container {
-        height: 480px;
+        height: 380px;
     }
 
     #computer-choice {
@@ -584,7 +584,7 @@ footer {
         height: 600px;
      }
      .display-container {
-        height: 480px;
+        height: 380px;
      }
 }
 
@@ -596,7 +596,7 @@ footer {
     }
 
     .display-container {
-        height: 480px;
+        height: 380px;
     }
 }
 
@@ -607,7 +607,7 @@ footer {
     }
 
     .display-container {
-        height: 580px;
+        height: 450px;
     }
 }
 
@@ -618,7 +618,7 @@ footer {
     }
 
     .display-container {
-        height: 600px;
+        height: 500px;
     }
 }
 
