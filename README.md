@@ -133,6 +133,16 @@ The website is created using **mobile-first design approach** and added media qu
 * [JavaScript]() - to make to site interactive with buttons' clickable functionalities.
 * [GitHub]() - to host and deploy the website with its content.
 * [GitPod]() - to edit the code and push the code to GitHub page.
+* [W3C Markup Validator](https://validator.w3.org/) - validates the site's HTML code.
+* [W3C CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator/) - validates the site's CSS code.
+
+* [JSHint](https://jshint.com) - to validate the site's JavaScript code.
+* [Responsive design checker]() - to check the site's responsiveness.
+* [Favicon generator]() - to generate the site's favicon icon.
+* [Am I Responsive](http://ami.responsivedesign.is) - generates the site's responsiveness preview image on the top of the README file.
+
+* [Chrome Dev Tools]() - carries out the **Lighthouse** testing and debug.
+
 
 [Back to top](#rock-paper-scissors)
 
@@ -316,26 +326,34 @@ The website is created using **mobile-first design approach** and added media qu
 
 ## Credit
 
-* ### Media
+* ### Content
+  * [Google Fonts](https://fonts.google.com/specimen/Lato#standard-styles) - provides the fonts for the site.
+
+  * [Font Awesome](https://fontawesome.com/) - provides the hand icons used for the game.
+
   * [Adobe Color](https://color.adobe.com/create/color-wheel) - extract the site's color theme.
   * [EightShape Contrast](https://contrast-grid.eightshapes.com/) - color contrast grid.
-  * [Google Fonts](https://fonts.google.com/specimen/Lato#standard-styles) - provides the fonts for the site.
+
+* ### Media
+ 
   * [Freepik](https://www.freepik.com/) - provides the background image for free.
-  * [Free icon shop](https://freeiconshop.com/) - provides the sound control icons.
-  * [Am I Responsive](http://ami.responsivedesign.is) - generates the site's responsiveness on different screens.
-  * [Font Awesome](https://fontawesome.com/) - provides the hand icons used for the game.
-  * [W3C School](https://www.w3schools.com/) - provides the extra learning materials.
+  * [Free icon shop](https://freeiconshop.com/) - provides the audio sound control icons.
+ 
+  
   * [MDN Web Docs](https://developer.mozilla.org/en-US/) - provides reference materials.
   * [Stack Overflow](https://stackoverflow.com/) - provides extra support information.
   * [Slack]() - provides extra support for the course and the project.
-  * [Chrome Dev Tools]() - carries out the **Lighthouse** testing and debug.
-  * [W3C Markup Validator](https://validator.w3.org/) - validates the site's HTML code.
-  * [W3C CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator/) - validates the site's CSS code.
-  * [Youtube](https://www.youtube.com/) - provides extra video learning materials.
+ 
+  * [Youtube](https://www.youtube.com/) - provides extra learning materials.
   * [Compressor](https://compressor.io/) - to compress the site's image and screenshots.
-  * [JSHint](https://jshint.com) - to validate the site's JavaScript code.
-  * [Responsive design checker]() - to check the site's responsiveness.
-  * [Favicon generator]() - to generate the site's favicon icon.
+
+* ### Code
+    * The CSS code for the box shadow and hover effect were based on the understanding of the examples on [W3C School](https://www.w3schools.com/) website.
+    * The CSS code for the sticky footer were based on the knowledge gained on [CSS-TRICKS]().
+    * The JS code to toggle the audio sound were inspired by the guidance from [Dave Gray]() on YouTube. 
+    * The code to hide the images in README file was based on the project example from other student at Code Institute.
+  
+ 
 
 [Back to top](#rock-paper-scissors)
 
