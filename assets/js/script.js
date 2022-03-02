@@ -8,15 +8,15 @@
 // Header elements variables
 const gameRulesBtn = document.getElementById('game-rules-btn');
 const closeBtn = document.querySelector('.close-btn');
-const soundOff = document.querySelector('.off');
-const soundOn = document.querySelector('.on');
+// const soundOff = document.querySelector('.off');
+// const soundOn = document.querySelector('.on');
 
 // Audio sound varibles
-const audios = document.querySelectorAll('audio');
+/*const audios = document.querySelectorAll('audio');
 const clickSound = document.getElementById('click-sound');
 const playerSound = document.getElementById('player-sound');
 const pcSound = document.getElementById('pc-sound');
-const drawSound = document.getElementById('draw-sound');
+const drawSound = document.getElementById('draw-sound');*/
 
 // Game section variables
 const popupBox = document.getElementById('popup-box');
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
      * and to toggle the sound control icon.
      */
 
-    soundOff.addEventListener('click', (e) => {
+    /*soundOff.addEventListener('click', (e) => {
 
         for (let audio of audios) {
 
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
             audio.muted = true;
         }
 
-    });
+    });*/
 
     /**
      * compares the choices between player and the computer.
