@@ -11,6 +11,12 @@ const drawSound = new Audio('assets/audio/draw.wav');
 
 let audioIsOn = false;
 
+// mute the audio sound by default when the page loaded
+// clickSound.muted = true;
+// playerSound.muted = true;
+// pcSound.muted = true;
+// drawSound.muted = true;
+
 /**
  * Add event listener to the icons.
  * The functions are to toggle the audio sound on and off on clicking the icons.
@@ -21,7 +27,7 @@ soundOn.addEventListener('click', turnAudioOff);
 
 function turnAudioOn() {
 
-    audioIsOn = false;
+    audioIsOn = true;
 
     if (soundOn.classList.contains('on')) {
         soundOn.classList.add('active');
@@ -32,7 +38,7 @@ function turnAudioOn() {
 
 function turnAudioOff() {
 
-    audioIsOn = true;
+    audioIsOn = false;
 
     if (soundOff.classList.contains('off')) {
         soundOff.classList.add('active');
@@ -71,14 +77,15 @@ soundOn.addEventListener('click', (e) => {
 /**
  * The function is to toggle the audio sound.
  */
-function toggleAudioSound() {
+// function toggleAudioSound() {
 
-    if (!audioIsOn) {
-        clickSound.play();
-        playerSound.play();
+//     if (!audioIsOn) {
 
-    } else {
-        clickSound.pause();
-        playerSound.pause();
-    }
-}
+//         turnAudioOn();
+
+//     } else {
+
+//         turnAudioOff();
+       
+//     }
+// }

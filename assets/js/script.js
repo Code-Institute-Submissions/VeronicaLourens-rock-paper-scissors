@@ -2,21 +2,23 @@
 
 /**
  * Wait for the DOM to finish loading the page,
- * manipulate the DOM to set variables in global enviroment.
+ * manipulate the DOM to get the variables in global enviroment.
  */
 
 // Header elements variables
 const gameRulesBtn = document.getElementById('game-rules-btn');
 const closeBtn = document.querySelector('.close-btn');
-// const soundOff = document.querySelector('.off');
-// const soundOn = document.querySelector('.on');
+const soundOff = document.querySelector('.off');
+const soundOn = document.querySelector('.on');
 
-// Audio sound varibles
-/*const audios = document.querySelectorAll('audio');
-const clickSound = document.getElementById('click-sound');
-const playerSound = document.getElementById('player-sound');
-const pcSound = document.getElementById('pc-sound');
-const drawSound = document.getElementById('draw-sound');*/
+// Audio sound track varibles
+const clickSound = new Audio('assets/audio/mouse-click.mp3');
+const playerSound = new Audio('assets/audio/player.wav');
+const pcSound = new Audio('assets/audio/pc.wav');
+const drawSound = new Audio('assets/audio/draw.wav');
+
+// Set the audio sound off by default when the page loaded
+let audioIsOn = false;
 
 // Game section variables
 const popupBox = document.getElementById('popup-box');
@@ -28,7 +30,7 @@ let playerScore = document.getElementById('player-score').innerText;
 let computerScore = document.getElementById('computer-score').innerText;
 let message = document.getElementById('message');
 
-// hidden elements
+// Hidden elements
  const matchBox = document.querySelector('.match-box');
  const computerChoiceBox = document.querySelector('.computer-choice-box');
  const drawMsg = document.querySelector('.draw-msg');
@@ -38,6 +40,7 @@ let message = document.getElementById('message');
 
 /**
  * Add event listeners to the buttons when the DOM content is loaded.
+ * Initiate all the game functionalities.
  */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -71,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     /**
-     * Add event listener to the header elemets.
+     * Add event listener to the game rules button.
      * The function is to change background color on moving mouse in and out,
      * open a popup box on clicking the game rules button,
      * close the popup box on clicking the close button.
@@ -80,7 +83,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     gameRulesBtn.addEventListener('click', (e) => {
         popupBox.style.display = 'block';
-        clickSound.play();
+
+        if(audioIsOn) {
+            clickSound.play();
+
+        } else {
+            clickSound.pause();
+        }
 
     });
 
@@ -96,7 +105,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     closeBtn.addEventListener('click', (e) => {
         popupBox.style.display = 'none';
-        clickSound.play();
+        
+         if (audioIsOn) {
+             clickSound.play();
+
+         } else {
+             clickSound.pause();
+         }
 
     });
 
@@ -106,32 +121,28 @@ document.addEventListener('DOMContentLoaded', function() {
      * and to toggle the sound control icon.
      */
 
-    /*soundOff.addEventListener('click', (e) => {
+    soundOff.addEventListener('click', turnAudioOn);
+    soundOn.addEventListener('click', turnAudioOff);
 
-        for (let audio of audios) {
+    function turnAudioOn() {
 
-            if (soundOn.classList.contains('on')) {
-                soundOn.classList.add('active');
-                soundOff.classList.remove('active');
-            }
-            audio.muted = false;
+        audioIsOn = true;
+
+        if (soundOn.classList.contains('on')) {
+            soundOn.classList.add('active');
+            soundOff.classList.remove('active');
         }
+    }
 
-    });
+    function turnAudioOff() {
 
-    soundOn.addEventListener('click', (e) => {
+        audioIsOn = false;
 
-        for (let audio of audios) {
-
-            if (soundOff.classList.contains('off')) {
-                soundOff.classList.add('active');
-                soundOn.classList.remove('active');
-            }
-
-            audio.muted = true;
+        if (soundOff.classList.contains('off')) {
+            soundOff.classList.add('active');
+            soundOn.classList.remove('active');
         }
-
-    });*/
+    }
 
     /**
      * compares the choices between player and the computer.
@@ -203,7 +214,13 @@ document.addEventListener('DOMContentLoaded', function() {
         message.style.color = '#F27329';
 
         movesCount();
-        drawSound.play();
+       
+        if (audioIsOn) {
+            drawSound.play();
+
+        } else {
+            drawSound.pause();
+        }
     }
 
     /**
@@ -218,7 +235,12 @@ document.addEventListener('DOMContentLoaded', function() {
         message.innerHTML = `<h4 id="message">You scored!</h4>`;
         message.style.color = 'red';
 
-        playerSound.play();
+        if (audioIsOn) {
+            playerSound.play();
+
+        } else {
+            pcSound.pause();
+        }
 
     }
 
@@ -234,7 +256,12 @@ document.addEventListener('DOMContentLoaded', function() {
         message.innerHTML = `<h4 id="message">PC scored!</h4>`;
         message.style.color = 'blue';
 
-        pcSound.play();
+        if (audioIsOn) {
+            pcSound.play();
+
+        } else {
+            pcSound.pause();
+        }
 
     }
 
@@ -251,7 +278,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Perform a check to see if 10 moves are made
         if (movesCount === 10) {
             checkWinner(movesCount);
-
         }
     }
 
@@ -283,7 +309,6 @@ document.addEventListener('DOMContentLoaded', function() {
             message.style.display = 'none';
             computerChoiceBox.style.display = 'none';
             restartBtn.style.display = 'block';
-  
         }
     }
 
@@ -294,7 +319,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     restartBtn.addEventListener('click', (e) => {
 
-        clickSound.play();
+        if (audioIsOn) {
+            clickSound.play();
+
+        } else {
+            clickSound.pause();
+        }
 
         //reset all the data back to initial state
 
@@ -311,10 +341,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 });
-
-
-
-
-
-
-
