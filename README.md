@@ -8,6 +8,16 @@ Click here to view the live website - [Rock Paper Scissors](https://veronicalour
 
 ![Rock Paper Scissors](assets/readmeimg/gamepg.jpg)
 
+  
+  ## Table of Content
+  
+  - [User Experience UX](#user-experience-ux)
+  - [Existing Features](#existing-features)
+  - [Technologies Userd](#technologies-userd)
+  - [Testing](#testing)
+  - [Deployment](#deployment)
+  - [Credit](#credit)
+  - [Acknowledgement](#acknowledgement)
 
 ## User Experience UX
 
@@ -172,7 +182,7 @@ The website is created using **mobile-first design approach** and added media qu
 
       ```56 Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (renderGame)```
 
-      This warning is caused by the function declared within the **for loop** at line **49** in the script.js file. The function fires on the click event that loop through each of the elements that has a **class** attribute with the value of **choice**.
+      This warning is caused by the function declared within the **for loop** at line **56** in the script.js file. The function fires on the click event that loop through each of the elements that has a **class** attribute with the value of **choice**.
 
 
         ![JSHint result](assets/readmeimg/jshint00.jpg)
