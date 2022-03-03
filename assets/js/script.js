@@ -39,14 +39,14 @@ let message = document.getElementById('message');
  const restartBtn = document.getElementById('restart-btn');
 
 /**
- * Add event listeners to the buttons when the DOM content is loaded.
- * Initiate all the game functionalities.
+ * Initiate all the game functionalities when the DOMContentLoaded event fires.
  */
 
 document.addEventListener('DOMContentLoaded', function() {
 
     /**
-     * To get computer's random choice on each time user clicks the hand buttons. 
+     * To get the player choices / hand buttons in the DOM.
+     * Add event listener to each of the hand buttons.
      * Start to play game on clicking each of the game choice buttons.
      */
 
@@ -57,11 +57,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
             let playerInput = this.getAttribute('id');
 
-             // to get computer's random choice
+             // to get computer's random choice each time user clicks the hand buttons
             let computerChoice = [rock, paper, scissors];
             let computerInput = computerChoice[Math.floor(Math.random() * 3)];
 
-             // to display the computer choice
+             // to display the computer choice on the page
             let html = `<button>${computerInput}</button>`;
             document.getElementById('computer-choice').innerHTML = html;
 
@@ -77,8 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
      * Add event listener to the game rules button.
      * The function is to change background color on moving mouse in and out,
      * open a popup box on clicking the game rules button,
-     * close the popup box on clicking the close button.
-     * The buttons have audio sound associated.
+     * The button has audio sound associated.
      */
 
     gameRulesBtn.addEventListener('click', (e) => {
@@ -103,6 +102,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     });
 
+    /**
+     * Add event listener to the close buttton.
+     * close the popup box on clicking the close button,
+     * the button has audio sound associated.
+     */
+
     closeBtn.addEventListener('click', (e) => {
         popupBox.style.display = 'none';
         
@@ -116,9 +121,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     /**
-     * Add event listener to the sound toggle icon,
-     * The function is to toggle the audio sound on and off,
-     * and to toggle the sound control icon.
+     * Add event listener to the sound toggle icons,
+     * The functions are to toggle the audio sound on and off,
+     * and to toggle the sound control icons.
      */
 
     soundOff.addEventListener('click', turnAudioOn);
@@ -150,7 +155,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function renderGame(playerInput, computerInput) {
 
-        // choice of rock
+        // player choice of rock
+
         if (playerInput === 'rock') {
 
             if (computerInput === rock) {
@@ -166,7 +172,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
 
-        // choice of paper
+        // player choice of paper
+
         if (playerInput === 'paper') {
 
             if (computerInput === paper) {
@@ -181,7 +188,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
 
-        // choice of scissors
+        // player choice of scissors
+
         if (playerInput === 'scissors') {
 
             if (computerInput === scissors) {
@@ -202,7 +210,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     /**
      * The incrementDrawCount function is to increment the draw count by 1 each time,
-     * display the message when the result is a "Draw".
+     * display the message on the page when the result is a "Draw".
      */
 
     function incrementDrawCount() {
@@ -225,7 +233,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     /**
      * The incrementPlayerScore function is to increment player's score 1 point each time,
-     * and display the message when the player wins.
+     * and display the message on the page when the player wins.
      */
 
     function incrementPlayerScore() {
@@ -246,7 +254,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     /**
      * The incrementComputerScore function is to increment PC's score 1 point each time,
-     * and display the message when PC wins.
+     * and display the message on the page when PC wins.
      */
 
     function incrementComputerScore() {
@@ -283,7 +291,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     /**
      * The checkWinner function is to tell who is the final winner,
-     * and display the message to state the result.
+     * and display the message on the page to state the result.
      */
 
     function checkWinner(movesCount) {
