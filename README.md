@@ -262,21 +262,21 @@ The website is created using **mobile-first design approach** and added media qu
 
   #### Lighthouse texting bugs
   
-    * Background and foreground colors do not have a sufficient contrast ratio;
+  * Background and foreground colors do not have a sufficient contrast ratio;
   
-      * Adjusted the background color for the game rules and restart button to solve the problem.
+    * Adjusted the background color for the game rules and restart button to solve the problem.
   
-    * First Content Paint and Largest Contentful Paint;
+  * First Content Paint and Largest Contentful Paint;
   
-      * Replaced the background image with compressed and resized image to solve the problem.
+    * Replaced the background image with compressed and resized image to solve the problem.
   
-    * Document doesn't use legible font size;
+  * Document doesn't use legible font size;
   
-      * Increased the font-size and changed the font size units to slove the problem.
+    * Increased the font-size and changed the font size units to slove the problem.
   
-    * Overlapping header elements and social media links.
+  * Overlapping header elements and social media links.
 
-      * Added margin to the header elements and social media links to solve the problem.
+    * Added margin to the header elements and social media links to solve the problem.
 
 #### JSHint JavaScript Validation Warnings
   
