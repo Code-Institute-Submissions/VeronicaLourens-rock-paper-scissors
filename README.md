@@ -164,13 +164,13 @@ The website is created using **mobile-first design approach** and added media qu
     * Metrics:
   
       * ```There are 15 functions in the script file.```
-      * ```Functions with the largest signature take 1 arguments, while the median is 1.```
-      * ```Largest function has 24 statements in it, while the median is 4.```
-      * ```The most complex function has a cyclomatic complexity value of 10 while the median is 1.```
+      * ```Functions with the largest signature take 2 arguments, while the median is 0.```
+      * ```Largest function has 19 statements in it, while the median is 6.```
+      * ```The most complex function has a cyclomatic complexity value of 10 while the median is 2.```
   
     * One warning:
 
-      ```49 Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (renderGame)```
+      ```56 Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (renderGame)```
 
       This warning is caused by the function declared within the **for loop** at line **49** in the script.js file. The function fires on the click event that loop through each of the elements that has a **class** attribute with the value of **choice**.
 
