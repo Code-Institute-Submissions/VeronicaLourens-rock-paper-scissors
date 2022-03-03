@@ -171,6 +171,7 @@ The website is created using **mobile-first design approach** and added media qu
 * [Am I Responsive](http://ami.responsivedesign.is) - generates the site's responsiveness preview image on the top of the README file.
 
 * [Chrome Dev Tools]() - carries out the **Lighthouse** testing and debug.
+* [Balsamiq]() - to make the project's wireframes.
 
 
 [Back to top](#rock-paper-scissors)
