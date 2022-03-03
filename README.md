@@ -8,20 +8,39 @@ Click here to view the live website - [Rock Paper Scissors](https://veronicalour
 
 ![Rock Paper Scissors](assets/readmeimg/gamepg.jpg)
 
-  
-  ## Table of Content
-  
+## Table of Content
   - [User Experience UX](#user-experience-ux)
+    - [User Stories](#user-stories)
+    - [Site Owner Stories](#site-owner-stories)
+    - [Wireframe](#wireframe)
+    - [Design Choice](#design-choice)
   - [Existing Features](#existing-features)
+    - [Header](#header)
+    - [Game section](#game-section)
+    - [Footer](#footer)
+    - [Future Features](#future-features)
   - [Technologies Userd](#technologies-userd)
   - [Testing](#testing)
+    - [Code Validation](#code-validation)
+    - [Lighthouse Testing](#lighthouse-testing)
+    - [Responsiveness Testing](#responsiveness-testing)
+    - [Browser Compatibility Testing](#browser-compatibility-testing)
+    - [Resolved Known-bugs](#resolved-known-bugs)
+      - [Lighthouse texting bugs](#lighthouse-texting-bugs)
+      - [JSHint JavaScript Validation Warnings](#jshint-javascript-validation-warnings)
+    - [Testing User Stories](#testing-user-stories)
   - [Deployment](#deployment)
+    - [Site Deployment](#site-deployment)
+    - [Clone the Project](#clone-the-project)
   - [Credit](#credit)
+    - [Content](#content)
+    - [Media](#media)
+    - [Code](#code)
   - [Acknowledgement](#acknowledgement)
 
 ## User Experience UX
 
-* ### User Stories
+  ### User Stories
   
   * As a first time user, I want the website to be easily accessible on different devices and work on different browsers.
   * As a first time user, I want the site to have a vivid theme.
@@ -30,16 +49,16 @@ Click here to view the live website - [Rock Paper Scissors](https://veronicalour
 
 [Back to top](#rock-paper-scissors)
 
-* ### Site Owner Stories
+  ### Site Owner Stories
   
   The purpose of the website is to provide a fun and exciting easy game for young and old to enjoy. The site should be accessible and responsive on different media screens and browsers.
 
-* ### Wireframe
+  ### Wireframe
   ![Rock Paper Scissors](assets/readmeimg/wireframe.jpg)
 
 [Back to top](#rock-paper-scissors)
 
-* ### Design Choice
+  ### Design Choice
   * Color Theme
   
       The site uses white color for the background and black color for the text. It has a lovely picture of two playful children playing the Rock Paper Scissors game for the background of the game section. The site uses bright colors based on the color theme that the colors change slidely to darker color. There are many different shapes with different colors to attract little children. The design is child and family friendly to attract little audience.
@@ -68,7 +87,7 @@ The website is created using **mobile-first design approach** and added media qu
 
 [Back to top](#rock-paper-scissors)
 
-* ### Header
+ ### Header
   
   The Header contains the name of the game **Rock Paper Scissors** on the left side, **Game Rules** button and the sound **on** and **off** image on the right. 
   
@@ -78,7 +97,7 @@ The website is created using **mobile-first design approach** and added media qu
 
 [Back to top](#rock-paper-scissors)
 
-* ### Game section
+  ### Game section
 
   * The pop up box contains the game rules that appears on the page after user clicks the **Game Rules** button on the header.
 
@@ -123,7 +142,7 @@ The website is created using **mobile-first design approach** and added media qu
 
 [Back to top](#rock-paper-scissors)
 
-* ### Footer
+  ### Footer
   
   The footer of the page contains a copyright text and social media links.
 
@@ -131,7 +150,7 @@ The website is created using **mobile-first design approach** and added media qu
 
   [Back to top](#rock-paper-scissors)
 
-* ### Future Features
+  ### Future Features
 
   Additional animation to be added with celebration audio sound and big emojis for praise user’s achievement. An option of user account to be implemented for saving the game records each time user plays the game.
 
@@ -157,7 +176,7 @@ The website is created using **mobile-first design approach** and added media qu
 [Back to top](#rock-paper-scissors)
 
 ## Testing
-* ### Code Validation
+  ### Code Validation
 
   The **Rock Paper Scissors** site's HTML, CSS and JavaScript codes have been validated by the **W3C HTML Markup Valication**, **W3C CSS Validation** and **JSHint Validation** services by entering the site's URL address.
   * W3C Markup Validation - No errors found.
@@ -190,7 +209,7 @@ The website is created using **mobile-first design approach** and added media qu
 
 [Back to top](#rock-paper-scissors)
 
-* ### Lighthouse Testing
+  ### Lighthouse Testing
 
   The site has been tested on Chrome Incognito window using Dev Tools for both mobile and the desktop.
 
@@ -206,7 +225,7 @@ The website is created using **mobile-first design approach** and added media qu
 
 [Back to top](#rock-paper-scissors)
 
-* ### Responsiveness Testing
+  ### Responsiveness Testing
 
   * The website has been manually tested and passed on the **Google Chrome Dev Tools** and the **Responsive Design Checker**.
 
@@ -228,7 +247,7 @@ The website is created using **mobile-first design approach** and added media qu
 
 [Back to top](#rock-paper-scissors)
 
-* ### Browser Compatibility Testing
+  ### Browser Compatibility Testing
 
   The website has been tested on the following browers. The site's compatibility and the functionality are fine with no issues. The website's appearence looks good using the following browsers. 
 
@@ -238,9 +257,9 @@ The website is created using **mobile-first design approach** and added media qu
 
 [Back to top](#rock-paper-scissors)
 
-* ### Resolved Known-bugs
+  ### Resolved Known-bugs
 
-  * #### Lighthouse texting bugs
+  #### Lighthouse texting bugs
   
     * Background and foreground colors do not have a sufficient contrast ratio;
   
@@ -258,7 +277,7 @@ The website is created using **mobile-first design approach** and added media qu
 
       * Added margin to the header elements and social media links to solve the problem.
 
-  * #### JSHint JavaScript Validation Warnings
+   #### JSHint JavaScript Validation Warnings
   
     * There were total 51 warnings:
   
@@ -283,7 +302,7 @@ The website is created using **mobile-first design approach** and added media qu
 
 [Back to top](#rock-paper-scissors)
 
-* ### Testing User Stories
+ ### Testing User Stories
 
   * As a first time user, I want the website to be easily accessible on different devices and work on different browsers.
   
@@ -305,7 +324,7 @@ The website is created using **mobile-first design approach** and added media qu
 
 ## Deployment
 
-* ### Site Deployment
+ ### Site Deployment
   
   The Rock Paper Scissors game website is deployed to GitHub page. The site's link -  https://veronicalourens.github.io/rock-paper-scissors/
 
@@ -320,7 +339,7 @@ The website is created using **mobile-first design approach** and added media qu
 
 [Back to top](#rock-paper-scissors)
 
-* ### Clone the Project
+ ### Clone the Project
   
   Steps to clone the project from GitHub as following:
   1. On my GitHub rock-paper-scissors repository page, click the **Code** tab next to the green **Gitpod** button;
@@ -336,7 +355,7 @@ The website is created using **mobile-first design approach** and added media qu
 
 ## Credit
 
-* ### Content
+ ### Content
   * [Google Fonts](https://fonts.google.com/specimen/Lato#standard-styles) - provides the fonts for the site.
 
   * [Font Awesome](https://fontawesome.com/) - provides the hand icons used for the game.
@@ -344,7 +363,7 @@ The website is created using **mobile-first design approach** and added media qu
   * [Adobe Color](https://color.adobe.com/create/color-wheel) - extract the site's color theme.
   * [EightShape Contrast](https://contrast-grid.eightshapes.com/) - color contrast grid.
 
-* ### Media
+ ### Media
  
   * [Freepik](https://www.freepik.com/) - provides the background image for free.
   * [Free icon shop](https://freeiconshop.com/) - provides the audio sound control icons.
@@ -357,7 +376,7 @@ The website is created using **mobile-first design approach** and added media qu
   * [Youtube](https://www.youtube.com/) - provides extra learning materials.
   * [Compressor](https://compressor.io/) - to compress the site's image and screenshots.
 
-* ### Code
+ ### Code
     * The CSS code for the box shadow and hover effect were based on the understanding of the examples on [W3C School](https://www.w3schools.com/) website.
     * The CSS code for the sticky footer were based on the knowledge gained on [CSS-TRICKS]().
     * The JS code to toggle the audio sound were inspired by the guidance from [Dave Gray]() on YouTube. 
