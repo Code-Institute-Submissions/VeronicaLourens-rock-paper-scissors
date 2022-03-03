@@ -93,7 +93,7 @@ The website is created using **mobile-first design approach** and added media qu
   
   The **Game Rules** button has a hover function that changes background color and horizontally shift to left and right when the mouse moves in and out. 
 
-    ![Header](assets/readmeimg/header.jpg)
+  ![Header](assets/readmeimg/header.jpg)
 
 [Back to top](#rock-paper-scissors)
 
@@ -176,35 +176,35 @@ The website is created using **mobile-first design approach** and added media qu
 [Back to top](#rock-paper-scissors)
 
 ## Testing
-  ### Code Validation
+### Code Validation
 
   The **Rock Paper Scissors** site's HTML, CSS and JavaScript codes have been validated by the **W3C HTML Markup Valication**, **W3C CSS Validation** and **JSHint Validation** services by entering the site's URL address.
-  * W3C Markup Validation - No errors found.
+* W3C Markup Validation - No errors found.
     
     ![HTML code](assets/readmeimg/w3c-html.jpg)
 
 
-  * W3C CSS Validation - No errors found.
+* W3C CSS Validation - No errors found.
 
     ![CSS code](assets/readmeimg/w3c-css.jpg)
 
-  * JSHint JavaScript Validation - One warning found.
+* JSHint JavaScript Validation - One warning found.
 
-    * Metrics:
+  * Metrics:
   
-      * ```There are 15 functions in the script file.```
-      * ```Functions with the largest signature take 2 arguments, while the median is 0.```
-      * ```Largest function has 19 statements in it, while the median is 6.```
-      * ```The most complex function has a cyclomatic complexity value of 10 while the median is 2.```
+    * ```There are 15 functions in the script file.```
+    * ```Functions with the largest signature take 2 arguments, while the median is 0.```
+    * ```Largest function has 19 statements in it, while the median is 6.```
+    * ```The most complex function has a cyclomatic complexity value of 10 while the median is 2.```
   
-    * One warning:
+  * One warning:
 
-      ```56 Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (renderGame)```
+    ```56 Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (renderGame)```
 
-      This warning is caused by the function declared within the **for loop** at line **56** in the script.js file. The function fires on the click event that loop through each of the elements that has a **class** attribute with the value of **choice**.
+    This warning is caused by the function declared within the **for loop** at line **56** in the script.js file. The function fires on the click event that loop through each of the elements that has a **class** attribute with the value of **choice**.
 
 
-        ![JSHint result](assets/readmeimg/jshint00.jpg)
+      ![JSHint result](assets/readmeimg/jshint00.jpg)
 
 
 [Back to top](#rock-paper-scissors)
@@ -277,20 +277,20 @@ The website is created using **mobile-first design approach** and added media qu
 
       * Added margin to the header elements and social media links to solve the problem.
 
-   #### JSHint JavaScript Validation Warnings
+#### JSHint JavaScript Validation Warnings
   
-    * There were total 51 warnings:
+  * There were total 51 warnings:
   
-      * 4 Missing semicolons;
-      * 1 Undefined variable: drawCount;
-      * 1 Functions declared within loops referencing an outer scoped variable may lead to confusing semantics;
-      * 45 Warnings about ES6.
+  * 4 Missing semicolons;
+  * 1 Undefined variable: drawCount;
+  * 1 Functions declared within loops referencing an outer scoped variable may lead to confusing semantics;
+  * 45 Warnings about ES6.
 
-        <details><summary>JSHint validation result.</summary>
+    <details><summary>JSHint validation result.</summary>
 
-          ![JSHint result](assets/readmeimg/jshint.jpg)
+      ![JSHint result](assets/readmeimg/jshint.jpg)
 
-        </details>
+    </details>
 
 
     * I took the following steps to improve and close the warnings:
@@ -377,10 +377,10 @@ The website is created using **mobile-first design approach** and added media qu
   * [Compressor](https://compressor.io/) - to compress the site's image and screenshots.
 
  ### Code
-    * The CSS code for the box shadow and hover effect were based on the understanding of the examples on [W3C School](https://www.w3schools.com/) website.
-    * The CSS code for the sticky footer were based on the knowledge gained on [CSS-TRICKS]().
-    * The JS code to toggle the audio sound were inspired by the guidance from [Dave Gray]() on YouTube. 
-    * The code to hide the images in README file was based on the project example from other student at Code Institute.
+  * The CSS code for the box shadow and hover effect were based on the understanding of the examples on [W3C School](https://www.w3schools.com/) website.
+  * The CSS code for the sticky footer were based on the knowledge gained on [CSS-TRICKS]().
+  * The JS code to toggle the audio sound were inspired by the guidance from [Dave Gray]() on YouTube. 
+  * The code to hide the images in README file was based on the project example from other student at Code Institute.
   
  
 
