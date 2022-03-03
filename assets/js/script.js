@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     /**
-     * Add event listener to the game rules and close buttons.
+     * Add event listener to the game rules button.
      * The function is to change background color on moving mouse in and out,
      * open a popup box on clicking the game rules button,
      * close the popup box on clicking the close button.
