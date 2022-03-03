@@ -1,31 +1,48 @@
-// audio and toggle sound variables 
+// toggle audio sound icon variables 
 
 const soundOff = document.querySelector('.off');
 const soundOn = document.querySelector('.on');
+
+// audio tracks 
 const clickSound = new Audio('assets/audio/mouse-click.mp3');
 const playerSound = new Audio('assets/audio/player.wav');
 const pcSound = new Audio('assets/audio/pc.wav');
 const drawSound = new Audio('assets/audio/draw.wav');
-//const audios = [mouseClickAudio, playerScoredAudio, pcScoredAudio, drawAudio];
 
-//
 let audioIsOn = false;
 
-function toggleAudioSound() {
+/**
+ * Add event listener to the icons.
+ * The functions are to toggle the audio sound on and off on clicking the icons.
+ */
 
-    if (!audioIsOn) {
-        clickSound.play();
-        playerSound.play();
+soundOff.addEventListener('click', turnAudioOn);
+soundOn.addEventListener('click', turnAudioOff);
 
-    } else {
-        clickSound.pause();
-        playerSound.pause();
+function turnAudioOn() {
+
+    audioIsOn = false;
+
+    if (soundOn.classList.contains('on')) {
+        soundOn.classList.add('active');
+        soundOff.classList.remove('active');
     }
+
 }
 
-// toggle the sound control icons
+function turnAudioOff() {
 
-soundOff.addEventListener('click', (e) => {
+    audioIsOn = true;
+
+    if (soundOff.classList.contains('off')) {
+        soundOff.classList.add('active');
+        soundOn.classList.remove('active');
+    }
+
+}
+
+
+/*soundOff.addEventListener('click', (e) => {
 
     //audioIsOn = false;
 
@@ -49,4 +66,19 @@ soundOn.addEventListener('click', (e) => {
 
     toggleAudioSound();
 
-})
+})*/
+
+/**
+ * The function is to toggle the audio sound.
+ */
+function toggleAudioSound() {
+
+    if (!audioIsOn) {
+        clickSound.play();
+        playerSound.play();
+
+    } else {
+        clickSound.pause();
+        playerSound.pause();
+    }
+}
